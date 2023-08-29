@@ -23,4 +23,6 @@
     else {
         include("controllers/homeController.php");
     }
+
+    include("controllers/project-templateController.php");
 ?>

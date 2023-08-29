@@ -3621,12 +3621,12 @@ li {
 
 .page-bg--lightpink {
   background-color: hsl(329deg, 56%, 96%);
-  background-image: url("../../images/backgrounds/asfalt-dark.png");
+  background-image: url("../../images/backgrounds/asfalt-lighter.png");
 }
 
 .page-bg--pink {
   background-color: hsl(329deg, 56%, 80%);
-  background-image: url("../../images/backgrounds/asfalt-dark.png");
+  background-image: url("../../images/backgrounds/asfalt-lighter.png");
 }
 
 .page-bg--forestgreen {
@@ -3636,7 +3636,7 @@ li {
 
 .page-bg--offwhite {
   background-color: hsl(48deg, 71%, 92%);
-  background-image: url("../../images/backgrounds/asfalt-dark.png");
+  background-image: url("../../images/backgrounds/asfalt-lighter.png");
 }
 
 .slide-page-up {

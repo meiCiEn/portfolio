@@ -13,11 +13,11 @@
 }
 
 .page-bg--lightpink {
-    @include page-background($color-5-lightest, 'asfalt-dark.png'); // name of image within public/images/backgrounds folder
+    @include page-background($color-5-lightest, 'asfalt-lighter.png'); // name of image within public/images/backgrounds folder
 }
   
   .page-bg--pink {
-    @include page-background($color-5, 'asfalt-dark.png');
+    @include page-background($color-5, 'asfalt-lighter.png');
   }
   
   .page-bg--forestgreen {
@@ -25,7 +25,7 @@
   }
   
   .page-bg--offwhite {
-    @include page-background($color-2, 'asfalt-dark.png');
+    @include page-background($color-2, 'asfalt-lighter.png');
   }
   
 

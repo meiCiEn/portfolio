@@ -2,4 +2,3 @@
     
     include("views/page/projects.php");
     
-?>
