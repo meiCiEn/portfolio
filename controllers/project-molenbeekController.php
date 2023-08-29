@@ -1,5 +1,5 @@
 <?php 
     
-    include("views/page/project-molenbeek.php");
+    include("views/page/projects/project-molenbeek.php");
     
 ?>

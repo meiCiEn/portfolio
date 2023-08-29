@@ -9,23 +9,23 @@
 
   @mixin page-background($color, $image) {
     background-color: $color;
-    background-image: url($image);
-  }
-  
-  .page-bg--lightpink {
-    @include page-background($color-5-lightest, 'public/images/backgrounds/asfalt-dark.png');
-  }
+    background-image: url("../../images/backgrounds/#{$image}"); // links to public/images/backgrounds folder
+}
+
+.page-bg--lightpink {
+    @include page-background($color-5-lightest, 'asfalt-dark.png'); // name of image within public/images/backgrounds folder
+}
   
   .page-bg--pink {
-    @include page-background($color-5, 'public/images/backgrounds/asfalt-dark.png');
+    @include page-background($color-5, 'asfalt-dark.png');
   }
   
   .page-bg--forestgreen {
-    @include page-background($color-4, 'public/images/backgrounds/asfalt-dark.png');
+    @include page-background($color-4, 'asfalt-dark.png');
   }
   
   .page-bg--offwhite {
-    @include page-background($color-2, 'public/images/backgrounds/asfalt-dark.png');
+    @include page-background($color-2, 'asfalt-dark.png');
   }
   
 

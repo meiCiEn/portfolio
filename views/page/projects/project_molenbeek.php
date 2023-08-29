@@ -10,5 +10,5 @@ $projectTeam = "";
 $projectDescription = "";
 $projectURL = "";
 
-include "project_template.php";
+include "views/html/project_template.php";
 ?>
