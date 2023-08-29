@@ -24,5 +24,5 @@
         include("controllers/homeController.php");
     }
 
-    include("controllers/project-templateController.php");
+    // include("controllers/project-templateController.php");
 ?>

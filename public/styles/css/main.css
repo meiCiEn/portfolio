@@ -3286,6 +3286,18 @@ li {
   justify-content: flex-end;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
 /* # BOOTSTRAP-STYLE GRID
 *
 *
