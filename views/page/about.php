@@ -1,3 +1,6 @@
+<?php
+$pageTitle = "About";?>
+
 <div class="page-bg page-bg--forestgreen d-flex justify-end">
 <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul class="breadcrumb__list">

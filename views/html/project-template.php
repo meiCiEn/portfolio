@@ -3,21 +3,21 @@
         <ul class="breadcrumb__list">
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=projects">Projects</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section={---SECTION_URL---}" aria-current="location">{---PROJECT_TITLE---}</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section={---SECTION_URL---}" aria-current="location"><?php echo $pageTitle; ?></a></li>
         </ul>
     </nav>
     <article id="{---PROJECT_TITLE---}">
         <div class="project__backdrop slide-page-up">
             <header class="project__header text-wrapper">
                 <h2 class="project__title slide-up-text">
-                    {---PROJECT_TITLE---}
+                <?php echo $pageTitle; ?>
                 </h2>
             </header>
         </div>
         <div class="project__info">
             <section class="project__summary">
                 <p class="project__lead lead slide-up-text-1">
-                    {---PROJECT_LEAD---}
+                <?php echo $projectLead; ?>
                 </p>
             </section>
             <section class="project__overview">
@@ -28,27 +28,27 @@
                                 <td class="table__heading">
                                     Type
                                 </td>
-                                <td>{---PROJECT_TYPE---}</td>
+                                <td><?php echo $projectType; ?></td>
                             </tr>
                             <tr>
                                 <td class="table__heading">
                                     Year
                                 </td>
-                                <td>{---PROJECT_YEAR---}</td>
+                                <td><?php echo $projectYear; ?></td>
                             </tr>
                             <tr>
                                 <td class="table__heading">
                                     Tech
                                 </td>
                                 <td>
-                                    {---PROJECT_TECH---}
+                                <?php echo $projectTech; ?>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="table__heading">
                                     Team
                                 </td>
-                                <td>{---PROJECT_TEAM---}
+                                <td><?php echo $projectTeam; ?>
                                 </td>
                             </tr>
                         </tbody>
@@ -57,10 +57,10 @@
                 <div class="project-overview__right">
                     <div class="project-overview__description">
                         <p>
-                            {---PROJECT DESCRIPTION---}</p>
+                        <?php echo $projectDescription; ?></p>
                     </div>
 
-                    <a href="{---PROJECT_URL---}" target="_blank" rel="noopener noreferrer" class="d-flex">→ go to site</a>
+                    <a href="<?php echo $projectURL; ?>" target="_blank" rel="noopener noreferrer" class="d-flex">→ go to site</a>
                 </div>
             </section>
         </div>
