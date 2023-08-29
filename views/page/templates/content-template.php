@@ -1,6 +1,4 @@
-<!-- project-molenbeek.php -->
 <?php
-// include("controllers/project-templateController.php");
 
 $pageTitle = "";
 $pagePath = "";
