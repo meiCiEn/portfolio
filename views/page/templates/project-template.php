@@ -44,6 +44,8 @@
                                     <?php echo $projectTech; ?>
                                 </td>
                             </tr>
+                            <!-- Only display this row if $projectTeam exists and contains a value -->
+                            <?php if (isset($projectTeam) && !empty($projectTeam)) : ?>
                             <tr>
                                 <td class="table__heading">
                                     Team
@@ -51,6 +53,7 @@
                                 <td><?php echo $projectTeam; ?>
                                 </td>
                             </tr>
+                            <?php endif; ?>
                         </tbody>
                     </table>
                 </div>
