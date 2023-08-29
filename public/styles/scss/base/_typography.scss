@@ -162,15 +162,19 @@ p {
     text-transform: uppercase;
 }
 
-// If you just put "font-style: italic" on hover you can't do smooth transitions. This method gives an italic effect while letting you do transitions.
 .italic {
+    font-style: italic;
+}
+
+// If you just put "font-style: italic" on hover you can't do smooth transitions. This method gives an italic effect while letting you do transitions.
+.cursive {
     transition-property: transform;
     transition-duration: 150ms;
     transition-delay: 200ms;
     transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
     transform: skewX(-18deg);
 }
 

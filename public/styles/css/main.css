@@ -2285,13 +2285,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -3222,13 +3226,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -6569,13 +6577,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -8836,13 +8848,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -10513,13 +10529,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -13153,13 +13173,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -14784,13 +14808,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -16328,13 +16356,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -17979,13 +18011,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 
@@ -19658,13 +19694,17 @@ p {
 }
 
 .italic {
+  font-style: italic;
+}
+
+.cursive {
   transition-property: transform;
   transition-duration: 150ms;
   transition-delay: 200ms;
   transition-timing-function: ease-in-out;
 }
 
-.italic:hover {
+.cursive:hover {
   transform: skewX(-18deg);
 }
 

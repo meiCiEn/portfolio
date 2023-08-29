@@ -48,7 +48,7 @@
                             <li>
                                 <a class="projects__link" href="?section=project-molenbeek">
                                     <div class="projects__row">
-                                        <div class="projects__name italic">
+                                        <div class="projects__name cursive">
                                             <div class="projects__arrow">
                                                 <h4 class="arrow">&#x21d2;</h4>
                                             </div>
