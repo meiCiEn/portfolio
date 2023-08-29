@@ -1,0 +1,50 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/typography';
+
+.about__wrapper {
+    margin: $vspace-4 0;
+    display: flex;
+    flex-direction: column;
+    width: $col-10;
+    @include sm {
+        width: $col-8;
+        margin: $vspace-3 0;
+    }
+}
+
+.about {
+    // margin: $vspace-4 0;
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: $vspace-1;
+    column-gap: $vspace-1;
+    color: $color-2;
+    margin-bottom: $vspace-1;
+
+    @include lg {
+        flex-direction: row-reverse;
+}
+}
+
+.about p:not(.lead) {
+    line-height: 1.8rem;
+    font-size: $text-sm;
+}
+
+.about__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: $vspace-1;
+}
+
+//* Should I include a photo? If so, where? Left/right sections don't look good now I've added skills so I've disabled the right section for the moment.
+
+.about__image img {
+    border: 3px solid;
+}
+
+.wrapper--about {
+    margin-bottom: $vspace_0-5;
+}
+

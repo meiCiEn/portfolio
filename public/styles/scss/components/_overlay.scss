@@ -1,0 +1,164 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/typography';
+
+.overlay {
+    position: fixed;
+    width: calc(100% - ($frame-space) * 2  - (1.5px));
+    height: calc(100% - ($frame-space) * 2 - (1.5px));
+    // background: ;
+    z-index: 4;
+    background-color: $color-4;
+}
+
+.slide-up-text {
+font-size: $text-xxxl;
+line-height: 65px;
+ @include sm {
+  font-size: $text-display-1;
+ 
+ }
+ @include md {
+  font-size: $text-display-2;
+  line-height: calc(1.7 * $space);;
+ }
+}
+
+
+.overlay--slidedown {
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+  }
+  
+  .overlay--slidedown.open {
+    visibility: visible;
+    transform: translateY(0%);
+    transition: transform 0.4s ease-in-out;
+    /* overflow: hidden; */
+  }
+  
+  .overlay__close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    z-index: 100;
+
+    -webkit-animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 3s both;
+
+    @include sm {
+      width: 80px;
+      height: 80px;
+    }
+
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  #x path {
+    fill: $color-2;
+  }
+
+  #x:hover path, #x:active path {
+    fill: $color-5;
+  }
+
+  .color__slider {
+    overflow: hidden;
+    background: linear-gradient(to top,
+        $color-5,
+        $color-5 50%,
+        $color-2 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position: 100% 0%;
+    transition: background-position 1s cubic-bezier(0.08, 0.82, 0.17, 1);
+    overflow: hidden;
+  }
+  
+  .color__slider:hover, .color__slider:active {
+    background-position: 0 100%;
+  }
+
+  .overlay__menu {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  .overlay__menu nav {
+    width: 100%;
+
+    @include sm {
+        width: 60%;
+    }
+  }
+  
+ .slide-up-text {
+  transform: translateY(50px);
+ }
+
+ .slide-top {
+	-webkit-animation: slide-top 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) 3.5s both;
+	        animation: slide-top 3s cubic-bezier(0.075, 0.820, 0.165, 1.000) 3.5s both;
+}
+
+
+
+/**
+ * ----------------------------------------
+ * animation slide-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY0(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+

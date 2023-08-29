@@ -1,0 +1,142 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/typography';
+
+.bg--home {
+    justify-content: center;
+    @include sm {
+        justify-content: flex-start;
+    }
+}
+.intro__wrapper p, .intro__wrapper a {
+    font-size: inherit;
+    @include md {
+        font-size: $text-md;
+
+    }
+}
+
+.intro__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: $col-10;
+    // margin: auto;
+    margin-top: 10vh;
+    // justify-content: flex-end;
+    padding-right: 0;
+    padding-left: 0;
+
+    @include sm {
+        height: calc(70vh - ($frame-space * 2) - 2px);
+        margin-top: 30vh;
+        padding-bottom: $vspace-1;
+    }
+    
+
+
+    @include md {
+        width: $col-8;
+        padding-bottom: $vspace-0_5;
+
+}
+}
+
+.intro__text-wrapper
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+
+    @include md {
+        justify-content: flex-start;
+    }
+}
+
+.intro__links {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 50%; 
+    justify-content: flex-end;
+
+    @include md {
+        position: absolute;
+        bottom: 0;
+        right: -10vw;
+    }
+
+    // flex: [max] [min] [ideal size];
+    // flex: [flex-grow] [flex-shrink] [flex-basis];
+    ul {
+        flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    width: fit-content;
+    align-items: flex-start;
+    align-self: flex-end;
+    column-gap: $vspace-0_5;
+
+    @include md {
+        flex-direction: row;
+    }
+        li {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            padding-bottom: $vspace-0_25;
+            transition: transform 200ms 300ms ease-in-out;
+            
+
+        a {
+            color: inherit;
+            transition: transform 100ms 150ms ease-in-out;
+            font-weight:500;
+            justify-content: center;
+        }
+
+        &:hover, &:active {
+            transform: translateX(20px);
+            @include md {
+                transform: translateX(0);
+            }
+
+            a {
+                transform: skewX(-18deg);
+            }
+
+            img {
+                transform: rotate(0deg);
+            }
+        }
+        
+        }
+    }
+}
+
+
+svg#EleanorMears {
+     @include sm {
+        display: none;
+     }
+}
+
+svg#eleanor {
+    display: none;
+
+    @include sm {
+        display: block;
+    }
+}
+

@@ -1,0 +1,16 @@
+.page__frame {
+    // The max() CSS function lets you set the largest (most positive) value from a list of comma-separated expressions as the value of a CSS property value. So, frame must be at least 20px, and expands to 4vmin when 4vmin is higher than 20px. 4vmin is the smaller of 4vh and 4vw. Useful for balance when viewport is squeezed either vertically or horizontally. 
+    padding: $frame-space;
+    height: 100vh; 
+    width: 100vw;
+    overflow: hidden;
+}
+
+.page__content {
+    border: 1px solid;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position:relative;
+}

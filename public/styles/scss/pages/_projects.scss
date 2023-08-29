@@ -1,0 +1,159 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/typography';
+
+.bg--projects {
+  justify-content: flex-end;
+  // height: 100%;
+}
+
+.projects__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.projects {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  flex-wrap: wrap;
+  // margin-top: 35vh;
+  margin-bottom: $vspace-0_75;
+
+  @include sm {
+    margin-bottom: 0;
+  }
+}
+
+.projects__left {
+  display: none;
+
+  @include sm {
+    display: flex;
+    width: 30%;
+  }
+}
+
+.projects__right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: $vspace-0_25;
+  padding-right: $vspace-0_25;
+  justify-content: flex-end;
+
+  @include md {
+    width: 70%;
+  }
+}
+
+.projects__right ul {
+  overflow-y: auto;
+  height: 100%;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.projects__right ul .projects__row {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: $vspace-0_25 0;
+  border-bottom: solid 2px $color-4;
+
+  @include sm {
+    padding: $vspace-0_5 0;
+  }
+}
+
+.projects__right ul li:last-child .projects__row {
+  @include sm {
+    border-bottom: 0;
+  }
+}
+
+.projects__name {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.projects__name .projects__arrow {
+  position: absolute;
+  overflow: hidden;
+}
+
+
+
+.projects__title {
+  margin-top: 0;
+  margin-bottom:0;
+  margin-left: 2rem;
+  margin-right: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+  transform: translateX(-30px);
+  transition: all 0.3s ease-in-out;
+  padding-right: 20px;
+  word-spacing: 0.2em;
+  font-size: $text-xs;
+
+  @include sm {
+    overflow: hidden;
+    margin-right: 20px;
+    font-size: $text-sm;
+  }
+
+  // @include md {
+  //   font-size: $text-md;
+  // }
+
+}
+
+.projects__name:hover .projects__title, .projects__name:active .projects__title {
+  transform: translateX(0);
+}
+
+.arrow {
+  padding: 0 $vspace-0_25 5px 0;
+  margin: 0;
+  position: relative;
+  transform: translateX(-100px);
+  transition: all 0.3s ease-in-out;
+  font-size: $text-sm;
+}
+
+.projects__name:hover .arrow, .projects__name:active .arrow {
+  transform: translateX(0);
+}
+
+.projects__right ul .projects__year {
+  display: none;
+  width: 100%;
+  text-align: right;
+  justify-content: flex-end;
+
+  @include xs {
+    display: flex;
+  }
+}
+
+.projects__right ul .projects__year p {
+  margin: 0;
+}
+
+.wrapper--projects {
+  margin-bottom: $vspace-0_25;
+
+  @include sm {
+    margin-bottom: $vspace-0_5;
+  }
+}

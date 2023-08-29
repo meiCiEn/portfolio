@@ -1,0 +1,210 @@
+@use '../abstracts/variables';
+@forward '../abstracts/mixins';
+
+/* ===================================================================
+ * # TYPOGRAPHY 
+ *
+ *
+ * ------------------------------------------------------------------- 
+ * type scale - ratio 1:2 | base: 20px
+ * -------------------------------------------------------------------
+ *
+ * --text-huge-3    = (148.60px)
+ * --text-huge-2    = (123.83px)
+ * --text-huge-1    = (103.20px)
+ * --text-display-3 = (86.00px)
+ * --text-display-2 = (71.66px)
+ * --text-display-1 = (59.72px)
+ * --text-xxxl      = (49.77px)
+ * --text-xxl       = (41.47px)
+ * --text-xl        = (34.56px)
+ * --text-lg        = (28.80px)
+ * --text-md        = (24.00px)
+ * --text-size      = (20.00px) BASE
+ * --text-sm        = (16.67px)
+ * --text-xs        = (13.89px)
+ *
+ * -------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------
+ * ## base type styles
+ * -------------------------------------------------------------------- */
+body {
+    font-family: $font-main;
+    font-size: $text-sm;
+    font-weight: 300;
+    line-height: $vspace-0_5;
+    color: $color-text;
+    // @include md {
+    //     font-size: $text-md;
+    // }
+}
+
+/* links */
+a {
+    color: $color-link;
+    transition: all 0.3s ease-in-out;
+}
+
+a:focus,
+a:hover,
+a:active {
+    color: $color-link-hover;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+/* headings */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2 {
+    font-family: $font-heading-bold;
+    text-transform: uppercase;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading-reg;
+}
+
+h1,
+.h1 {
+    font-size: $text-xxxl;
+    line-height: calc(2.2 * $space);
+
+    @include sm {
+        font-size: $text-huge-1;
+    }
+}
+
+h2,
+.h2 {
+    font-size: $text-display-2;
+    line-height: calc(1.7 * $space);
+    // line-height: calc($text-display-2);
+}
+
+h3,
+.h3 {
+    font-size: $text-xl;
+    line-height: calc(1.125 * $space);
+}
+
+h4,
+.h4 {
+    font-size: $text-lg;
+}
+
+h5,
+.h5 {
+    font-size: $text-md;
+}
+
+h6,
+.h6 {
+    font-size: $text-sm;
+}
+
+p {
+    font-size: inherit;
+    font-weight:300;
+    margin-top: 0;
+    margin-bottom: $vspace-0_5;
+  }
+
+/* ## additional typography & helper classes
+ * -------------------------------------------------------------------- */
+.lead {
+	font-family: $font-main;
+	font-size  : 1.6rem;
+    font-weight: 500;
+	line-height: $vspace-0_75;
+    @include sm {
+        font-size  : $text-md;
+    }
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+// If you just put "font-style: italic" on hover you can't do smooth transitions. This method gives an italic effect while letting you do transitions.
+.italic {
+    transition-property: transform;
+    transition-duration: 150ms;
+    transition-delay: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.italic:hover {
+    transform: skewX(-18deg);
+}
+
+
+/* ## lists
+ * -------------------------------------------------------------------- */
+ol {
+	list-style: decimal;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	display: list-item;
+}
+
+.forestgreen {
+    color: $color-4;
+}
+
+.offwhite {
+    color: $color-2;
+}
+
+.pink {
+    color: $color-5;
+}
+
+.lightpink {
+    color: $color-5-lightest;
+}
+
+.rader {
+    font-family: "pp_raderregular";
+}

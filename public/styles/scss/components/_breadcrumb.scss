@@ -1,0 +1,121 @@
+@import '../abstracts/variables';
+
+@import '../abstracts/mixins';
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.back {
+	position: sticky;
+	top: 100px;
+	right: 25px;
+	align-self: flex-end;
+	margin-top: -80px;
+	z-index: 3;
+	transition: transform 300ms ease-in;
+	animation: 5s ease-out 0s 1 opacity;
+	@include sm {
+        display: none;
+}
+}
+
+.back--contact svg {
+	fill: $color-4;
+}
+
+.back--about svg {
+	fill: $color-2;
+}
+
+.back:active {
+	transform: translateX(-30px);
+}
+
+.breadcrumb {
+	display: none;
+	transform: rotate(-0);
+	transform-origin: 100% 100% 0;
+	mix-blend-mode: difference;
+	bottom: 0;
+	width: 60vw;
+	@include sm {
+        position: sticky;
+	display: flex;
+	right: 0px;
+	transform: rotate(-90deg);
+	align-self: flex-end;
+	width: fit-content;
+	justify-content: flex-end;
+	top: 0;
+}
+
+}
+
+.breadcrumb--projects,
+.breadcrumb--project,
+.breadcrumb--about {
+	top: 22px;
+	@include sm {
+        top: 0;
+}
+}
+
+.breadcrumb__list {
+	padding: 16px;
+	list-style: none;
+}
+
+.breadcrumb__list li {
+	display: inline;
+	font-size: $text-xs;
+	padding: 5px 0;
+	transition-property: transform;
+	transition-duration: 150ms;
+	transition-delay: 200ms;
+	transition-timing-function: ease-in-out;
+	@include sm {
+        font-size: $text-sm;
+}
+}
+
+.breadcrumb__list li:hover,
+.breadcrumb__list li:active {
+	transform: skewX(-18deg);
+}
+
+.breadcrumb li+li:before {
+	padding: 8px;
+	color: $color-white;
+	content: "/\00a0";
+}
+
+.breadcrumb li a {
+	color: $color-white;
+	text-decoration: none;
+}
+
+.breadcrumb li a[aria-current="location"] {
+	color: $color-white;
+	text-decoration: underline;
+}
+
+.breadcrumb li:hover a,
+.breadcrumb li:active a {
+	opacity: 0.7;
+}
+
+.breadcrumb li:hover :not(a[aria-current="location"]),
+.breadcrumb li:active :not(a[aria-current="location"]) {
+	text-decoration: underline;
+}

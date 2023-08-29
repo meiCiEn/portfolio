@@ -1,0 +1,560 @@
+
+
+/* 
+* # VARIABLES
+*
+*
+* ------------------------------------------------------------------- */
+
+/* 
+* ------------------------------------------------------------------- 
+* ## fonts 
+* ------------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'pp_raderbold';
+    src: url('../../../public/fonts/Rader/PPRader-Bold.otf') format('opentype'), url('../../../public/fonts/Rader/pprader-bold-webfont.woff2') format('woff2'),
+        url('../../../public/fonts/Rader/pprader-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_raderbold_italic';
+    src: url('../../../public/fonts/Rader/PPRader-BoldItalic.otf') format('opentype'), url('../../../public/fonts/Rader/pprader-bolditalic-webfont.woff2') format('woff2'),
+        url('../../../public/fonts/Rader/pprader-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_raderitalic';
+    src: url('../../../public/fonts/Rader/PPRader-Italic.otf') format('opentype'), url('../../../public/fonts/Rader/pprader-italic-webfont.woff2') format('woff2'),
+        url('../../../public/fonts/Rader/pprader-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_raderregular';
+    src: url('../../../public/fonts/Rader/PPRader-Regular.otf') format('opentype'), url('../../../public/fonts/Rader/pprader-regular-webfont.woff2') format('woff2'),
+        url('../../../public/fonts/Rader/pprader-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_raderthin';
+    src: url('../../../public/fonts/Rader/PPRader-Thin.otf') format('opentype'), url('../../../public/fonts/Rader/pprader-thin-webfont.woff2') format('woff2'),
+        url('../../../public/fonts/Rader/pprader-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pp_raderthin_italic';
+    src: url('../../../public/fonts/Rader/PPRader-ThinItalic.otf') format('opentype'), url('../../public/fonts/Rader/pprader-thinitalic-webfont.woff2') format('woff2'),
+        url('../../../public/fonts/Rader/pprader-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Link to Adobe Fonts
+@import url("https://use.typekit.net/fjj4tfz.css");
+
+
+$font-main: bicyclette,
+    sans-serif;
+$font-heading-reg: "pp_raderregular",
+    sans-serif;
+$font-heading-bold: "pp_raderbold",
+    sans-serif;
+
+/* monospace */
+$font-mono: Droid Sans Mono Regular;
+
+/* ------------------------------------------------------------------- 
+ * ## colors
+ * ------------------------------------------------------------------- */
+
+
+/* color-1(#212529) --blackish
+* color-2(#f9f3dd) --offwhite
+* color-3(#f2b139) --mustard
+* color-4(#275f5e) --forestgreen
+* color-5(#edc0d7) --pink /*
+
+    /* theme colors */
+$color-1: hsla(210, 11%, 15%, 1);
+$color-2: hsla(48, 71%, 92%, 1);
+$color-3: hsla(39, 88%, 59%, 1);
+$color-4: hsla(179, 42%, 26%, 1);
+$color-5: hsla(329, 56%, 80%, 1);
+
+/* theme color variations */
+$color-1-lightest : hsla(210, 11%, 96%, 1);
+$color-1-lighter : hsla(210, 11%, 69%, 1);
+$color-1-light : hsla(210, 11%, 59%, 1);
+$color-1-dark : hsla(210, 11%, 39%, 1);
+$color-1-darker : hsla(210, 11%, 29%, 1);
+$color-1-darkest : hsla(210, 11%, 10%, 1);
+
+$color-1-translucent: hsla(210, 11%, 15%, 0.1);
+
+$color-3-lightest : hsla(39, 88%, 96%, 1);
+$color-3-lighter : hsla(39, 88%, 69%, 1);
+$color-3-light : hsla(39, 88%, 59%, 1);
+$color-3-dark : hsla(39, 88%, 39%, 1);
+$color-3-darker : hsla(39, 88%, 29%, 1);
+$color-3-darkest : hsla(39, 88%, 10%, 1);
+
+$color-4-lightest : hsla(179, 42%, 96%, 1);
+$color-4-lighter : hsla(179, 42%, 69%, 1);
+$color-4-light : hsla(179, 42%, 59%, 1);
+$color-4-dark : hsla(179, 42%, 39%, 1);
+$color-4-darker : hsla(179, 42%, 29%, 1);
+$color-4-darkest : hsla(179, 42%, 10%, 1);
+
+$color-5-lightest : hsla(329, 56%, 96%, 1); // $lightpink
+$color-5-lighter : hsla(329, 56%, 69%, 1);
+$color-5-light : hsla(329, 56%, 59%, 1);
+$color-5-dark : hsla(329, 56%, 39%, 1);
+$color-5-darker : hsla(329, 56%, 29%, 1);
+$color-5-darkest : hsla(329, 56%, 10%, 1);
+
+$color-5-translucent: hsla(329, 56%, 39%, 0.2);
+
+/* greys */
+$color-black : hsla(0, 0%, 0%, 1);
+$color-white : hsla(0, 0%, 100%, 1);
+$color-gray-dark : hsla(0, 0%, 20%, 1);
+$color-gray-mid : hsla(0, 0%, 50%, 1);
+$color-gray-light : hsla(0, 0%, 80%, 1);
+
+/* text */
+$color-text: $color-1;
+$color-header: $color-white;
+
+/* error / success */
+$color-error: #a21232;
+$color-success: #4c9173;
+
+/* links */
+   $color-link: $color-1;
+   $color-link-hover: $color-1-darker;
+   $color-link-active: $color-1-darker;
+
+/* buttons */
+$color-btn: $color-1;
+$color-btn-hover: $color-1-darker;
+
+/* others */
+$color-body: $color-white;
+$color-border: $color-1;
+
+/* 
+
+/* ------------------------------------------------------------------- 
+ * ## spacing and typescale
+ * -------------------------------------------------------------------*/
+
+/* spacing
+   * base font size: 20px 
+   * frame thickness: max(20px, 4vmin);
+   */
+
+$frame-space: max(20px, 4vmin);
+
+//    $base-size        : 62.5%;
+   $multiplier       : 1;
+   $base-font-size   : calc(1.5rem * $multiplier);
+   $space            : calc(3.2rem * $multiplier);
+
+/* vertical spacing */
+$vspace-0_25: calc(0.25 * #{$space});
+$vspace-0_5: calc(0.5 * #{$space});
+$vspace-0_75: calc(0.75 * #{$space});
+$vspace-1: $space;
+$vspace-1_5: calc(1.5 * #{$space});
+$vspace-2: calc(2 * #{$space});
+$vspace-3: calc(3 * #{$space});
+$vspace-4: calc(4  * #{$space});
+
+$text-scale-ratio : 1.2;
+	$text-size        : $base-font-size;
+	$text-xs          : calc($text-size / $text-scale-ratio / $text-scale-ratio);
+	$text-sm          : calc($text-xs * $text-scale-ratio);
+	$text-md          : calc($text-sm * $text-scale-ratio * $text-scale-ratio);
+	$text-lg          : calc($text-md * $text-scale-ratio);
+	$text-xl          : calc($text-lg * $text-scale-ratio);
+	$text-xxl         : calc($text-xl * $text-scale-ratio);
+	$text-xxxl        : calc($text-xxl * $text-scale-ratio);
+	$text-display-1   : calc($text-xxxl * $text-scale-ratio);
+	$text-display-2   : calc($text-display-1 * $text-scale-ratio);
+	$text-display-3   : calc($text-display-2 * $text-scale-ratio);
+	$text-huge-1      : calc($text-display-3 * $text-scale-ratio);
+	$text-huge-2      : calc($text-huge-1 * $text-scale-ratio);
+	$text-huge-3      : calc($text-huge-2 * $text-scale-ratio);
+
+    $border-width: 1px; 
+    
+/* ------------------------------------------------------------------- 
+* ## breakpoints
+* ------------------------------------------------------------------- */
+
+// Small phones (landscape view)
+$screen-xs-min: 400px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+/* 
+* ## shadows and borders
+* ------------------------------------------------------------------- */
+
+$box-shadow-1: 0px 5px 25px -3px rgba(0,0,0,0.2);
+
+$border-radius-small: 4px;
+
+/* ------------------------------------------------------------------- 
+* ## layout (rows/columns)
+* ------------------------------------------------------------------- */
+
+$col-flex: 1 0 0%;
+
+/* column-widths */
+
+$col-auto: auto;
+
+$col-1: 8.33333333%;
+
+$col-2: 16.66666667%;
+
+$col-3: 25%;
+
+$col-4: 33.33333333%;
+
+$col-5: 41.66666667%;
+
+$col-6: 50%;
+
+$col-7: 58.33333333%;
+
+$col-8: 66.66666667%;
+
+$col-9: 75%;
+
+$col-10: 83.33333333%;
+
+$col-11: 91.66666667%;
+
+$col-12: 100%;
+
+
+/* min-width: 576px */
+@media (min-width: 576px) {
+    .col-sm {
+        flex: 1 0 0%;
+    }
+
+    .col-sm-auto {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .col-sm-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+
+    .col-sm-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-sm-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .col-sm-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-sm-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-sm-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+}
+
+/* min-width: 768px */
+@media (min-width: 768px) {
+    .col-md {
+        flex: 1 0 0%;
+    }
+
+    .col-md-auto {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .col-md-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+
+    .col-md-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-md-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .col-md-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-md-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-md-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-md-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    .col-md-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+}
+
+/* min-width: 992px */
+@media (min-width: 992px) {
+    .col-lg {
+        flex: 1 0 0%;
+    }
+
+    .col-lg-auto {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .col-lg-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-lg-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-lg-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+}
+
+/* min-width: 992px */
+@media (min-width: 1200px) {
+    .col-xl {
+        flex: 1 0 0%;
+    }
+
+    .col-xl-auto {
+        flex: 0 0 auto;
+        width: auto;
+    }
+
+    .col-xl-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+
+    .col-xl-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+
+    .col-xl-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-xl-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-xl-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-xl-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-xl-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .col-xl-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-xl-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-xl-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-xl-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    .col-xl-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+}
+

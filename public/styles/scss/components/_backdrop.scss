@@ -1,0 +1,36 @@
+.page-bg {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @mixin page-background($color, $image) {
+    background-color: $color;
+    background-image: url($image);
+  }
+  
+  .page-bg--lightpink {
+    @include page-background($color-5-lightest, 'public/images/backgrounds/asfalt-dark.png');
+  }
+  
+  .page-bg--pink {
+    @include page-background($color-5, 'public/images/backgrounds/asfalt-dark.png');
+  }
+  
+  .page-bg--forestgreen {
+    @include page-background($color-4, 'public/images/backgrounds/asfalt-dark.png');
+  }
+  
+  .page-bg--offwhite {
+    @include page-background($color-2, 'public/images/backgrounds/asfalt-dark.png');
+  }
+  
+
+.slide-page-up {
+    height: 100%;
+    width: 100%;
+}
+

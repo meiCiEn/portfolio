@@ -1,0 +1,139 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../base/typography";
+
+.contact a {
+@include md {
+    font-size: $text-md;
+}
+}
+
+.wrapper--contact {
+    margin-bottom: $vspace-0_5;
+}
+
+.contact {
+    width: $col-10;
+    display: flex;
+    flex-direction: column;
+
+    // margin-top: $vspace-2;
+
+    @include sm {
+        width: $col-8;
+        // margin: $vspace-3;
+    }
+}
+
+.contact__details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 50%;
+
+    // flex: [max] [min] [ideal size];
+    // flex: [flex-grow] [flex-shrink] [flex-basis];
+    ul {
+        li {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            padding-bottom: $vspace-0_25;
+        }
+    }
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    gap: $vspace-0_5;
+    margin-top: $vspace-1;
+
+    @include md {
+        flex-direction: row;
+    }
+}
+
+.contact__form {
+    // display: none;
+    display: flex;
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+.contact__details {
+
+    li {
+        transition: transform 200ms 300ms ease-in-out;
+
+        a {
+            color: inherit;
+            transition: transform 100ms 150ms ease-in-out;
+            font-weight:500;
+        }
+
+        &:hover, &:active {
+            transform: translateX(20px);
+
+            a {
+                transform: skewX(-18deg);
+            }
+
+            img {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+.bullet {
+    display: flex;
+
+    img {
+        height: 20px;
+        transform: rotate(-45deg);
+        transition: transform 200ms 150ms ease-in-out;
+    }
+}
+
+
+svg#contact-sm {
+    @include sm {
+       display: none;
+    }
+}
+
+svg#contact {
+   display: none;
+   @include sm {
+       display: block;
+   }
+}
+
+.breadcrumb__wrapper--contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// .bg--contact {
+//     height: 100%;
+// }
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: $vspace-3;
+    margin-bottom: 80px;
+
+    @include sm {
+        margin-top: $vspace-2;
+        margin-bottom: $vspace-2;
+    }
+}

@@ -1,0 +1,37 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+$button-padding-y: 45px;
+$button-padding-x: 13px;
+
+.button__body {
+  padding: $button-padding-x $button-padding-y;
+  margin: $vspace-0_5, 0;
+  border-radius: $border-radius-small;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 400;
+  cursor: pointer;
+  width: fit-content;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 0px;
+  line-height: normal;
+
+  &:hover {
+    padding: calc($button-padding-x - ($border-width)) calc($button-padding-y - ($border-width));
+  }
+
+  &:active {
+    padding: calc($button-padding-x - ($border-width)) calc($button-padding-y - ($border-width));
+  }
+}
+
+
+.button__body--light {
+  @include button-color($color-2, $color-4); // see mixins.scss
+}
+
+.button__body--black {
+  @include button-color($color-1, $color-5); // see mixins.scss
+}

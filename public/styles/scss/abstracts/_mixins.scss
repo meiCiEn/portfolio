@@ -1,0 +1,107 @@
+/* 
+* # MIXINS
+*
+*
+* ------------------------------------------------------------------- */
+
+@import '../abstracts/variables';
+
+/*
+* ------------------------------------------------------------------- 
+* ## breakpoints
+* ------------------------------------------------------------------- */
+
+// Very small devices
+@mixin pointer-coarse {
+    @media (pointer:coarse) {
+        @content;
+    }
+}
+
+// Very small devices
+@mixin xs {
+    @media (min-width: #{$screen-xs-min}) {
+        @content;
+    }
+}
+
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+
+@mixin border-bottom ($color) {
+    border-bottom: 2px solid;
+    border-color: $color;
+}
+
+$border-page: 1px solid;
+
+@mixin border-page ($color) {
+    border: 1px solid;
+    border-color: border;
+}
+/*
+* ------------------------------------------------------------------- 
+* ## buttons
+* ------------------------------------------------------------------- */
+
+@mixin border ($color) {
+    border-width: 1px;
+    border-color: $color;
+    border-style: solid;
+}
+
+
+@mixin button-color ($bg, $color) {
+    background: $bg;
+    color: $color;
+
+
+    &:hover {
+      background: $color;
+      color: $bg;
+      transition: all 0.3s ease;
+      @include border($bg);
+    
+    }
+    &:active {
+      background:lighten($color,10%);
+    } 
+  }
+
+
+
+/*
+* ------------------------------------------------------------------- 
+* ## typography
+* ------------------------------------------------------------------- */
+
+
+
+@mixin line ($bg) {
+    background-color: $bg;
+}

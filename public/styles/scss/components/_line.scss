@@ -1,0 +1,32 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+@keyframes lineOpacity {
+    0% {
+      opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.line {
+    height: 2px;
+    transform-origin: right;
+}
+
+.line--light {
+    @include line($color-2);
+}
+
+.line--green {
+    @include line($color-4);
+}
+
+.line--mb {
+    margin-bottom: $vspace-0_5;
+}

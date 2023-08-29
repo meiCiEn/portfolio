@@ -1,0 +1,142 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/typography';
+
+.skills__group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: auto;
+    align-content: start;
+    overflow: hidden;
+    gap: 10px;
+    padding: $vspace_0-75 $vspace_0-5;
+}
+
+.skill {
+    padding: 5px 15px;
+    border-radius: $border-radius-small;
+    font-family: inherit;
+    font-size: $text-sm;
+    font-weight: 400;
+    width: fit-content;
+    flex: 0 0 auto;
+    // margin: 10px;
+}
+
+// .skill--light {
+//     @include button-color($color-2, $color-4);
+// }
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-top-left-radius: $border-radius-small;
+    border-top-right-radius: $border-radius-small;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    border: 1px solid $color-2;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    font-size: $text-sm;
+    // float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5pc, 5px;
+    transition: 0.3s;
+    font-family: inherit;
+
+    @include sm {
+        padding: 14px 16px;
+    }
+}
+
+.tab--light button {
+    background-color: $color-2;
+    color: $color-4;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover, .tab button:active {
+    background-color: $color-4;
+    color: $color-2;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: $color-4;
+    color: $color-2;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    // border: 1px solid $color-2;
+    border-bottom-left-radius: $border-radius-small;
+    border-bottom-right-radius: $border-radius-small;
+    border-top: none;
+    border-bottom: 1px solid;
+}
+
+// Animation
+.skills__wrapper {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-bottom-right-radius: $border-radius-small;
+    border-bottom-left-radius: $border-radius-small;
+    transform-origin: 0% 0%;
+}
+
+
+.skills__wrapper .skill {
+    transform-origin: 50% 100%;
+    color: $color-4;
+    background-color: $color-2;
+}
+
+.bottom-rounded {
+    border-bottom-right-radius: $border-radius-small;
+    border-bottom-left-radius: $border-radius-small;
+}
+
+.skills__title {
+    margin-bottom: $vspace-0_5;
+}
+
+.reset {
+    background: transparent;
+    border: none;
+    font-size: $text-sm;
+    color: $color-2;
+}
+
+.reset__wrapper {
+    padding: 5px;
+    width: 30%;
+}
+
+.skills__container {
+    position: relative;
+}
+
+.click-me {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+}
+
+
+
+// TODO - Add cross or minus symbol in skills chart (bottom right, align-self) to hide all tabcontent
+
+//TODO - Ensure skills section appears at the bottom of the About page on mobile devices (flex column reverse?)
+
+//TODO - upload CV

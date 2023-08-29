@@ -1,0 +1,194 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../base/typography';
+
+/*
+* # PROJECT OVERVIEW PAGES
+*
+*
+* ------------------------------------------------------------------- */
+
+
+.project {
+    position: relative;
+}
+
+.project-overview__description {
+    font-size: $text-sm;
+}
+
+.project__backdrop {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: $color-1;
+    height: 70vh;
+    width: $col-12;
+    margin-top: -70px;
+
+    @include sm {
+        border-bottom-right-radius: $border-radius-small;
+        border-bottom-left-radius: $border-radius-small;
+        width: $col-8;
+    }
+}
+
+.project__header {
+    margin-bottom: 10%;
+}
+
+.project__title {
+    padding: 0 2rem;
+    font-size: calc(1.5rem + 4.5vw);
+    text-align: center;
+    line-height: 1.1;
+    color: $color-5-lightest;
+    margin: 0;
+    word-break: break-word;
+}
+
+.project__info {
+    width: $col-10;
+    margin-bottom: $vspace-1;
+
+    @include sm {
+        width: $col-8;
+    }
+}
+
+.project__summary {
+    @include border-bottom($color-1);
+    padding-top: $vspace-0_75;
+}
+
+.project__overview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $vspace-0_5;
+    margin-bottom: $vspace-0_5;
+}
+
+.project-overview__left {
+    margin-bottom: $vspace-0_5;
+}
+
+@include md {
+    .project-overview {
+        display: flex;
+    }
+
+    .project-overview__left {
+        flex-grow: 0;
+        flex-shrink: 2;
+        flex-basis: 30%;
+    }
+
+    .project-overview__right {
+        flex-grow: 1;
+        flex-shrink: 2;
+        flex-basis: 50%;
+        padding-left: 2rem;
+    }
+}
+
+
+// See _table.scss
+
+.project-overview__table {
+    display: block;
+    padding: $vspace-0_5;
+    background-color: $color-1-translucent;
+    width: fit-content;
+    max-width: 100%;
+    font-family: $font-main;
+    border-collapse: collapse;
+    border-radius: $border-radius-small;
+    border-width: 0;
+}
+
+.project-overview__table th,
+.project-overview__table td {
+    padding: 0.5rem;
+    text-align: left;
+    border: none;
+}
+
+
+.table__heading {
+    font-family: $font-heading-reg;
+    text-transform: uppercase;
+    font-size: $text-sm;
+    width: 1rem;
+}
+
+.project td:not(.table__heading) {
+    width: fit-content;
+    font-size: $text-sm;
+}
+
+.next {
+    display: flex;
+    width: 400px;
+    overflow: hidden;
+    padding-top: $vspace-0_25;
+}
+
+.next__wrapper {
+    position: absolute;
+    overflow: hidden;
+}
+
+.next__arrow {
+    padding: 0;
+    margin: -3px 0 0 0;
+    position: relative;
+
+    @include sm {
+        transform: translateX(-100px);
+        transition-delay: 400ms;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.next:hover .next__arrow, .next:active .next__arrow {
+    transform: translateX(0);
+}
+
+.next__text {
+    margin: 0 0 0 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+
+    @include sm {
+        transform: translateX(-20px);
+    }
+}
+
+
+
+.next:hover .next__text, .next:active .next__text {
+    @include sm {
+        transform: translateX(10px);
+    }
+}
+
+
+.projects-title {
+    margin: 0 20px 0 3rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateX(-40px);
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.projects-right li:hover .projects-title, .projects-right li:active .projects-title {
+    transform: translateX(0);
+    font-style: italic;
+}

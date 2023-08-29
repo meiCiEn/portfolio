@@ -1,0 +1,92 @@
+@use './../abstracts/variables';
+@use './../abstracts/mixins';
+@import './typography';
+/* ===================================================================
+ * # BASE SETUP
+ *
+ *
+ * ------------------------------------------------------------------- */
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: $base-font-size;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #{$color-text}; // var(--blackish)
+	font-family: $font-main;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+p {
+	font-size     : inherit;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	text-decoration: none;
+}
+
+svg,
+img,
+video {
+	max-width: 100%;
+	height   : auto;
+}
+
+// The <pre> HTML element represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font.
+pre {
+	overflow: auto;
+}
+
+div,
+dl, /* description list */
+dt, /* defines terms/names */
+dd, /* describes each term/name */
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+	margin : 0;
+	padding: 0;
+}
+
+input[type=email],
+input[type=number],
+input[type=search],
+input[type=text],
+input[type=tel],
+input[type=url],
+input[type=password],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance   : none;
+	appearance        : none;
+}
+
