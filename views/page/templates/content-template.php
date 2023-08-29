@@ -3,6 +3,7 @@
 // include("controllers/project-templateController.php");
 
 $pageTitle = "";
+$pagePath = "";
 $projectLead = "";
 $projectTitle = "";
 $projectType = "";

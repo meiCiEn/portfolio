@@ -3,11 +3,11 @@
         <ul class="breadcrumb__list">
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=projects">Projects</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section={---SECTION_URL---}" aria-current="location"><?php echo $pageTitle; ?></a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=<?php echo $pagePath; ?>" aria-current="location"><?php echo $pageTitle; ?></a></li>
         </ul>
     </nav>
     <article id="<?php echo $pageTitle; ?>" class="d-flex flex-column align-items-center">
-        <div class="project__backdrop slide-page-up">
+        <div class="project__backdrop slide-page-down">
             <header class="project__header text-wrapper">
                 <h2 class="project__title slide-up-text">
                     <?php echo $pageTitle; ?>
