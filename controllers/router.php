@@ -1,8 +1,8 @@
 <?php 
     $tabRoles = [
         // anonyme
-        1 => ["home", "about", "contact", "projects", "project-molenbeek", "project-ecologie", "project-film", "project-bakery", "project-bwt", "project-agr", "project-shuihu", "deconnexion", "form" ],
-        0 => ["home", "about", "contact", "projects", "project-molenbeek", "project-ecologie",  "project-bakery", "project-film", "project-bwt", "project-agr", "project-shuihu", "connexion", "form" ],
+        1 => ["home", "about", "contact", "projects", "project-molenbeek", "project-ecologie", "project-film", "project-boulangerie", "project-bwt", "project-agr", "project-shuihu", "deconnexion", "form" ],
+        0 => ["home", "about", "contact", "projects", "project-molenbeek", "project-ecologie",  "project-boulangerie", "project-film", "project-bwt", "project-agr", "project-shuihu", "connexion", "form" ],
         // connecté
         // for future - admin?
     ];

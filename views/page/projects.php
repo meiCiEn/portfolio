@@ -91,7 +91,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="projects__link" href="?section=project-bakery">
+                                <a class="projects__link" href="?section=project-boulangerie">
                                     <div class="projects__row">
                                         <div class="projects__name cursive">
                                             <div class="projects__arrow">
