@@ -7402,8 +7402,35 @@ li {
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
 .header__logo img {
-  width: 2rem;
+  width: 3rem;
+  animation: spin 4s linear infinite;
+  transition: transform 0.3s ease;
+}
+
+.header__logo:hover img {
+  animation-play-state: paused;
+}
+
+.ball {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  backdrop-filter: invert(1) grayscale(1);
+  -webkit-backdrop-filter: invert(1) grayscale(1);
+  z-index: 99999;
 }
 
 /* 

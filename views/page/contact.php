@@ -1,5 +1,5 @@
 <div class="page-bg page-bg--pink forestgreen">
-
+<div class="ball"></div>
     <div class="slide-page-up d-flex">
         <div class="breadcrumb__wrapper breadcrumb__wrapper--contact">
             <!-- breadcrumb -->

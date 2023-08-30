@@ -2,6 +2,7 @@
 $pageTitle = "About";?>
 
 <div class="page-bg page-bg--forestgreen d-flex justify-end">
+<div class="ball"></div>
 <nav class="breadcrumb" aria-label="Breadcrumb">
             <ul class="breadcrumb__list">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>

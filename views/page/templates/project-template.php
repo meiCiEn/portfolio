@@ -1,4 +1,5 @@
 <div class="project page-bg page-bg--lightpink">
+<div class="ball"></div>
     <nav class="breadcrumb breadcrumb--project" aria-label="breadcrumb">
         <ul class="breadcrumb__list">
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>

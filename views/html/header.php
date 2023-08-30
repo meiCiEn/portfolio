@@ -19,10 +19,11 @@
 
 <body>
     <header class="header">
+
         <div class="header__content">
             <div class="header__left">
                 <a href="?section=home">
-                    <div class="header__logo"><img src="./public/images/logos/EM-logo-semicolon-white.svg" alt="logo"></div>
+                    <div class="header__logo" id="header__logo"><img src="./public/images/logos/EM-logo-semicolon-white.svg" alt="logo"></div>
                 </a>
             </div>
             <div class="header__right">
@@ -51,9 +52,12 @@
                 </ul>
             </div>
         </div>
+
     </header>
+
     <main>
         <div class="page__frame">
+
 
             <div class="page__content">
                 <div class="overlay overlay--slidedown page-bg--forestgreen">
@@ -70,10 +74,10 @@
                     <div class="overlay__menu">
                         <nav>
                             <ul class="overlay__list">
-                                <a  href="?section=home">
+                                <a href="?section=home">
 
                                     <li class="text-wrapper">
-                                            <h2 class="slide-up-text color__slider">Home</h2>
+                                        <h2 class="slide-up-text color__slider">Home</h2>
                                     </li>
                                 </a>
                                 <a href="?section=projects">
@@ -95,5 +99,5 @@
                         </nav>
                     </div>
 
+
                 </div>
-                
