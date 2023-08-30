@@ -1,17 +1,15 @@
 <?php
-$pageTitle = "About";?>
-
+$pageTitle = "About"; ?>
 <div class="page-bg page-bg--forestgreen d-flex justify-end">
-<div class="ball"></div>
-<nav class="breadcrumb" aria-label="Breadcrumb">
-            <ul class="breadcrumb__list">
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=about" aria-current="location">About</a></li>
-            </ul>
-        </nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=about" aria-current="location">About</a></li>
+        </ul>
+    </nav>
     <div class="d-flex justify-center">
         <!-- breadcrumb -->
-        
+
         <a class="back back--about" href="?section=home"><svg id="back" class="back" xmlns="http://www.w3.org/2000/svg" width="50.06" height="50" viewBox="0 0 50.06 50">
                 <g id="About_offwhite">
                     <path d="M50.06,25c0,14.28-10.75,25-25.03,25S0,39.28,0,25,10.78,0,25.03,0s25.03,10.75,25.03,25Zm-25,23.09c13.02,0,22.89-9.97,22.89-23.09S38.08,1.94,25.06,1.94,2.1,11.88,2.1,25s9.91,23.09,22.96,23.09Zm-2.98-38.86h2.75l-13.21,13.21c-.58,.58-.29,1.1,.42,1.1h31.8v2.14H12.05c-.71,0-.97,.52-.42,1.1l13.18,13.28h-2.75L6.61,24.61l15.48-15.38Z" />
@@ -177,4 +175,5 @@ $pageTitle = "About";?>
             </div>
         </div>
     </div>
+
 </div>

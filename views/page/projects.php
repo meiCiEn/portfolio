@@ -1,22 +1,13 @@
-<div class="bg--projects page-bg page-bg--offwhite noise">
-    
-    <div class="slide-page-up">
-    <!-- <nav class="breadcrumb breadcrumb--projects" aria-label="Breadcrumb">
-        <ul class="breadcrumb__list">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=projects" aria-current="location">Projects</a></li>
-        </ul>
-    </nav> -->
+<div class="page-bg page-bg--offwhite" style="border:5px solid red;">
 
-        <a class="back back--projects" href="?section=home"><img src="public/images/glyphs/arrow-back.svg" alt="go back"></a>
-        <div class="projects__wrapper">
-            <div class="projects">
-                <div class="projects__left">
+    <div class="d-flex">
+        <div class="projects__wrapper d-flex slide-page-up">
+            <div class="projects d-flex">
+                <div class="projects__left d-flex" style="border: 2px solid green">
                 </div>
-                <div class="projects__right">
-                    <!-- border border-primary -->
+                <div class="projects__right d-flex" style="border: 2px solid green">
                     <div>
-                        <div class="wrapper wrapper--projects">
+                        <div class="wrapper wrapper--projects" style="border:2px solid orange;">
                             <!-- <h1 class="page__title slide-up-left forestgreen">Projects</h1> -->
                             <!--?xml version="1.0" encoding="UTF-8"?--><svg id="projects" xmlns="http://www.w3.org/2000/svg" width="370.3900146484375" height="72" viewBox="0 0 370.39 72">
                                 <defs>
@@ -44,6 +35,7 @@
                             </svg>
                         </div>
                         <div class="line line--green"></div>
+                        <!-- LIST OF PROJECTS -->
                         <ul>
                             <li>
                                 <a class="projects__link" href="?section=project-molenbeek">
@@ -105,53 +97,6 @@
                                     </div>
                                 </a>
                             </li>
-                            <!-- <li> -->
-                            <!-- href="?section=project-shuihu" -->
-                            <!-- <a class="projects__link" role="link" aria-disabled="true">
-                            <div class="projects__row">
-                                <div class="projects__name">
-                                    <div class="projects__arrow">
-                                        <h4 class="arrow">&#x21d2;</h4>
-                                    </div>
-                                    <h4 class="projects__title">Shuihu [coming soon]</h4>
-                                </div>
-                                <div class="projects__year">
-                                    <p>2022</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li> -->
-                            <!-- href="?section=project-agr" -->
-                            <!-- <li><a class="projects__link" role="link" aria-disabled="true">
-                            <div class="projects__row">
-                                <div class="projects__name">
-                                    <div class="projects__arrow">
-                                        <h4 class="arrow">&#x21d2;</h4>
-                                    </div>
-                                    <h4 class="projects__title">Agregator [coming soon]</h4>
-                                </div>
-                                <div class="projects__year">
-                                    <p>2022</p>
-                                </div>
-                            </div>
-                        </a></li>
-                    <li> -->
-                            <!-- href="?section=project-film"  -->
-                            <!-- <a class="projects__link" role="link" aria-disabled="true">
-                            <div class="projects__row">
-                                <div class="projects__name">
-                                    <div class="projects__arrow">
-                                        <h4 class="arrow">&#x21d2;</h4>
-                                    </div>
-                                    <h4 class="projects__title">Film Database [coming soon]</h4>
-                                </div>
-                                <div class="projects__year">
-                                    <p>2022</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li> -->
-
                         </ul>
                     </div>
                 </div>

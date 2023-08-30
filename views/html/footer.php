@@ -1,27 +1,20 @@
 <!-- </body>
 </html> -->
-        </div> <!-- end of page content -->
-      </div> <!-- end of page background -->
-    </main>
+</div> <!-- end of page content -->
+</div> <!-- end of page background -->
+</div>
+</main>
 <footer>
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
+</footer>
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
 <!-- GreenSock animation library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script type="">
-// Mouse Cursor Animation
+  // Mouse Cursor Animation
   gsap.set(".ball", { xPercent: -50, yPercent: -50 });
   const ball = document.querySelector(".ball");
   const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
@@ -43,31 +36,31 @@
     ySet(pos.y);
   });
 </script>
-    <script src="public/scripts/anime.min.js"></script>
-    <script src="public/scripts/animations.js"></script>
-    <script src="public/scripts/menu.js"></script>
-    <script src="public/scripts/tabs.js"></script>
-    <script src="public/scripts/form.js"></script>
-    <script src="public/scripts/intersection.js"></script>
+<script src="public/scripts/anime.min.js"></script>
+<script src="public/scripts/animations.js"></script>
+<script src="public/scripts/menu.js"></script>
+<script src="public/scripts/tabs.js"></script>
+<script src="public/scripts/form.js"></script>
+<script src="public/scripts/intersection.js"></script>
 
-    <script>
-      const wrapperList = [...document.querySelectorAll('.wrapper svg')];
-
-
+<script>
+  const wrapperList = [...document.querySelectorAll('.wrapper svg')];
 
 
-function draw() {
-  let wrappers = document.querySelectorAll('.wrapper svg');
-[...wrappers].forEach(wrapper => {
-  console.log(wrapper);
-    wrapper.classList.add('active');
-});
+
+
+  function draw() {
+    let wrappers = document.querySelectorAll('.wrapper svg');
+    [...wrappers].forEach(wrapper => {
+      console.log(wrapper);
+      wrapper.classList.add('active');
+    });
   }
 
   setTimeout(draw, 300)
-
 </script>
 
 
-  </body>
+</body>
+
 </html>
