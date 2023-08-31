@@ -44,7 +44,7 @@
                 <!-- LIST OF PROJECTS -->
                 <ul>
                 <li>
-                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-javascript">
+                        <a id="project-javascript" class="projects__link" href="?section=project-javascript">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -74,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="project-ecologie-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-ecologie-link" class="projects__link" href="?section=project-ecologie">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -89,7 +89,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="project-bwt-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-bwt-link" class="projects__link" href="?section=project-bwt">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -104,7 +104,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-boulangerie">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -119,7 +119,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-boulangerie">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">

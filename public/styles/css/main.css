@@ -7440,6 +7440,12 @@ li {
   backdrop-filter: invert(1) grayscale(1);
   -webkit-backdrop-filter: invert(1) grayscale(1);
   z-index: 99999;
+  display: none;
+}
+@media (min-width: 576px) {
+  .ball {
+    display: block;
+  }
 }
 
 /* 
@@ -13413,7 +13419,6 @@ svg#eleanor {
 }
 
 .bullet-link-trigger {
-  border: solid red 2px;
   padding: 0;
 }
 @media (min-width: 576px) {

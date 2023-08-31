@@ -2,7 +2,7 @@
 <?php
 // include("controllers/project-templateController.php");
 
-$pageTitle = "Boulangerie";
+$pageTitle = "Molenbeek en Promenade";
 $pagePath = "project-boulangerie";
 $projectLead = "A district bursting with life and colour, Molenbeek has too often been ignored or maligned. <span class='italic'>Molenbeek en Promenade</span> aims to change all that by putting Brussels 1080 back on the map.";
 $projectTitle = "Molenbeek en Promenade";

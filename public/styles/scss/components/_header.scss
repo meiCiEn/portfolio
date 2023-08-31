@@ -90,4 +90,11 @@ flex-direction: row;
   backdrop-filter: invert(1) grayscale(1);
   -webkit-backdrop-filter: invert(1) grayscale(1);
   z-index: 99999;
+  display: none;
+
+  @include sm {
+    display:block;
+  }
 }
+
+

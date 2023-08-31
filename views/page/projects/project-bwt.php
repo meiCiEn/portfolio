@@ -23,7 +23,7 @@ $screenShot_5 = "";
 $screenShotTitle_5 = "";
 $screenShot_mobile = "public/images/screenshots/bwt/bwt-mob.png";
 $nextProjectTitle = "Boulangerie";
-$nextProjectURL = "?section=project-bakery";
+$nextProjectURL = "?section=project-boulangerie";
 
 include("controllers/project-templateController.php");
 ?>

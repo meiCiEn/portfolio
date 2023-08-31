@@ -22,7 +22,7 @@ $screenShotTitle_4 = "";
 $screenShot_5 = "";
 $screenShotTitle_5 = "";
 $screenShot_mobile = "";
-$nextProjectTitle = "Brussels Women Together";
+$nextProjectTitle = "Belgium Women Together";
 $nextProjectURL = "?section=project-bwt";
 
 include("controllers/project-templateController.php");
