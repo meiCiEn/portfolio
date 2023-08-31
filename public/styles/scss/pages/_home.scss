@@ -112,9 +112,9 @@
                 transform: translateX(0);
             }
 
-            a {
-                transform: skewX(-18deg);
-            }
+            // a {
+            //     transform: skewX(-18deg);
+            // }
 
             img {
                 transform: rotate(0deg);
@@ -140,3 +140,48 @@ svg#eleanor {
     }
 }
 
+.bullet-link {
+    position: relative;
+  }
+  
+  .bullet-link .bullet-link-text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+
+
+  .bullet-link-trigger {
+    border: solid red 2px;
+    padding: 0;
+
+    @include sm {
+        padding:20px;
+    }
+  }
+  
+  .bullet-link .bullet-link-letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+
+  .bullet-link .bullet-link-1-letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+
+  .bullet-link .bullet-link-2-letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }
+
+  .bullet {
+    display: flex;
+    margin-right: 10px;
+  }
