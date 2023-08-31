@@ -1,20 +1,20 @@
-<div class="page-bg page-bg--offwhite" style="border:5px solid red;">
+<div class="page-bg page-bg--offwhite" >
     <div class="projects d-flex">
-        <div class="projects__left d-flex" style="border: 2px solid green">
+        <div class="projects__left d-flex" >
             <div id="project__image" class="project__image">
-                <img id="project1-img" src="/public/images/test/molenbeek.png" alt="Project 1 Image" style="display: none;">
-                <img id="project2-img" src="/public/images/test/molenbeek.png" alt="Project 2 Image" style="display: none;">
-                <img id="project3-img" src="/public/images/test/molenbeek.png" alt="Project 3 Image" style="display: none;">
-                <img id="project4-img" src="/public/images/test/molenbeek.png" alt="Project 4 Image" style="display: none;">
+                <img id="project-molenbeek-img" src="public/images/thumbnails/molenbeek.png" alt="screenshot of Molenbeek en Promenade" style="display: none;">
+                <img id="project-ecologie-img" src="public/images/thumbnails/ecologie.png" alt="Project 2 Image" style="display: none;">
+                <img id="project-bwt-img" src="public/images/thumbnails/bwt.png" alt="Project 3 Image" style="display: none;">
+                <img id="project-boulangerie-img" src="public/images/thumbnails/boulangerie.png" alt="Project 4 Image" style="display: none;">
                 <!-- Add images for other projects here -->
             </div>
             <div class="project__description">
-
+                <!-- <p>Here's a little info about the project.</p> -->
             </div>
         </div>
-        <div class="projects__right d-flex" style="border: 2px solid green">
-            <div class="d-flex flex-column" style="border: 1px solid chartreuse;">
-                <div class="wrapper wrapper--projects" style="border:2px solid orange;">
+        <div class="projects__right d-flex" >
+            <div class="d-flex flex-column">
+                <div class="wrapper wrapper--projects" >
                     <svg id="projects" xmlns="http://www.w3.org/2000/svg" width="370.3900146484375" height="72" viewBox="0 0 370.39 72">
                         <defs>
                             <style>
@@ -43,8 +43,23 @@
                 <div class="line line--green"></div>
                 <!-- LIST OF PROJECTS -->
                 <ul>
+                <li>
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-javascript">
+                            <div class="projects__row">
+                                <div class="projects__name cursive">
+                                    <div class="projects__arrow">
+                                        <h4 class="arrow">&#x21d2;</h4>
+                                    </div>
+                                    <h4 class="projects__title">JavaScript</h4>
+                                </div>
+                                <div class="projects__year">
+                                    <p class="projects-year">2023</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                     <li>
-                        <a id="project1-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-molenbeek-link" class="projects__link" href="?section=project-molenbeek">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -59,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="project2-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-ecologie-link" class="projects__link" href="?section=project-molenbeek">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -74,7 +89,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="project3-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-bwt-link" class="projects__link" href="?section=project-molenbeek">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -89,7 +104,7 @@
                         </a>
                     </li>
                     <li>
-                        <a id="project4-link" class="projects__link" href="?section=project-molenbeek">
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
                             <div class="projects__row">
                                 <div class="projects__name cursive">
                                     <div class="projects__arrow">
@@ -103,16 +118,94 @@
                             </div>
                         </a>
                     </li>
+                    <li>
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
+                            <div class="projects__row">
+                                <div class="projects__name cursive">
+                                    <div class="projects__arrow">
+                                        <h4 class="arrow">&#x21d2;</h4>
+                                    </div>
+                                    <h4 class="projects__title">Boulangerie</h4>
+                                </div>
+                                <div class="projects__year">
+                                    <p class="projects-year">2022</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
+                            <div class="projects__row">
+                                <div class="projects__name cursive">
+                                    <div class="projects__arrow">
+                                        <h4 class="arrow">&#x21d2;</h4>
+                                    </div>
+                                    <h4 class="projects__title">Boulangerie</h4>
+                                </div>
+                                <div class="projects__year">
+                                    <p class="projects-year">2022</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
+                            <div class="projects__row">
+                                <div class="projects__name cursive">
+                                    <div class="projects__arrow">
+                                        <h4 class="arrow">&#x21d2;</h4>
+                                    </div>
+                                    <h4 class="projects__title">Boulangerie</h4>
+                                </div>
+                                <div class="projects__year">
+                                    <p class="projects-year">2022</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
+                            <div class="projects__row">
+                                <div class="projects__name cursive">
+                                    <div class="projects__arrow">
+                                        <h4 class="arrow">&#x21d2;</h4>
+                                    </div>
+                                    <h4 class="projects__title">Boulangerie</h4>
+                                </div>
+                                <div class="projects__year">
+                                    <p class="projects-year">2022</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="project-boulangerie-link" class="projects__link" href="?section=project-molenbeek">
+                            <div class="projects__row">
+                                <div class="projects__name cursive">
+                                    <div class="projects__arrow">
+                                        <h4 class="arrow">&#x21d2;</h4>
+                                    </div>
+                                    <h4 class="projects__title">Boulangerie</h4>
+                                </div>
+                                <div class="projects__year">
+                                    <p class="projects-year">2022</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
     </div>
 </div>
-<script>
+<!-- <script>
     // Get references to project links and project images by ID
     const projectLinks = {
-        'project1-link': 'project1-img',
-        'project2-link': 'project2-img',
+        'project-molenbeek-link': 'project-molenbeek-img',
+        'project-ecologie-link': 'project-ecologie-img',
+        'project-bwt-link': 'project-bwt-img',
+        'project-boulangerie-link': 'project-boulangerie-img',
         // Add more link-image pairs here
     };
 
@@ -142,4 +235,4 @@
             });
         }
     }
-</script>
+</script> -->

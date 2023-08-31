@@ -1,3 +1,4 @@
+<!-- project-boulangerie.php -->
 <?php
 
 $pageTitle = "Boulangerie";

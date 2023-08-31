@@ -16458,6 +16458,8 @@ li {
   flex-wrap: wrap;
   margin-bottom: calc(0.75 * 3.2rem);
   height: calc(100vh - 80px);
+  overflow: scroll;
+  padding-top: 10rem;
 }
 @media (min-width: 576px) {
   .projects {
@@ -16482,6 +16484,7 @@ li {
   padding-left: calc(0.25 * 3.2rem);
   padding-right: calc(0.25 * 3.2rem);
   justify-content: flex-end;
+  overflow: scroll;
 }
 @media (min-width: 768px) {
   .projects__right {
@@ -16583,6 +16586,14 @@ li {
 
 .projects__right ul .projects__year p {
   margin: 0;
+}
+
+.project__image {
+  display: flex;
+  min-width: 100%;
+  height: 400px;
+  padding: 20px;
+  object-fit: cover;
 }
 
 /* 

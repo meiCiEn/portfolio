@@ -1,3 +1,4 @@
+<!-- project-ecologie.php -->
 <?php
 
 $pageTitle = "Maison de l'Écologie";

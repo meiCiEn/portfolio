@@ -9,6 +9,8 @@
   flex-wrap: wrap;
   margin-bottom: $vspace-0_75;
   height: calc((100vh) - 80px);
+  overflow: scroll;
+  padding-top: 10rem;
 
   @include sm {
     margin-bottom: 0;
@@ -31,6 +33,7 @@
   padding-left: $vspace-0_25;
   padding-right: $vspace-0_25;
   justify-content: flex-end;
+  overflow: scroll;
 
   @include md {
     width: 60%;
@@ -132,10 +135,11 @@
   margin: 0;
 }
 
-// .wrapper--projects {
-//   margin-bottom: $vspace-0_25;
-
-//   @include sm {
-//     margin-bottom: $vspace-0_5;
-//   }
-// }
+.project__image {
+  display: flex;
+  min-width: 100%;
+  height: 400px;
+  padding: 20px;
+  object-fit: cover;
+  
+}
