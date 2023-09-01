@@ -42,7 +42,8 @@
 
                                 <!-- hamburger menu -->
                                 <div class="menu__burger">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+                                    <i class="fa-solid fa-bars"></i>
                                 </div>
                             </li>
                         </label>

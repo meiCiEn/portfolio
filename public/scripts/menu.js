@@ -3,7 +3,8 @@ const menu = document.querySelector( '.menu' );
 const menuButton = document.querySelector( '.menu__label' );
 const ellipsisContainer = 
     document.querySelector('.menu__burger' );
-const menuBars = document.querySelector( '.fa-ellipsis-vertical' );
+// const menuBars = document.querySelector( '.fa-ellipsis-vertical' );
+const menuBars = document.querySelector( '.fa-bars' );
 const overlay = document.querySelector('.overlay' );
 const overlayClose = document.querySelector('.overlay__close');
 const slidingText = document.querySelector('.slide-top');

@@ -12,8 +12,15 @@
 }
 
 
-.menu__burger .fa-ellipsis-vertical {
-    transform: rotate(0deg);
+// .menu__burger .fa-ellipsis-vertical {
+//     transform: rotate(0deg);
+//     transition: transform 0.3s ease-out;
+//     transition-delay: 0.1s;
+//     font-size: 2rem;
+// }
+
+.menu__burger .fa-bars {
+    transform: rotate(0deg) rotateY(0deg);
     transition: transform 0.3s ease-out;
     transition-delay: 0.1s;
     font-size: 2rem;
@@ -24,7 +31,8 @@
 }
 
 .rotate-90 {
-    transform: rotate(90deg);
+    transform-origin: center;
+    transform: rotate(90deg) rotateY(80deg);
 }
 
 
