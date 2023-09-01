@@ -58,7 +58,7 @@
 }
 
 .projects__right ul li:last-child .projects__row {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 .projects__name {
@@ -75,12 +75,12 @@
 
 .projects__title {
   margin-top: 0;
-  margin-bottom:0;
+  margin-bottom: 0;
   margin-left: 2rem;
   margin-right: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
-  
+
   transform: translateX(-30px);
   transition: all 0.3s ease-in-out;
   padding-right: 20px;
@@ -95,7 +95,8 @@
 
 }
 
-.projects__name:hover .projects__title, .projects__name:active .projects__title {
+.projects__name:hover .projects__title,
+.projects__name:active .projects__title {
   transform: translateX(0);
 }
 
@@ -108,7 +109,8 @@
   font-size: $text-sm;
 }
 
-.projects__name:hover .arrow, .projects__name:active .arrow {
+.projects__name:hover .arrow,
+.projects__name:active .arrow {
   transform: translateX(0);
 }
 
@@ -133,5 +135,28 @@
   height: 400px;
   padding: 20px;
   object-fit: cover;
-  
+
+}
+
+.project__sitelink {
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: fit-content;
+  flex: 0 0 auto;
+  background-color: $color-1;
+  &:hover {
+    background-color: $color-5-lightest;
+  }
+
+  a {
+    color: $color-5-lightest;
+    
+  }
+
+  &:hover a {
+    color: $color-1;
+  }
 }

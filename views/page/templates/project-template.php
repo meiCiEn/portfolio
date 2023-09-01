@@ -64,7 +64,8 @@
                                 <?php echo $projectDescription; ?></p>
                         </div>
                         <?php if (isset($projectURL) && !empty($projectURL)) : ?>
-                            <a href="<?php echo $projectURL; ?>" target="_blank" rel="noopener noreferrer" class="d-flex">→ go to site</a>
+                            <div class="project__sitelink"><a href="<?php echo $projectURL; ?>" target="_blank" rel="noopener noreferrer" class="d-flex">go to site</a></div>
+                            
                         <?php endif; ?>
                     </div>
                 </section>

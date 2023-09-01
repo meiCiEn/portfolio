@@ -16594,7 +16594,8 @@ li {
   }
 }
 
-.projects__name:hover .projects__title, .projects__name:active .projects__title {
+.projects__name:hover .projects__title,
+.projects__name:active .projects__title {
   transform: translateX(0);
 }
 
@@ -16607,7 +16608,8 @@ li {
   font-size: 1.25rem;
 }
 
-.projects__name:hover .arrow, .projects__name:active .arrow {
+.projects__name:hover .arrow,
+.projects__name:active .arrow {
   transform: translateX(0);
 }
 
@@ -16633,6 +16635,26 @@ li {
   height: 400px;
   padding: 20px;
   object-fit: cover;
+}
+
+.project__sitelink {
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 400;
+  width: fit-content;
+  flex: 0 0 auto;
+  background-color: hsl(210deg, 11%, 15%);
+}
+.project__sitelink:hover {
+  background-color: hsl(329deg, 56%, 96%);
+}
+.project__sitelink a {
+  color: hsl(329deg, 56%, 96%);
+}
+.project__sitelink:hover a {
+  color: hsl(210deg, 11%, 15%);
 }
 
 /* 
