@@ -3,13 +3,14 @@
 @import '../base/typography';
 
 .bg--home {
-    justify-content: center;
-    @include sm {
-        justify-content: flex-start;
-    }
+    justify-content: flex-start;
+    height: calc(100vh - ($frame-space * 2) - 2px);
 }
-.intro__wrapper p, .intro__wrapper a {
+
+.intro__wrapper p,
+.intro__wrapper a {
     font-size: inherit;
+
     @include md {
         font-size: $text-md;
 
@@ -17,14 +18,11 @@
 }
 
 .intro__wrapper {
+    height: calc(70vh - ($frame-space * 2) - 2px);
     position: relative;
     display: flex;
     flex-direction: column;
-
     width: $col-10;
-    // margin: auto;
-    margin-top: 10vh;
-    // justify-content: flex-end;
     padding-right: 0;
     padding-left: 0;
 
@@ -33,18 +31,17 @@
         margin-top: 30vh;
         padding-bottom: $vspace-1;
     }
-    
+
 
 
     @include md {
         width: $col-8;
         padding-bottom: $vspace-0_5;
 
-}
+    }
 }
 
-.intro__text-wrapper
-{
+.intro__text-wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +62,7 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    flex-basis: 50%; 
+    flex-basis: 50%;
     justify-content: flex-end;
 
     @include md {
@@ -78,58 +75,61 @@
     // flex: [flex-grow] [flex-shrink] [flex-basis];
     ul {
         flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    width: fit-content;
-    align-items: flex-start;
-    align-self: flex-end;
-    column-gap: $vspace-0_5;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        width: fit-content;
+        align-items: flex-start;
+        align-self: flex-end;
+        column-gap: $vspace-0_5;
 
-    @include md {
-        flex-direction: row;
-    }
+        @include md {
+            flex-direction: row;
+        }
+
         li {
             display: flex;
             gap: 15px;
             align-items: center;
             padding-bottom: $vspace-0_25;
             transition: transform 200ms 300ms ease-in-out;
-            
 
-        a {
-            color: inherit;
-            transition: transform 100ms 150ms ease-in-out;
-            font-weight:500;
-            justify-content: center;
-        }
 
-        &:hover, &:active {
-            transform: translateX(20px);
-            @include md {
-                transform: translateX(0);
+            a {
+                color: inherit;
+                transition: transform 100ms 150ms ease-in-out;
+                font-weight: 500;
+                justify-content: center;
             }
 
-            // a {
-            //     transform: skewX(-18deg);
-            // }
+            &:hover,
+            &:active {
+                transform: translateX(20px);
 
-            img {
-                transform: rotate(0deg);
+                @include md {
+                    transform: translateX(0);
+                }
+
+                // a {
+                //     transform: skewX(-18deg);
+                // }
+
+                img {
+                    transform: rotate(0deg);
+                }
             }
-        }
-        
+
         }
     }
 }
 
 
 svg#EleanorMears {
-     @include sm {
+    @include sm {
         display: none;
-     }
+    }
 }
 
 svg#eleanor {
@@ -142,45 +142,45 @@ svg#eleanor {
 
 .bullet-link {
     position: relative;
-  }
-  
-  .bullet-link .bullet-link-text-wrapper {
+}
+
+.bullet-link .bullet-link-text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.2em;
     padding-right: 0.05em;
     padding-bottom: 0.1em;
     overflow: hidden;
-  }
+}
 
 
-  .bullet-link-trigger {
+.bullet-link-trigger {
     padding: 0;
 
-    @include sm {
-        padding:20px;
+    @include md {
+        padding: 20px;
     }
-  }
-  
-  .bullet-link .bullet-link-letter {
+}
+
+.bullet-link .bullet-link-letter {
     display: inline-block;
     line-height: 1em;
     transform-origin: 0 0;
-  }
+}
 
-  .bullet-link .bullet-link-1-letter {
+.bullet-link .bullet-link-1-letter {
     display: inline-block;
     line-height: 1em;
     transform-origin: 0 0;
-  }
+}
 
-  .bullet-link .bullet-link-2-letter {
+.bullet-link .bullet-link-2-letter {
     display: inline-block;
     line-height: 1em;
     transform-origin: 0 0;
-  }
+}
 
-  .bullet {
+.bullet {
     display: flex;
     margin-right: 10px;
-  }
+}

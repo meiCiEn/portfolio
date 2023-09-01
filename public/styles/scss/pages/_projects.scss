@@ -7,20 +7,15 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  margin-bottom: $vspace-0_75;
-  height: calc((100vh) - 80px);
+  height: calc((100vh) - ($frame-space * 2) - 2px);
   overflow: scroll;
   padding-top: 10rem;
-
-  @include sm {
-    margin-bottom: 0;
-  }
 }
 
 .projects__left {
   display: none;
 
-  @include sm {
+  @include md {
     display: flex;
     width: 40%;
   }
@@ -63,9 +58,7 @@
 }
 
 .projects__right ul li:last-child .projects__row {
-  @include sm {
     border-bottom: 0;
-  }
 }
 
 .projects__name {
@@ -91,14 +84,13 @@
   transform: translateX(-30px);
   transition: all 0.3s ease-in-out;
   padding-right: 20px;
-  word-spacing: 0.2em;
   font-size: $text-sm;
   font-weight: 400;
   font-family: bicyclette, sans-serif;
 
   @include sm {
     margin-right: 20px;
-    font-size: $text-md;
+    font-size: 1.6rem;
   }
 
 }

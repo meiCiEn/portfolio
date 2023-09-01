@@ -1,6 +1,6 @@
 <div class="page-bg page-bg--offwhite" >
     <div class="projects d-flex">
-        <div class="projects__left d-flex" >
+        <div class="projects__left" >
             <div id="project__image" class="project__image">
                 <img id="project-molenbeek-img" src="public/images/thumbnails/molenbeek.png" alt="screenshot of Molenbeek en Promenade" style="display: none;">
                 <img id="project-ecologie-img" src="public/images/thumbnails/ecologie.png" alt="Project 2 Image" style="display: none;">

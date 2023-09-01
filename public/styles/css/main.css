@@ -3646,6 +3646,8 @@ li {
 .page {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-bg--lightpink {
@@ -13276,29 +13278,27 @@ li {
 }
 
 .bg--home {
-  justify-content: center;
-}
-@media (min-width: 576px) {
-  .bg--home {
-    justify-content: flex-start;
-  }
+  justify-content: flex-start;
+  height: calc(100vh - max(20px, 4vmin) * 2 - 2px);
 }
 
-.intro__wrapper p, .intro__wrapper a {
+.intro__wrapper p,
+.intro__wrapper a {
   font-size: inherit;
 }
 @media (min-width: 768px) {
-  .intro__wrapper p, .intro__wrapper a {
+  .intro__wrapper p,
+  .intro__wrapper a {
     font-size: 1.8rem;
   }
 }
 
 .intro__wrapper {
+  height: calc(70vh - max(20px, 4vmin) * 2 - 2px);
   position: relative;
   display: flex;
   flex-direction: column;
   width: 83.33333333%;
-  margin-top: 10vh;
   padding-right: 0;
   padding-left: 0;
 }
@@ -13421,7 +13421,7 @@ svg#eleanor {
 .bullet-link-trigger {
   padding: 0;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .bullet-link-trigger {
     padding: 20px;
   }
@@ -16504,21 +16504,15 @@ li {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  margin-bottom: calc(0.75 * 3.2rem);
-  height: calc(100vh - 80px);
+  height: calc(100vh - max(20px, 4vmin) * 2 - 2px);
   overflow: scroll;
   padding-top: 10rem;
-}
-@media (min-width: 576px) {
-  .projects {
-    margin-bottom: 0;
-  }
 }
 
 .projects__left {
   display: none;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .projects__left {
     display: flex;
     width: 40%;
@@ -16563,10 +16557,8 @@ li {
   }
 }
 
-@media (min-width: 576px) {
-  .projects__right ul li:last-child .projects__row {
-    border-bottom: 0;
-  }
+.projects__right ul li:last-child .projects__row {
+  border-bottom: 0;
 }
 
 .projects__name {
@@ -16591,7 +16583,6 @@ li {
   transform: translateX(-30px);
   transition: all 0.3s ease-in-out;
   padding-right: 20px;
-  word-spacing: 0.2em;
   font-size: 1.25rem;
   font-weight: 400;
   font-family: bicyclette, sans-serif;
@@ -16599,7 +16590,7 @@ li {
 @media (min-width: 576px) {
   .projects__title {
     margin-right: 20px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
