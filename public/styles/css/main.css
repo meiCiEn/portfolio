@@ -9120,7 +9120,7 @@ li {
   transform: rotate(0deg) rotateY(0deg);
   transition: transform 0.3s ease-out;
   transition-delay: 0.1s;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .menu__checkbox {
