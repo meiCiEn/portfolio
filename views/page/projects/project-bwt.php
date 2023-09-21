@@ -10,7 +10,8 @@ $projectYear = "2022";
 $projectTech = "HTML, CSS, JavaScript";
 $projectTeam = "";
 $projectDescription = "Belgium Women Together, as a non-denominational event, needed an independent website not linked to any one particular church. The aim was to outline the programme, introduce the speaker, give practical details and provide a way of signing up for the event.</br></br>The one-page approach was designed to be accessible and clear, paying particular attention to those viewing the site on a smartphone. The colour scheme of the site takes its cue from a piece of artwork that had been chosen by the speaker as a focus for the event.";
-$projectURL = "https://bwt-retreat.be/";
+$projectURL = "
+";
 $screenShot_1 = "public/images/screenshots/bwt/bwt-full-page.png";
 $screenShotTitle_1 = "Homepage";
 $screenShot_2 = "";

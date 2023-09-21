@@ -44,6 +44,21 @@
                 <!-- LIST OF PROJECTS -->
                 <ul>
                 <li>
+                        <a id="project-reactology" class="projects__link" href="?section=project-reactology">
+                            <div class="projects__row">
+                                <div class="projects__name cursive">
+                                    <div class="projects__arrow">
+                                        <h4 class="arrow">&#x21d2;</h4>
+                                    </div>
+                                    <h4 class="projects__title">Reactology</h4>
+                                </div>
+                                <div class="projects__year">
+                                    <p class="projects-year">2023</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                <li>
                         <a id="project-javascript" class="projects__link" href="?section=project-javascript">
                             <div class="projects__row">
                                 <div class="projects__name cursive">

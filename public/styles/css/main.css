@@ -18350,6 +18350,10 @@ li {
   font-style: italic;
 }
 
+.project-link {
+  font-weight: 500;
+}
+
 /* 
 * # VARIABLES
 *
