@@ -22,8 +22,8 @@ $screenShotTitle_4 = "";
 $screenShot_5 = "";
 $screenShotTitle_5 = "";
 $screenShot_mobile = "";
-$nextProjectTitle = "Molenbeek en Promenade";
-$nextProjectURL = "?section=project-molenbeek";
+$nextProjectTitle = "Webflow Portfolio";
+$nextProjectURL = "?section=project-portfolio";
 
 include("controllers/project-templateController.php");
 ?>

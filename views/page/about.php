@@ -84,6 +84,8 @@ $pageTitle = "About"; ?>
                                         <div class="skill skill--light">PHP</div>
                                         <div class="skill skill--light">MySQL</div>
                                         <div class="skill skill--light">WordPress</div>
+                                        <div class="skill skill--light">Elementor</div>
+                                        <div class="skill skill--light">Webflow</div>
                                     </div>
                                     <div class="reset__wrapper"><button class="reset" type="button" id="reset1">x</button></div>
                                 </div>

@@ -16667,6 +16667,11 @@ li {
   color: hsl(329deg, 56%, 96%);
 }
 
+.scrollable-list-container {
+  max-height: 400px; /* Set your desired max height here */
+  overflow-y: scroll;
+}
+
 /* 
 * # VARIABLES
 *
