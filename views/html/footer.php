@@ -14,6 +14,7 @@
 <!-- GreenSock animation library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script type="">
+
   // Mouse Cursor Animation
   gsap.set(".ball", { xPercent: -50, yPercent: -50 });
   const ball = document.querySelector(".ball");
@@ -59,6 +60,18 @@
 
   setTimeout(draw, 300)
 </script>
+
+
+<!-- particles background -->
+<script src="public/scripts/particles-config.js"></script>
+
+<!-- Debugging: Output variable values -->
+<script>
+    console.log("Background Color: <?php echo $backgroundColor; ?>");
+    console.log("Background Image: <?php echo $backgroundImage; ?>");
+</script>
+
+<!-- background animation -->
 
 
 </body>

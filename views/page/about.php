@@ -1,6 +1,16 @@
 <?php
 $pageTitle = "About"; ?>
+
+<?php
+// Define background and bubble colors based on the page
+$backgroundColor = "#265e5d";
+$backgroundImage = "linear-gradient(160deg, #265e5d 0%, #1e4848 100%)"; 
+$particleColor = "#678b8b";
+?>
+
+
 <div class="page-bg page-bg--forestgreen d-flex justify-end">
+<div id="tsparticles"></div>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ul class="breadcrumb__list">
             <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
@@ -179,3 +189,9 @@ $pageTitle = "About"; ?>
     </div>
 
 </div>
+
+<script>
+let jsBackgroundColor = "<?php echo $backgroundColor; ?>";
+let jsBackgroundImage = "<?php echo $backgroundImage; ?>";
+let jsParticleColor = "<?php echo $particleColor; ?>";
+</script>

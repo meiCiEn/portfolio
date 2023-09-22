@@ -3652,27 +3652,33 @@ li {
 
 .page-bg--lightpink {
   background-color: hsl(329deg, 56%, 96%);
-  background-image: url("../../images/backgrounds/asfalt-lighter.png");
 }
 
 .page-bg--pink {
   background-color: hsl(329deg, 56%, 80%);
-  background-image: url("../../images/backgrounds/asfalt-lighter.png");
 }
 
 .page-bg--forestgreen {
   background-color: hsl(179deg, 42%, 26%);
-  background-image: url("../../images/backgrounds/asfalt-dark.png");
+}
+
+.page-bg--blackish {
+  background-color: hsl(0deg, 0%, 20%);
 }
 
 .page-bg--offwhite {
   background-color: hsl(48deg, 71%, 92%);
-  background-image: url("../../images/backgrounds/asfalt-lighter.png");
 }
 
 .slide-page-up {
   height: 100%;
   width: 100%;
+}
+
+#tsparticles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
 /* 
@@ -7325,6 +7331,7 @@ li {
 .line {
   height: 2px;
   transform-origin: right;
+  z-index: 1;
 }
 
 .line--light {
@@ -7347,6 +7354,10 @@ li {
 
 .text-wrapper {
   overflow: hidden;
+}
+
+.wrapper {
+  z-index: 1;
 }
 
 .header {
@@ -8957,7 +8968,7 @@ li {
   width: calc(100% - max(20px, 4vmin) * 2 - 1.5px);
   height: calc(100% - max(20px, 4vmin) * 2 - 1.5px);
   z-index: 4;
-  background-color: hsl(179deg, 42%, 26%);
+  background-color: hsl(0deg, 0%, 20%);
 }
 
 .slide-up-text {
@@ -16668,7 +16679,7 @@ li {
 }
 
 .scrollable-list-container {
-  max-height: 400px; /* Set your desired max height here */
+  max-height: 400px;
   overflow-y: scroll;
 }
 

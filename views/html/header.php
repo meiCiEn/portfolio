@@ -19,6 +19,8 @@
 
     <script src="https://kit.fontawesome.com/f64cbb42a1.js" crossorigin="anonymous" defer></script>
     <!-- <script src="gen_validatorv4.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
+
 </head>
 
 <body>
@@ -65,7 +67,7 @@
 
 
             <div class="page__content">
-                <div class="overlay overlay--slidedown page-bg--forestgreen">
+                <div class="overlay overlay--slidedown page-bg--blackish">
                     <button type="button" class="overlay__close">
                         <svg id="x" xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
                             <g id="logo-white">
@@ -74,9 +76,10 @@
                         </svg>
                     </button>
 
-
+                    
 
                     <div class="overlay__menu">
+
                         <nav>
                             <ul class="overlay__list">
                                 <a href="?section=home">
@@ -108,3 +111,4 @@
                 </div>
                 <div class="page">
                 <div class="ball"></div>
+

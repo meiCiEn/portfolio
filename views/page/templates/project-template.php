@@ -1,5 +1,13 @@
 
-    <div class="project page-bg page-bg--lightpink">
+<?php
+// Define background and bubble colors based on the page
+$backgroundColor = "#fbeff5"; // Change this colour for each page
+$backgroundImage = "linear-gradient(160deg, #fbeff5 0%, #f4d7e6 100%)"; // Change this colour for each page
+$particleColor = "#ffffff";
+?>
+   
+   <div class="project page-bg page-bg--lightpink">
+    <div id="tsparticles"></div>
         <nav class="breadcrumb breadcrumb--project" aria-label="breadcrumb">
             <ul class="breadcrumb__list">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
@@ -7,7 +15,7 @@
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=<?php echo $pagePath; ?>" aria-current="location"><?php echo $pageTitle; ?></a></li>
             </ul>
         </nav>
-        <article id="<?php echo $pageTitle; ?>" class="d-flex flex-column align-items-center">
+        <article id="<?php echo $pageTitle; ?>" class="d-flex flex-column align-items-center" style="z-index: 1;">
             <div class="project__backdrop slide-page-down">
                 <header class="project__header text-wrapper">
                     <h2 class="project__title slide-up-text">
@@ -139,3 +147,9 @@
             </div>
         </article>
     </div>
+
+    <script>
+let jsBackgroundColor = "<?php echo $backgroundColor; ?>";
+let jsBackgroundImage = "<?php echo $backgroundImage; ?>";
+let jsParticleColor = "<?php echo $particleColor; ?>";
+</script>

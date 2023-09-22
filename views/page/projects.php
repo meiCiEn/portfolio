@@ -1,4 +1,14 @@
+<?php
+// Define background and bubble colors based on the page
+$backgroundColor = "#f9f3dc"; // Change this colour for each page
+$backgroundImage = "linear-gradient(160deg, #f9f3dc 0%, #f5ecc6; 100%)"; // Change this colour for each page
+$particleColor = "#ffffff"
+?>
+
 <div class="page-bg page-bg--offwhite">
+
+<div id="tsparticles"></div>
+    
     <div class="projects d-flex">
         <div class="projects__left">
             <div id="project__image" class="project__image">
@@ -156,6 +166,15 @@
         </div>
     </div>
 </div>
+
+<!-- Define JavaScript variables with PHP values -->
+<script>
+let jsBackgroundColor = "<?php echo $backgroundColor; ?>";
+let jsBackgroundImage = "<?php echo $backgroundImage; ?>";
+let jsParticleColor = "<?php echo $particleColor; ?>";
+</script>
+
+
 <!-- <script>
     // Get references to project links and project images by ID
     const projectLinks = {
