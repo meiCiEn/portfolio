@@ -4385,6 +4385,7 @@ li {
     width: fit-content;
     justify-content: flex-end;
     top: 0;
+    mix-blend-mode: difference !important;
   }
 }
 

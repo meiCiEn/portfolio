@@ -8,7 +8,9 @@ $particleColor = "#ffffff";
    
    <div class="project page-bg page-bg--lightpink">
     <div id="tsparticles"></div>
-        <nav class="breadcrumb breadcrumb--project" aria-label="breadcrumb">
+        <nav class="breadcrumb breadcrumb--project" aria-label="breadcrumb" style="
+    z-index: 2;
+">
             <ul class="breadcrumb__list">
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=projects">Projects</a></li>
