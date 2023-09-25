@@ -1,29 +1,41 @@
-<!-- project-boulangerie.php -->
 <?php
-
+$pageLang = "fr";
 $pageTitle = "Boulangerie";
-$pagePath = "project-boulangerie";
-$projectLead = "During Covid lockdown I learnt to bake sourdough bread and loved it. So I decided to create the website for a (pretend) bakery as my first project at Interface3.";
-$projectTitle = "Boulangerie";
-$projectType = "Website";
-$projectYear = "2022";
-$projectTech = "HTML, CSS, JavaScript, PHP";
-$projectTeam = "";
-$projectDescription = "";
-$projectURL = "";
-$screenShot_1 = "public/images/screenshots/boulangerie/ss-home-top.png";
-$screenShotTitle_1 = "Homepage Top";
-$screenShot_2 = "public/images/screenshots/boulangerie/ss-home-content.png";
-$screenShotTitle_2 = "Homepage Content";
-$screenShot_3 = "public/images/screenshots/boulangerie/ss-visit.png";
-$screenShotTitle_3 = "Visit Us";
-$screenShot_4 = "public/images/screenshots/boulangerie/ss-order-online.png";
-$screenShotTitle_4 = "Order Page";
-$screenShot_5 = "";
-$screenShotTitle_5 = "";
-$screenShot_mobile = "public/images/screenshots/boulangerie/boul-mob.png";
-$nextProjectTitle = "";
-$nextProjectURL = "";
+
+// Read the JSON file based on the selected language
+$translationFile = ($pageLang === "en") ? "public/data/text_files/boulangerie_en.json" : "public/data/text_files/boulangerie_fr.json";
+$translationData = json_decode(file_get_contents($translationFile), true);
+
+$pageTitle = $translationData["pageTitle"];
+$pagePath = $translationData["pagePath"];
+$projectLead = $translationData["projectLead"];
+$projectTitle = $translationData["projectTitle"];
+$projectType = $translationData["projectType"];
+$projectYear = $translationData["projectYear"];
+$projectTech = $translationData["projectTech"];
+$projectTeam = $translationData["projectTeam"];
+$projectDescription = $translationData["projectDescription"];
+$projectURL = $translationData["projectURL"];
+$screenShot_1 = $translationData["screenShot_1"];
+$screenShotTitle_1 = $translationData["screenShotTitle_1"];
+$screenShot_2 = $translationData["screenShot_2"];
+$screenShotTitle_2 = $translationData["screenShotTitle_2"];
+$screenShot_3 = $translationData["screenShot_3"];
+$screenShotTitle_3 = $translationData["screenShotTitle_3"];
+$screenShot_4 = $translationData["screenShot_4"];
+$screenShotTitle_4 = $translationData["screenShotTitle_4"];
+$screenShot_5 = $translationData["screenShot_5"];
+$screenShotTitle_5 = $translationData["screenShotTitle_5"];
+$screenShotMobile = $translationData["screenShotMobile"];
+$nextProjectTitle = $translationData["nextProjectTitle"];
+$nextProjectURL = $translationData["nextProjectURL"];
+$next = $translationData["next"];
+$goToSite = $translationData["goToSite"];
+$breadcrumbHome = $translationData["breadcrumbHome"];
+$breadcrumbProjects = $translationData["breadcrumbProjects"];
+$breadcrumbCurrent = $translationData["breadcrumbCurrent"];
 
 include("controllers/project-templateController.php");
+
+
 ?>

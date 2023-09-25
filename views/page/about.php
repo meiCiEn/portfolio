@@ -6,15 +6,25 @@ $pageTitle = "About"; ?>
 $backgroundColor = "#265e5d";
 $backgroundImage = "linear-gradient(160deg, #265e5d 0%, #1e4848 100%)";
 $particleColor = "#678b8b";
+
+// Define page name and language
+$pageTitle = "about";
+$pageLang = "fr";
+
 ?>
 
+<script>
+    // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
+        let pageTitle = <?php echo json_encode($pageTitle); ?>;
+        let pageLang = <?php echo json_encode($pageLang); ?>;
+</script>
 
 <div class="page-bg page-bg--forestgreen d-flex justify-end">
     <div id="tsparticles"></div>
     <nav class="breadcrumb" aria-label="Breadcrumb">
         <ul class="breadcrumb__list">
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
-            <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=about" aria-current="location">About</a></li>
+            <li class="breadcrumb__item"><a id="breadcrumb_home" class="breadcrumb__link" href="?section=home">Home</a></li>
+            <li class="breadcrumb__item"><a id="breadcrumb_current" class="breadcrumb__link" href="?section=about" aria-current="location">About</a></li>
         </ul>
     </nav>
     <div class="d-flex justify-center">
@@ -42,14 +52,14 @@ $particleColor = "#678b8b";
                     <!-- Tab links -->
                     <section class="skills__container">
                         <div>
-                            <h3 class="uppercase skills__title">Skills</h3>
+                            <h3 id="about_title_skills" class="uppercase skills__title">Skills</h3>
                             <img class="click-me" src="public/images/glyphs/click-me.svg" alt="click me">
                         </div>
                         <div class="skills">
                             <div id="tab" class="tab tab--light bottom-rounded">
-                                <button class="tablinks" onclick="openSkills(event, 'Coding')">Coding</button>
-                                <button class="tablinks" onclick="openSkills(event, 'Design')">Design</button>
-                                <button class="tablinks" onclick="openSkills(event, 'Languages')">Languages</button>
+                                <button id="about_coding" class="tablinks" onclick="openSkills(event, 'Coding')">Coding</button>
+                                <button id="about_design" class="tablinks" onclick="openSkills(event, 'Design')">Design</button>
+                                <button id="about_languages" class="tablinks" onclick="openSkills(event, 'Languages')">Languages</button>
                             </div>
 
 
@@ -95,11 +105,11 @@ $particleColor = "#678b8b";
                             <div class="skills__wrapper">
                                 <div id="Languages" class="tabcontent">
                                     <div class="skills__group">
-                                        <div class="skill skill--light">English (native)</div>
-                                        <div class="skill skill--light">French (B2)</div>
-                                        <div class="skill skill--light">German (B2)</div>
-                                        <div class="skill skill--light">Mandarin (B1)</div>
-                                        <div class="skill skill--light">Dutch (A2)</div>
+                                        <div id="about_english" class="skill skill--light">English (native)</div>
+                                        <div id="about_french" class="skill skill--light">French (B2)</div>
+                                        <div id="about_german" class="skill skill--light">German (B2)</div>
+                                        <div id="about_mandarin" class="skill skill--light">Mandarin (B1)</div>
+                                        <div id="about_dutch" class="skill skill--light">Dutch (A2)</div>
                                     </div>
                                     <div class="reset__wrapper"><button class="reset" type="button">x</button></div>
                                 </div>
@@ -128,10 +138,10 @@ $particleColor = "#678b8b";
                     </section>
                     <section>
                         <div>
-                            <h3 class="uppercase">Background</h3>
+                            <h3 id="about_title_background" class="uppercase">Background</h3>
                         </div>
                         <div>
-                            <p>
+                            <p id="about_p2">
                                 Born in Kent, the “Garden of England”, I studied German and English Literature at Oxford University, before working in media and journalism in the UK, Taiwan and Belgium. I live in central Brussels and enjoy singing, long walks, sourdough bread and Studio Ghibli films.
                             </p>
 
@@ -144,10 +154,10 @@ $particleColor = "#678b8b";
                 <div class="about__right">
 
                     <section>
-                        <p class="lead  ">
+                        <p id="about_lead" class="lead">
                             As an aspiring web developer from the world of journalism, my goal is to create visually-appealing websites with accessibility and user experience at the forefront of each design.
                         </p>
-                        <p>
+                        <p id="about_p1">
                             A trained journalist with experience at The Guardian, BBC, Deutsche Welle and Politico, I embarked on a full-time intensive web development course (Interface3) in 2021 in order to hone skills with a view to pursuing frontend development professionally.
 
                             I am fascinated by high-quality web design that is both eye-catching and functional, and I love the process of developing visual ideas towards a harmonious whole.
@@ -160,7 +170,7 @@ $particleColor = "#678b8b";
             </div>
             <div class=button style="
     z-index: 1;">
-                <a class="button__body button__body--light" href="public/images/docs/CV_Eleanor_Mears_en.pdf" download="Eleanor-Mears_CV" role="button">Download my CV</a>
+                <a id="about_download_button" class="button__body button__body--light" href="public/images/docs/CV_Eleanor_Mears_en.pdf" download="Eleanor-Mears_CV" role="button">Download my CV</a>
             </div>
         </div>
     </div>

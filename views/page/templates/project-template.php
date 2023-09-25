@@ -12,8 +12,8 @@ $particleColor = "#ffffff";
     z-index: 2;
 ">
             <ul class="breadcrumb__list">
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home">Home</a></li>
-                <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=projects">Projects</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=home"><?php echo $breadcrumbHome; ?></a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=projects"><?php echo $breadcrumbProjects; ?></a></li>
                 <li class="breadcrumb__item"><a class="breadcrumb__link" href="?section=<?php echo $pagePath; ?>" aria-current="location"><?php echo $pageTitle; ?></a></li>
             </ul>
         </nav>
@@ -74,7 +74,7 @@ $particleColor = "#ffffff";
                                 <?php echo $projectDescription; ?></p>
                         </div>
                         <?php if (isset($projectURL) && !empty($projectURL)) : ?>
-                            <div class="project__sitelink"><a href="<?php echo $projectURL; ?>" target="_blank" rel="noopener noreferrer" class="d-flex">go to site</a></div>
+                            <div class="project__sitelink"><a href="<?php echo $projectURL; ?>" target="_blank" rel="noopener noreferrer" class="d-flex"><?php echo $goToSite; ?></a></div>
                             
                         <?php endif; ?>
                     </div>
@@ -128,10 +128,10 @@ $particleColor = "#ffffff";
                     <!-- end row -->
 
                     <!-- row -->
-                    <?php if (isset($screenShot_mobile) && !empty($screenShot_mobile)) : ?>
+                    <?php if (isset($screenShotMobile) && !empty($screenShotMobile)) : ?>
                         <div class="screenshot">
                             <h5 class="screenshot__title">Mobile</h5>
-                            <img class="screenshot__img" src="<?php echo $screenShot_mobile; ?>" alt="screenshot">
+                            <img class="screenshot__img" src="<?php echo $screenShotMobile; ?>" alt="screenshot">
                         </div>
                     <?php endif; ?>
                     <!-- end row -->
@@ -142,7 +142,7 @@ $particleColor = "#ffffff";
                         <div class="next__wrapper">
                             <p class="rader next__arrow">&#x21d2;&nbsp;</p>
                         </div>
-                        <p class="next__text"><a href="<?php echo $nextProjectURL; ?>">Next: <span><?php echo $nextProjectTitle; ?></span></a></p>
+                        <p class="next__text"><a href="<?php echo $nextProjectURL; ?>"><?php echo $next; ?><span><?php echo $nextProjectTitle; ?></span></a></p>
                     </section>
                 <?php endif; ?>
 

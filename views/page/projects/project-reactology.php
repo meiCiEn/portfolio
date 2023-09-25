@@ -1,28 +1,41 @@
 <?php
-
+$pageLang = "fr";
 $pageTitle = "Reactology";
-$pagePath = "project-reactology";
-$projectLead = "Reactology is a collection of projects I've created using React and Tailwind CSS";
-$projectTitle = "Reactology";
-$projectType = "Website";
-$projectYear = "2023";
-$projectTech = "React, Tailwind CSS";
-$projectTeam = "";
-$projectDescription = "I created Reactology as a kind of laboratory where I can try out react code. Projects include a <a class='project-link' href='https://react.eleanor-mears.com/todo' target='_blank' noopener>to-do list app</a>, a <a href='https://react.eleanor-mears.com/stopwatch' target='_blank' noopener>stopwatch</a>, <a class='project-link' href='https://react.eleanor-mears.com/countdown' target='_blank' noopener>countdown timer</a>, <a class='project-link' href='https://react.eleanor-mears.com/calculator' target='_blank' noopener>calculator</a> and <a class='project-link' href='https://react.eleanor-mears.com/memory-game' target='_blank' noopener>memory game</a>. ";
-$projectURL = "https://react.eleanor-mears.com/";
-$screenShot_1 = "public/images/screenshots/reactology/reactology-home.png";
-$screenShotTitle_1 = "Homepage";
-$screenShot_2 = "public/images/screenshots/reactology/reactology-game.png";
-$screenShotTitle_2 = "Memory Game";
-$screenShot_3 = "public/images/screenshots/reactology/reactology-calc.png";
-$screenShotTitle_3 = "Calculator";
-$screenShot_4 = "public/images/screenshots/reactology/reactology-timer.png";
-$screenShotTitle_4 = "Timer";
-$screenShot_5 = "";
-$screenShotTitle_5 = "";
-$screenShot_mobile = "";
-$nextProjectTitle = "JavaScript";
-$nextProjectURL = "?section=project-javascript";
+
+// Read the JSON file based on the selected language
+$translationFile = ($pageLang === "en") ? "public/data/text_files/reactology_en.json" : "public/data/text_files/reactology_fr.json";
+$translationData = json_decode(file_get_contents($translationFile), true);
+
+$pagePath = $translationData["pagePath"];
+$projectLead = $translationData["projectLead"];
+$projectTitle = $translationData["projectTitle"];
+$projectType = $translationData["projectType"];
+$projectYear = $translationData["projectYear"];
+$projectTech = $translationData["projectTech"];
+$projectTeam = $translationData["projectTeam"];
+$projectDescription = $translationData["projectDescription"];
+$projectURL = $translationData["projectURL"];
+$screenShot_1 = $translationData["screenShot_1"];
+$screenShotTitle_1 = $translationData["screenShotTitle_1"];
+$screenShot_2 = $translationData["screenShot_2"];
+$screenShotTitle_2 = $translationData["screenShotTitle_2"];
+$screenShot_3 = $translationData["screenShot_3"];
+$screenShotTitle_3 = $translationData["screenShotTitle_3"];
+$screenShot_4 = $translationData["screenShot_4"];
+$screenShotTitle_4 = $translationData["screenShotTitle_4"];
+$screenShot_5 = $translationData["screenShot_5"];
+$screenShotTitle_5 = $translationData["screenShotTitle_5"];
+$screenShotMobile = $translationData["screenShotMobile"];
+$nextProjectTitle = $translationData["nextProjectTitle"];
+$nextProjectURL = $translationData["nextProjectURL"];
+$next = $translationData["next"];
+$goToSite = $translationData["goToSite"];
+$breadcrumbHome = $translationData["breadcrumbHome"];
+$breadcrumbProjects = $translationData["breadcrumbProjects"];
+$breadcrumbCurrent = $translationData["breadcrumbCurrent"];
 
 include("controllers/project-templateController.php");
+
+
 ?>
+

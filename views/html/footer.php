@@ -44,6 +44,10 @@
 <script src="public/scripts/form.js"></script>
 <script src="public/scripts/intersection.js"></script>
 
+<!-- JS for toggling between languages -->
+<script src="public/scripts/language_toggle.js"></script>
+
+
 <script>
   const wrapperList = [...document.querySelectorAll('.wrapper svg')];
 
@@ -71,7 +75,8 @@
     console.log("Background Image: <?php echo $backgroundImage; ?>");
 </script>
 
-<!-- background animation -->
+
+
 
 
 </body>

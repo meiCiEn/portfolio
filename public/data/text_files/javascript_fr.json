@@ -1,0 +1,33 @@
+{
+    "pageTitle": "JavaScript",
+    "pagePath": "project-javascript",
+    "projectLead": "Voici un site web que j'ai créé en suivant le cours JavaScript de W3Schools. Il contient mes notes et des exercices pratiques que je me suis fixés.",
+    "projectTitle": "JavaScript",
+    "projectType": "Site web",
+    "projectYear": "2023",
+    "projectTech": "HTML, CSS, JavaScript, PHP, Bootstrap, Prism.js",
+    "projectTeam": "",
+    "projectDescription": "J'ai créé ce site web en utilisant HTML, CSS, JavaScript et PHP. J'ai utilisé Bootstrap pour la mise en page et le style, et la bibliothèque Prism.js pour la mise en évidence de la syntaxe. Il contient des notes sur une variété de sujets liés au JavaScript(<a href='https://javascript.eleanor-mears.com/?page=loops' class='project-link' target='_blank'>boucles</a>, <a href='https://javascript.eleanor-mears.com/?page=conditional_statements' class='project-link' target='_blank'>déclarations conditionnelles</a>, <a href='https://javascript.eleanor-mears.com/?page=comparison_and_logical_operators' class='project-link' target='_blank'>opérateurs logiques</a> etc.), <a href='https://javascript.eleanor-mears.com/?page=age_calculator' class='project-link' target='_blank' >exercices d'entraînement</a> et le code correspondant, ainsi qu'un glossaire. Il s'agit d'un travail en cours que j'enrichirai au fur et à mesure que j'en apprendrai davantage.",
+    "projectURL": "https://javascript.eleanor-mears.com/?page=home",
+    "screenShotTitle_1": "Les Opérateurs JavaScript",
+    "screenShot_1": "public/images/screenshots/javascript/javascript.eleanor-mears.com__page=comparison_and_logical_operators.png",
+    "screenShotTitle_2": "Les objets JavaScript Date",
+    "screenShot_2": "public/images/screenshots/JavaScript/javascript.eleanor-mears.com__page=dates.png",
+    "screenShotTitle_3": "Exercice d'entraînement",
+    "screenShot_3": "public/images/screenshots/JavaScript/javascript.eleanor-mears.com__page=random_conversation_starter_generator.png",
+    "screenShotTitle_4": "",
+    "screenShot_4": "",
+    "screenShotTitle_5": "",
+    "screenShot_5": "",
+
+    "screenShotMobile": "",
+    "nextProjectTitle": "Webflow Portfolio",
+    "nextProjectURL": "?section=project-portfolio",
+    
+    "next": "Projet suivant: ",
+    "goToSite": "aller vers le site",
+    "breadcrumbHome": "Accueil",
+    "breadcrumbProjects": "Projets",
+    "breadcrumbCurrent": "JavaScript"
+  }
+  

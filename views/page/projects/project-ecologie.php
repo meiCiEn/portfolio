@@ -1,29 +1,42 @@
-<!-- project-ecologie.php -->
 <?php
-
+$pageLang = "fr";
 $pageTitle = "Maison de l'Écologie";
-$pagePath = "project-ecologie";
-$projectLead = "I designed a new homepage for the Maison de l'Écologie in Namur using Wordpress.";
-$projectTitle = "Maison de l'Écologie";
-$projectType = "Website";
-$projectYear = "2023";
-$projectTech = "Wordpress, HTML, CSS";
-$projectTeam = "Soumaya Mhenni";
-$projectDescription = "The Maison de l'Écologie in Namur is a charitable association that promotes sustainabitity through workshops, childrens' holiday clubs and its large library of toys and board games. It approached my coding school, Interface3, because it wanted a website that was more coherent, attractive and user friendly. Soumaya Mhenni and I were charged with redesigning the homepage and navigation menu. <br /><br />Wordpress was a great choice for this project, as we needed an administrator interface that was easy to use, and would enable staff at the organisation to easily publish news articles and add events to the calendar.";
-$projectURL = "";
-$screenShot_1 = "public/images/screenshots/ecologie/screenshot-ecologie.png";
-$screenShotTitle_1 = "Homepage";
-$screenShot_2 = "";
-$screenShotTitle_2 = "";
-$screenShot_3 = "";
-$screenShotTitle_3 = "";
-$screenShot_4 = "";
-$screenShotTitle_4 = "";
-$screenShot_5 = "";
-$screenShotTitle_5 = "";
-$screenShot_mobile = "";
-$nextProjectTitle = "Belgium Women Together";
-$nextProjectURL = "?section=project-bwt";
+
+// Read the JSON file based on the selected language
+$translationFile = ($pageLang === "en") ? "public/data/text_files/ecologie_en.json" : "public/data/text_files/ecologie_fr.json";
+$translationData = json_decode(file_get_contents($translationFile), true);
+
+$pageTitle = $translationData["pageTitle"];
+$pagePath = $translationData["pagePath"];
+$projectLead = $translationData["projectLead"];
+$projectTitle = $translationData["projectTitle"];
+$projectType = $translationData["projectType"];
+$projectYear = $translationData["projectYear"];
+$projectTech = $translationData["projectTech"];
+$projectTeam = $translationData["projectTeam"];
+$projectDescription = $translationData["projectDescription"];
+$projectURL = $translationData["projectURL"];
+$screenShot_1 = $translationData["screenShot_1"];
+$screenShotTitle_1 = $translationData["screenShotTitle_1"];
+$screenShot_2 = $translationData["screenShot_2"];
+$screenShotTitle_2 = $translationData["screenShotTitle_2"];
+$screenShot_3 = $translationData["screenShot_3"];
+$screenShotTitle_3 = $translationData["screenShotTitle_3"];
+$screenShot_4 = $translationData["screenShot_4"];
+$screenShotTitle_4 = $translationData["screenShotTitle_4"];
+$screenShot_5 = $translationData["screenShot_5"];
+$screenShotTitle_5 = $translationData["screenShotTitle_5"];
+$screenShotMobile = $translationData["screenShotMobile"];
+$nextProjectTitle = $translationData["nextProjectTitle"];
+$nextProjectURL = $translationData["nextProjectURL"];
+$next = $translationData["next"];
+$goToSite = $translationData["goToSite"];
+$breadcrumbHome = $translationData["breadcrumbHome"];
+$breadcrumbProjects = $translationData["breadcrumbProjects"];
+$breadcrumbCurrent = $translationData["breadcrumbCurrent"];
 
 include("controllers/project-templateController.php");
+
+
 ?>
+

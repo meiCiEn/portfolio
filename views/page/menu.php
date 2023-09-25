@@ -1,18 +1,16 @@
-<div class="d-flex h-100 justify-content-center align-items-center">
-            <nav class="row col-sm-7">
-              <ul>
-                <a href="#"
-                  ><li><h3 class="display-2">Home</h3></li></a
-                >
-                <a href="?section=projects"
-                  ><li><h3 class="display-2">Projects</h3></li></a>
-                >
-                <a href="#"
-                  ><li><h3 class="display-2">About</h3></li></a
-                >
-                <a href="#"
-                  ><li><h3 class="display-2">Get in touch</h3></li></a
-                >
-              </ul>
-            </nav>
-          </div>
+<?php
+$pageLang = "fr";
+
+// Read the JSON file based on the selected language
+$translationFile = ($pageLang === "en") ? "public/data/text_files/menu_en.json" : "public/data/text_files/menu_fr.json";
+$translationData = json_decode(file_get_contents($translationFile), true);
+
+$topMenuItem_home = $translationData["topMenuItem_home"];
+$topMenuItem_projects = $translationData["topMenuItem_projects"];
+$topMenuItem_about = $translationData["topMenuItem_about"];
+$topMenuItem_contact = $translationData["topMenuItem_contact"];
+
+include("controllers/menu-templateController.php");
+
+?>
+

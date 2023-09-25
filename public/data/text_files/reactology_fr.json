@@ -1,0 +1,31 @@
+{
+    "pagePath": "project-reactology",
+    "projectLead": "Reactology est une collection de projets que j'ai créés en utilisant React et Tailwind CSS",
+    "projectTitle": "Reactology",
+    "projectType": "site web",
+    "projectYear": "2023",
+    "projectTech": "React, Tailwind CSS",
+    "projectTeam": "",
+    "projectDescription": "J'ai créé Reactology comme une sorte de laboratoire où je peux essayer le code react. Les projets incluent une <a class='project-link' href='https://react.eleanor-mears.com/todo' target='_blank' noopener>application de liste de tâches</a>, un <a href='https://react.eleanor-mears.com/stopwatch' target='_blank' noopener>chronomètre</a>, un <a class='project-link' href='https://react.eleanor-mears. com/countdown' target='_blank' noopener>compte à rebours</a>, une <a class='project-link' href='https://react.eleanor-mears.com/calculator' target='_blank' noopener>calculatrice</a> et un <a class='project-link' href='https://react.eleanor-mears.com/memory-game' target='_blank' noopener>jeu de mémoire</a>.",
+    "projectURL": "https://react.eleanor-mears.com/",
+    "screenShotTitle_1": "Page d'accueil",
+    "screenShot_1": "public/images/screenshots/reactology/reactology-home.png",
+    "screenShotTitle_2": "Jeu de mémoire",
+    "screenShot_2": "public/images/screenshots/reactology/reactology-game.png",
+    "screenShotTitle_3": "Calculatrice",
+    "screenShot_3": "public/images/screenshots/reactology/reactology-calc.png",
+    "screenShotTitle_4": "Compte à rebours",
+    "screenShot_4": "public/images/screenshots/reactology/reactology-timer.png",
+    "screenShotTitle_5": "",
+    "screenShot_5": "",
+
+    "screenShotMobile": "",
+    "nextProjectTitle": "JavaScript",
+    "nextProjectURL": "?section=project-javascript",
+    "next": "Projet suivant : ",
+    "goToSite": "aller sur le site",
+    "breadcrumbHome": "Accuiel",
+    "breadcrumbProjects": "Projets",
+    "breadcrumbCurrent": "Reactology"
+  }
+  

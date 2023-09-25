@@ -21,7 +21,11 @@
     <!-- <script src="gen_validatorv4.js" type="text/javascript"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
 
+
+
+
 </head>
+
 
 <body>
     <header class="header">
@@ -36,10 +40,6 @@
                 <ul>
                     <!-- <li>
                         <a href="/fr/">FR</a>
-                    </li>
-                    <li>
-                        
-                        <a href="#"><i class="fa-regular fa-moon"></i></a>
                     </li> -->
                     <div class="menu">
                         <!-- hamburger icon -->
@@ -76,39 +76,15 @@
                         </svg>
                     </button>
 
-                    
+
 
                     <div class="overlay__menu">
-
-                        <nav>
-                            <ul class="overlay__list">
-                                <a href="?section=home">
-
-                                    <li class="text-wrapper">
-                                        <h2 class="slide-up-text color__slider">Home</h2>
-                                    </li>
-                                </a>
-                                <a href="?section=projects">
-                                    <li class="text-wrapper">
-                                        <h2 class="color__slider slide-up-text">Projects</h2>
-                                    </li>
-                                </a>
-                                <a href="?section=about">
-                                    <li class="text-wrapper">
-                                        <h2 class="color__slider slide-up-text">About</h2>
-                                    </li>
-                                </a>
-                                <a href="?section=contact">
-                                    <li class="text-wrapper">
-                                        <h2 class="color__slider slide-up-text">Get in touch</h2>
-                                    </li>
-                                </a>
-                            </ul>
-                        </nav>
+                    <?php
+                         include("views/page/menu.php");
+                     ?>
                     </div>
 
 
                 </div>
                 <div class="page">
-                <div class="ball"></div>
-
+                    <div class="ball"></div>
