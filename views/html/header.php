@@ -1,5 +1,24 @@
+<?php
+
+// // Check the session status
+// if (session_status() == PHP_SESSION_NONE) {
+//     session_start(); // Start a new session if one has not been started
+// }
+
+// require 'helpers/language_detection.php';
+
+// // Check if the user manually selected a language via the language toggle
+// if (isset($_SESSION['user_language'])) {
+//     $siteLanguage = $_SESSION['user_language'];
+// } else {
+//     // Detect the language of the browser and set the site language to this (if browser language is French or English)
+//     $siteLanguage = detectBrowserLanguage();
+// }
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-UK">
+<!-- <html lang="<?= $siteLanguage ?>"> -->
 
 <head>
     <title><?php echo $pageTitle; ?></title>
@@ -32,12 +51,18 @@
 
         <div class="header__content">
             <div class="header__left">
+            <!-- <p>Detected Language: <?= $siteLanguage ?></p> -->
                 <a href="?section=home">
                     <div class="header__logo" id="header__logo"><img src="./public/images/logos/EM-logo-semicolon-white.svg" alt="logo"></div>
                 </a>
             </div>
             <div class="header__right">
                 <ul>
+                    <div id="language-toggle">
+                        <button id="en-btn">English</button>
+                        <button id="fr-btn">French</button>
+                    </div>
+
                     <!-- <li>
                         <a href="/fr/">FR</a>
                     </li> -->
@@ -79,12 +104,14 @@
 
 
                     <div class="overlay__menu">
-                    <?php
-                         include("views/page/menu.php");
-                     ?>
+                        <?php
+                        include("views/page/menu.php");
+                        ?>
                     </div>
 
 
                 </div>
                 <div class="page">
                     <div class="ball"></div>
+
+

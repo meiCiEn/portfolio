@@ -30,7 +30,7 @@ $pageLang = "en";
                 </div>
 
                 <h4 id="job_description" class="translate job_description">
-                    Front-end web developer & journalist based in Brussels.
+                    Front-end web developer
 </h4>
             </div>
             <div class="intro__links ">
@@ -84,6 +84,7 @@ fetch('public/data/text_files/contact_en.json')
     englishText = data;
     // Once English text is loaded, call updateText to set the initial language
     updateText('en');
+    
   });
 
 fetch('public/data/text_files/contact_fr.json')
@@ -91,7 +92,6 @@ fetch('public/data/text_files/contact_fr.json')
   .then(data => {
     frenchText = data;
     console.log('French text loaded:', frenchText);
-    updateText('fr');
   });
 
   function updateText(language) {

@@ -9,8 +9,8 @@ const overlay = document.querySelector('.overlay' );
 const overlayClose = document.querySelector('.overlay__close');
 const slidingText = document.querySelector('.slide-top');
 
-console.log(`menuCheckBox : ${menuCheckBox}`, `menu : ${menu}`);
-console.log(menuCheckBox, menu, menuButton, ellipsisContainer, menuBars, overlay, overlayClose);
+// console.log(`menuCheckBox : ${menuCheckBox}`, `menu : ${menu}`);
+// console.log(menuCheckBox, menu, menuButton, ellipsisContainer, menuBars, overlay, overlayClose);
 menuCheckBox.addEventListener( 'change', function ()
 {
 
