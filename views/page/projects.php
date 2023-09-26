@@ -25,7 +25,7 @@ $particleColor = "#ffffff"
         <div class="projects__right d-flex">
             <div class="d-flex flex-column">
                 <div class="wrapper wrapper--projects">
-                    <?php include_once 'views/titles/projects.php'; ?>
+                    <?php include_once 'views/titles/projects_en.php'; ?>
                 </div>
                 <div class="line line--green"></div>
                 <!-- LIST OF PROJECTS -->

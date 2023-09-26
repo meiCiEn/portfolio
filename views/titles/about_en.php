@@ -2,7 +2,7 @@
 // This PHP script should be located in the "controllers" or "views" folder.
 
 // Define the path to your SVG file in the "public" directory.
-$svgFilePath = 'public/images/titles/projects.svg';
+$svgFilePath = 'public/images/titles/about_en.svg';
 
 // echo $svgFilePath;
 
@@ -13,6 +13,7 @@ if (file_exists($svgFilePath)) {
 
     // Generate the HTML code to embed the SVG.
     echo $svgContent;
+
 } else {
     // Handle the case where the SVG file does not exist.
     echo "SVG file not found.";

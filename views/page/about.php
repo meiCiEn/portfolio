@@ -37,7 +37,7 @@ $pageLang = "fr";
             </svg></a>
         <div class="about__wrapper">
             <div class="wrapper wrapper--about">
-            <?php include_once 'views/titles/about.php'; ?>
+            <?php include_once 'views/titles/about_en.php'; ?>
             </div>
             <div class="line line--light line--mb"></div>
             <div class="about slide-page-up">
