@@ -6,7 +6,7 @@ $particleColor = "#ffffff";
 
 // Define page name and language
 $pageTitle = "home";
-$pageLang = "fr";
+$pageLang = "en";
 ?>
 
 <script>
@@ -29,9 +29,9 @@ $pageLang = "fr";
                 <?php include_once 'views/titles/home_mob.php'; ?>
                 </div>
 
-                <p id="job_description" class="translate">
+                <h4 id="job_description" class="translate job_description">
                     Front-end web developer & journalist based in Brussels.
-                </p>
+</h4>
             </div>
             <div class="intro__links ">
                 <ul class="intro__nav">

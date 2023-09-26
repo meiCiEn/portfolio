@@ -126,13 +126,19 @@
     position: relative;
 }
 
-.click-me {
+.click-me_en {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 150px;
+    top: 0;
+    right: -50px;
+    width: 120px;
 }
 
+.click-me_fr {
+    position: absolute;
+    top: -10px;
+    right: -95px;
+    width: 170px;
+}
 
 
 // TODO - Add cross or minus symbol in skills chart (bottom right, align-self) to hide all tabcontent

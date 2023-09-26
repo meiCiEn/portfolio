@@ -37,8 +37,10 @@ $pageLang = "fr";
             <div class="contact__wrapper">
                 <div class="contact">
                     <div class="wrapper wrapper--contact">
-                    <?php include_once 'views/titles/contact_en.php'; ?>
-                    <?php include_once 'views/titles/contact_mob_en.php'; ?>
+                    <?php include_once 'views/titles/contact_fr.php'; ?>
+                    <?php 
+                    // include_once 'views/titles/contact_mob_fr.php';
+                     ?>
                     </div>
                     <div class="line line--green"></div>
 

@@ -2,7 +2,7 @@
 // This PHP script should be located in the "controllers" or "views" folder.
 
 // Define the path to your SVG file in the "public" directory.
-$svgFilePath = 'public/images/titles/about_en.svg';
+$svgFilePath = 'public/images/titles/contact_fr.svg';
 
 // echo $svgFilePath;
 

@@ -15,8 +15,8 @@ $pageLang = "fr";
 
 <script>
     // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
-        let pageTitle = <?php echo json_encode($pageTitle); ?>;
-        let pageLang = <?php echo json_encode($pageLang); ?>;
+    let pageTitle = <?php echo json_encode($pageTitle); ?>;
+    let pageLang = <?php echo json_encode($pageLang); ?>;
 </script>
 
 <div class="page-bg page-bg--forestgreen d-flex justify-end">
@@ -37,7 +37,7 @@ $pageLang = "fr";
             </svg></a>
         <div class="about__wrapper">
             <div class="wrapper wrapper--about">
-            <?php include_once 'views/titles/about_en.php'; ?>
+                <?php include_once 'views/titles/about_fr.php'; ?>
             </div>
             <div class="line line--light line--mb"></div>
             <div class="about slide-page-up">
@@ -53,7 +53,8 @@ $pageLang = "fr";
                     <section class="skills__container">
                         <div>
                             <h3 id="about_title_skills" class="uppercase skills__title">Skills</h3>
-                            <img class="click-me" src="public/images/glyphs/click-me.svg" alt="click me">
+                            <!-- <img class="click-me_en" src="public/images/glyphs/click_me_en.svg" alt="click me"> -->
+                            <img class="click-me_fr" src="public/images/glyphs/click_me_fr.svg" alt="click me">
                         </div>
                         <div class="skills">
                             <div id="tab" class="tab tab--light bottom-rounded">
@@ -182,3 +183,4 @@ $pageLang = "fr";
     let jsBackgroundImage = "<?php echo $backgroundImage; ?>";
     let jsParticleColor = "<?php echo $particleColor; ?>";
 </script>
+

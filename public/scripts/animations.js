@@ -172,17 +172,3 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='bul
       },
     });
 });
-
-
-
-  // anime.timeline({ loop: false })
-  //   .add({
-  //     targets: '.bullet-link-letter-1',
-  //     rotateX: {
-  //       value: [0, -360],
-  //       duration: 1300,
-  //       easing: "easeOutExpo",
-  //       delay: (el, i) => 45 * i
-  //     },
-  //   });
-

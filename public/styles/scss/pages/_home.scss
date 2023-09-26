@@ -7,6 +7,8 @@
     height: calc(100vh - ($frame-space * 2) - 2px);
 }
 
+
+
 .intro__wrapper p,
 .intro__wrapper a {
     font-size: inherit;
@@ -184,4 +186,27 @@ svg#eleanor {
 .bullet {
     display: flex;
     margin-right: 10px;
+}
+
+.job_description {
+    font-family: $font-main;
+    text-align: left;
+    font-size: inherit;
+    line-height: 1.2rem;
+
+    @include xs {
+    font-size: 5vw;
+    }
+    
+    @include sm {
+        font-size: $text-md;
+    }
+    @include md {
+        font-size: $text-lg;
+        text-align: right;
+    }
+    @include xl {
+        font-size: $text-xl;
+        text-align: right;
+    }
 }
