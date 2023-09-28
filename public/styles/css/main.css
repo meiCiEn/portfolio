@@ -7462,6 +7462,10 @@ li {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 /* 
 * # VARIABLES
 *

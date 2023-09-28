@@ -1,5 +1,5 @@
 <?php
-$pageTitle = "About"; ?>
+$pageTitle = "about"; ?>
 
 <?php
 // Define background and bubble colors based on the page
@@ -7,16 +7,11 @@ $backgroundColor = "#265e5d";
 $backgroundImage = "linear-gradient(160deg, #265e5d 0%, #1e4848 100%)";
 $particleColor = "#678b8b";
 
-// Define page name and language
-$pageTitle = "about";
-$pageLang = "fr";
-
 ?>
 
 <script>
     // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
     let pageTitle = <?php echo json_encode($pageTitle); ?>;
-    let pageLang = <?php echo json_encode($pageLang); ?>;
 </script>
 
 <div class="page-bg page-bg--forestgreen d-flex justify-end">
@@ -116,26 +111,7 @@ $pageLang = "fr";
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="skills">
-                    <h5 class="skills__title">
-                        Coding / IT
-                    </h5>
-                    <div class="skills__group">
-                        <div class="skill skill--light">HTML</div>
-                        <div class="skill skill--light">CSS</div>
-                        <div class="skill skill--light">Sass</div>
-                        <div class="skill skill--light">Bootstrap</div>
-                        <div class="skill skill--light">Tailwind</div>
-                        <div class="skill skill--light">JavaScript</div>
-                        <div class="skill skill--light">React</div>
-                        <div class="skill skill--light">JQuery</div>
-                        <div class="skill skill--light">Node.js</div>
-                        <div class="skill skill--light">Git</div>
-                        <div class="skill skill--light">PHP</div>
-                        <div class="skill skill--light">MySQL</div>
-                        <div class="skill skill--light">WordPress</div>
-                    </div>
-                </div> -->
+
                     </section>
                     <section>
                         <div>

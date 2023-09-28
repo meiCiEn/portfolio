@@ -1,16 +1,39 @@
 <?php
-$pageLang = "fr";
-
-// Read the JSON file based on the selected language
-$translationFile = ($pageLang === "en") ? "public/data/text_files/menu_en.json" : "public/data/text_files/menu_fr.json";
-$translationData = json_decode(file_get_contents($translationFile), true);
-
-$topMenuItem_home = $translationData["topMenuItem_home"];
-$topMenuItem_projects = $translationData["topMenuItem_projects"];
-$topMenuItem_about = $translationData["topMenuItem_about"];
-$topMenuItem_contact = $translationData["topMenuItem_contact"];
-
-include("controllers/menu-templateController.php");
+// $pageTitle = "menu";
 
 ?>
 
+<script>
+    // // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
+    // let pageTitle = <?php echo json_encode($pageTitle); ?>;
+</script>
+
+<nav>
+    <ul class="overlay__list">
+        <a href="?section=home">
+
+            <li class="text-wrapper">
+                <h2 id="topMenuItem_home" class="slide-up-text color__slider">--Home--</h2>
+            </li>
+        </a>
+        <a href="?section=projects">
+            <li class="text-wrapper">
+                <h2 id="topMenuItem_projects" class="color__slider slide-up-text">--Projects--</h2>
+            </li>
+        </a>
+        <a href="?section=about">
+            <li class="text-wrapper">
+                <h2 id="topMenuItem_about" class="color__slider slide-up-text">--About--</h2>
+            </li>
+        </a>
+        <a href="?section=contact">
+            <li class="text-wrapper">
+                <h2 id="topMenuItem_contact" class="color__slider slide-up-text">--Contact--</h2>
+            </li>
+        </a>
+    </ul>
+</nav>
+
+<script>
+    loadPageText('menu', siteLanguage);
+</script>

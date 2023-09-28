@@ -8,6 +8,7 @@ const menuBars = document.querySelector( '.fa-bars' );
 const overlay = document.querySelector('.overlay' );
 const overlayClose = document.querySelector('.overlay__close');
 const slidingText = document.querySelector('.slide-top');
+const languageToggleButton = document.querySelector('#language-toggle');
 
 // console.log(`menuCheckBox : ${menuCheckBox}`, `menu : ${menu}`);
 // console.log(menuCheckBox, menu, menuButton, ellipsisContainer, menuBars, overlay, overlayClose);
@@ -21,8 +22,13 @@ menuCheckBox.addEventListener( 'change', function ()
         ellipsisContainer.style.transition = "all 0.3s ease-out";
         ellipsisContainer.style.transitionDelay = "0.1s";
         overlay.classList.add('open');
+        loadPageText('menu', siteLanguage);
+        // add hidden class so you don't see language toggle button when menu is open
+        languageToggleButton.classList.add('hidden');
         overlayClose.addEventListener('click', function() {
             overlay.classList.remove('open');
+            // remove hidden class so you see language toggle button again when menu closed
+            languageToggleButton.classList.remove('hidden');
             ellipsisContainer.classList.remove('rotate-90');
             menuCheckBox.checked = false;
         })
@@ -56,3 +62,4 @@ menuCheckBox.addEventListener( 'change', function ()
         } );
     }
 } );
+

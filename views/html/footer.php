@@ -42,7 +42,7 @@
 <script src="public/scripts/menu.js"></script>
 <script src="public/scripts/tabs.js"></script>
 <script src="public/scripts/form.js"></script>
-<script src="public/scripts/intersection.js"></script>
+<!-- <script src="public/scripts/intersection.js"></script> -->
 
 <!-- JS for toggling between languages -->
 <script src="public/scripts/language_toggle.js"></script>
@@ -74,6 +74,7 @@
     console.log("Background Color: <?php echo $backgroundColor; ?>");
     console.log("Background Image: <?php echo $backgroundImage; ?>");
 </script>
+
 
 
 

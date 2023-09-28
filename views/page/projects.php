@@ -1,4 +1,6 @@
 <?php
+$pageTitle = "projects";
+
 // Define background and bubble colors based on the page
 $backgroundColor = "#f9f3dc"; // Change this colour for each page
 $backgroundImage = "linear-gradient(160deg, #f9f3dc 0%, #f5ecc6; 100%)"; // Change this colour for each page

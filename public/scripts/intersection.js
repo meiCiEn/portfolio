@@ -14,8 +14,6 @@ const backArrow = document.querySelector(`.back--project svg`);
 
 const projectTitle = document.querySelector(`.project__title`);
 
-console.log(backArrow);
-
 const objOptions = {
     root: null,
      // what exact root element we want our observed element to intersect against. Null is intersection with browser window itself.

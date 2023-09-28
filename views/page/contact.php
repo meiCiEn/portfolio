@@ -1,19 +1,17 @@
 <?php
+$pageTitle = "contact";
+
 // Define background and bubble colors based on the page
 $backgroundColor = "#e9afcd"; // 
 $backgroundImage = "linear-gradient(160deg, #e9afcd 0%, e39cc0 100%)"; 
 $particleColor = "#efd7e3";
 
-// Define page name and language
-$pageTitle = "contact";
-$pageLang = "fr";
 
 ?>
 
 <script>
     // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
         let pageTitle = <?php echo json_encode($pageTitle); ?>;
-        let pageLang = <?php echo json_encode($pageLang); ?>;
 </script>
 
 <div class="page-bg page-bg--pink forestgreen">
