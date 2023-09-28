@@ -1,42 +1,18 @@
 <?php
-$pageLang = "fr";
-$pageTitle = "Molenbeek en Promenade";
-
-// Read the JSON file based on the selected language
-$translationFile = ($pageLang === "en") ? "public/data/text_files/molenbeek_en.json" : "public/data/text_files/molenbeek_fr.json";
-$translationData = json_decode(file_get_contents($translationFile), true);
-
-$pageTitle = $translationData["pageTitle"];
-$pagePath = $translationData["pagePath"];
-$projectLead = $translationData["projectLead"];
-$projectTitle = $translationData["projectTitle"];
-$projectType = $translationData["projectType"];
-$projectYear = $translationData["projectYear"];
-$projectTech = $translationData["projectTech"];
-$projectTeam = $translationData["projectTeam"];
-$projectDescription = $translationData["projectDescription"];
-$projectURL = $translationData["projectURL"];
-$screenShot_1 = $translationData["screenShot_1"];
-$screenShotTitle_1 = $translationData["screenShotTitle_1"];
-$screenShot_2 = $translationData["screenShot_2"];
-$screenShotTitle_2 = $translationData["screenShotTitle_2"];
-$screenShot_3 = $translationData["screenShot_3"];
-$screenShotTitle_3 = $translationData["screenShotTitle_3"];
-$screenShot_4 = $translationData["screenShot_4"];
-$screenShotTitle_4 = $translationData["screenShotTitle_4"];
-$screenShot_5 = $translationData["screenShot_5"];
-$screenShotTitle_5 = $translationData["screenShotTitle_5"];
-$screenShotMobile = $translationData["screenShotMobile"];
-$nextProjectTitle = $translationData["nextProjectTitle"];
-$nextProjectURL = $translationData["nextProjectURL"];
-$next = $translationData["next"];
-$goToSite = $translationData["goToSite"];
-$breadcrumbHome = $translationData["breadcrumbHome"];
-$breadcrumbProjects = $translationData["breadcrumbProjects"];
-$breadcrumbCurrent = $translationData["breadcrumbCurrent"];
+$pageTitle = "molenbeek";
+$pagePath = "project-molenbeek";
+$projectTeam = "Christel Rodriguez Perez, Nasra Ahmed Ibrahim";
+$projectYear = "2022";
+$projectTech = "HTML, CSS, JavaScript, Leaflet.js";
+$screenShot_1 = "public/images/screenshots/molenbeek/accueil.png";
+$screenShot_2 = "public/images/screenshots/molenbeek/slider.png";
+$screenShot_3 = "public/images/screenshots/molenbeek/parcours-velo.png";
+$screenShot_4 = "public/images/screenshots/molenbeek/projet.png";
+$screenShot_5 = "public/images/screenshots/molenbeek/inscription.png";
+$screenShotMobile = "public/images/screenshots/molenbeek/molen-mob.png";
+$nextProjectTitle = "Maison de l'Écologie";
+$nextProjectURL = "?section=project-ecologie";
 
 include("controllers/project-templateController.php");
 
-
 ?>
-

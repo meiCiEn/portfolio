@@ -48,6 +48,10 @@ menuCheckBox.addEventListener( 'change', function ()
     else if ( menuCheckBox.checked == false )
     {
         menu.style.overflow = ( 'hidden' );
+        setTimeout(() => {
+            languageToggleButton.classList.remove('hidden');
+        }, 300);
+        
         ellipsisContainer.classList.remove('rotate-90');
         overlay.classList.remove('open');
         anime( {

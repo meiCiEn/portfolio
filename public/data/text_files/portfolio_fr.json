@@ -1,30 +1,14 @@
 {
-  "pagePath": "project-portfolio",
-  "projectLead": "Un site portfolio one-page créé en Webflow",
   "projectTitle": "Portfolio",
+  "projectLead": "Un site portfolio one-page créé en Webflow",
   "projectType": "Site web",
-  "projectYear": "2023",
-  "projectTech": "Webflow",
-  "projectTeam": "",
+  "year": "année",
   "projectDescription": "J'ai créé cette page de portfolio entièrement responsive en utilisant la plateforme 'no-code' Webflow, inspirée par le cours LinkedIn de Sandy Ludosky, disponible <a class='project-link' href='https://react.eleanor-mears.com/todo' target='_blank' noopener>ici.</a>",
-  "projectURL": "https://ellies-awesome-site-3b0c0e.webflow.io/",
   "screenShotTitle_1": "Page d'accuiel",
-  "screenShot_1": "public/images/screenshots/portfolio/portfolio-full.png",
-  "screenShotTitle_2": "",
-  "screenShot_2": "",
-  "screenShotTitle_3": "",
-  "screenShot_3": "",
-  "screenShotTitle_4": "",
-  "screenShot_4": "",
-  "screenShotTitle_5": "",
-  "screenShot_5": "",
-
-  "screenShotMobile": "",
-  "nextProjectTitle": "Molenbeek en Promenade",
-  "nextProjectURL": "?section=project-molenbeek",
   "next": "Projet suivant: ",
   "goToSite": "aller vers le site",
-  "breadcrumbHome": "Accuiel",
+  "breadcrumbHome": "Accueil",
   "breadcrumbProjects": "Projets",
-  "breadcrumbCurrent": "Portfolio"
+  "breadcrumbCurrent": "Webflow Portfolio"
 }
+

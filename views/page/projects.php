@@ -7,6 +7,12 @@ $backgroundImage = "linear-gradient(160deg, #f9f3dc 0%, #f5ecc6; 100%)"; // Chan
 $particleColor = "#ffffff"
 ?>
 
+<script>
+    // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
+        let pageTitle = 'projects';
+</script>
+
+
 <div class="page-bg page-bg--offwhite">
 
     <div id="tsparticles"></div>
@@ -71,6 +77,7 @@ $particleColor = "#ffffff"
     let jsBackgroundImage = "<?php echo $backgroundImage; ?>";
     let jsParticleColor = "<?php echo $particleColor; ?>";
 </script>
+
 
 
 <!-- <script>

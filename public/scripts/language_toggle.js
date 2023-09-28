@@ -55,12 +55,14 @@ if ( siteLanguage === 'en' )
   document.documentElement.lang = 'en';
   // document.documentElement.lang = `${ siteLanguage }-UK`;
   localStorage.setItem('site language', 'en');
+  console.log(pageTitle);
   loadPageText(pageTitle, 'en');
 } else
 {
   document.documentElement.lang = 'fr';
   // document.documentElement.lang = `${ siteLanguage }-BE`;
   localStorage.setItem('site language', 'fr' );
+  console.log(pageTitle);
   loadPageText(pageTitle, 'fr');
 }
 // store user language preference and set it in the browser storage
@@ -109,6 +111,8 @@ document.getElementById('fr-btn').addEventListener('click', function () {
 function loadPageText ( page, language )
 {
   const filePath = `public/data/text_files/${ page }_${ language }.json`;
+  console.log('page:', page);
+  console.log('language:', language)
 
   fetch( filePath )
     .then( response => response.json() )
@@ -118,13 +122,13 @@ function loadPageText ( page, language )
       if ( language === 'en' )
       {
         englishText = data;
-        // console.log( 'English text loaded:', englishText );
+        console.log( 'English text loaded:', englishText );
         // console.log( 'pageTitle, pageLang:', pageTitle, pageLang );
         updateText( 'en' );
       } else if ( language === 'fr' )
       {
         frenchText = data;
-        // console.log( 'French text loaded:', frenchText );
+        console.log( 'French text loaded:', frenchText );
         // console.log( 'pageTitle, pageLang:', pageTitle, pageLang );
         updateText( 'fr' );
       }
@@ -161,7 +165,7 @@ function updateText ( language )
       // If none of the above, update the text content
       else
       {
-        element.textContent = text[ key ];
+        element.innerHTML = text[ key ];
       }
     }
   }

@@ -4,8 +4,7 @@
 ?>
 
 <script>
-    // // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
-    // let pageTitle = <?php echo json_encode($pageTitle); ?>;
+ <?php echo json_encode($pageTitle); ?>;
 </script>
 
 <nav>
