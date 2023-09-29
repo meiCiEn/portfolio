@@ -26,7 +26,7 @@ $particleColor = "#ffffff";
                 </div>
 
                 <h4 id="job_description" class="translate job_description">
-                    Front-end web developer
+                    <!-- Front-end web developer -->
 </h4>
             </div>
             <div class="intro__links ">

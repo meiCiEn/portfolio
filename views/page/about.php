@@ -48,8 +48,11 @@ $particleColor = "#678b8b";
                     <section class="skills__container">
                         <div>
                             <h3 id="about_title_skills" class="uppercase skills__title">Skills</h3>
-                            <!-- <img class="click-me_en" src="public/images/glyphs/click_me_en.svg" alt="click me"> -->
-                            <img class="click-me_fr" src="public/images/glyphs/click_me_fr.svg" alt="click me">
+                            <div id="click-me-svg">
+
+                            </div>
+
+                            <div id="click-me-svg"></div>
                         </div>
                         <div class="skills">
                             <div id="tab" class="tab tab--light bottom-rounded">
@@ -63,21 +66,21 @@ $particleColor = "#678b8b";
                             <div class="skills__wrapper">
                                 <div id="Coding" class="tabcontent">
                                     <div class="skills__group">
-                                        <div class="skill skill--light">HTML</div>
-                                        <div class="skill skill--light">CSS</div>
-                                        <div class="skill skill--light">Sass</div>
-                                        <div class="skill skill--light">Bootstrap</div>
-                                        <div class="skill skill--light">Tailwind</div>
-                                        <div class="skill skill--light">JavaScript</div>
-                                        <div class="skill skill--light">React</div>
-                                        <div class="skill skill--light">JQuery</div>
-                                        <div class="skill skill--light">Node.js</div>
-                                        <div class="skill skill--light">Git</div>
-                                        <div class="skill skill--light">PHP</div>
-                                        <div class="skill skill--light">MySQL</div>
-                                        <div class="skill skill--light">WordPress</div>
-                                        <div class="skill skill--light">Elementor</div>
-                                        <div class="skill skill--light">Webflow</div>
+                                        <div class="skill skill-1 skill--light">HTML</div>
+                                        <div class="skill skill-1 skill--light">CSS</div>
+                                        <div class="skill skill-1 skill--light">Sass</div>
+                                        <div class="skill skill-1 skill--light">Bootstrap</div>
+                                        <div class="skill skill-1 skill--light">Tailwind</div>
+                                        <div class="skill skill-1 skill--light">JavaScript</div>
+                                        <div class="skill skill-1 skill--light">React</div>
+                                        <div class="skill skill-1 skill--light">JQuery</div>
+                                        <div class="skill skill-1 skill--light">Node.js</div>
+                                        <div class="skill skill-1 skill--light">Git</div>
+                                        <div class="skill skill-1 skill--light">PHP</div>
+                                        <div class="skill skill-1 skill--light">MySQL</div>
+                                        <div class="skill skill-1 skill--light">WordPress</div>
+                                        <div class="skill skill-1 skill--light">Elementor</div>
+                                        <div class="skill skill-1 skill--light">Webflow</div>
                                     </div>
                                     <div class="reset__wrapper"><button class="reset" type="button" id="reset1">x</button></div>
                                 </div>
@@ -86,13 +89,13 @@ $particleColor = "#678b8b";
                             <div class="skills__wrapper">
                                 <div id="Design" class="tabcontent">
                                     <div class="skills__group">
-                                        <div class="skill skill--light">Final Cut Pro</div>
-                                        <div class="skill skill--light">Adobe XD</div>
-                                        <div class="skill skill--light">Illustrator</div>
-                                        <div class="skill skill--light">Photoshop</div>
-                                        <div class="skill skill--light">Animate</div>
-                                        <div class="skill skill--light">After Effects</div>
-                                        <div class="skill skill--light">Audition</div>
+                                        <div class="skill skill-2 skill--light">Final Cut Pro</div>
+                                        <div class="skill skill-2 skill--light">Adobe XD</div>
+                                        <div class="skill skill-2 skill--light">Illustrator</div>
+                                        <div class="skill skill-2 skill--light">Photoshop</div>
+                                        <div class="skill skill-2 skill--light">Animate</div>
+                                        <div class="skill skill-2 skill--light">After Effects</div>
+                                        <div class="skill skill-2 skill--light">Audition</div>
                                     </div>
                                     <div class="reset__wrapper"><button class="reset" type="button">x</button></div>
                                 </div>
@@ -101,11 +104,11 @@ $particleColor = "#678b8b";
                             <div class="skills__wrapper">
                                 <div id="Languages" class="tabcontent">
                                     <div class="skills__group">
-                                        <div id="about_english" class="skill skill--light">English (native)</div>
-                                        <div id="about_french" class="skill skill--light">French (B2)</div>
-                                        <div id="about_german" class="skill skill--light">German (B2)</div>
-                                        <div id="about_mandarin" class="skill skill--light">Mandarin (B1)</div>
-                                        <div id="about_dutch" class="skill skill--light">Dutch (A2)</div>
+                                        <div id="about_english" class="skill skill-3 skill--light">English (native)</div>
+                                        <div id="about_french" class="skill skill-3 skill--light">French (B2)</div>
+                                        <div id="about_german" class="skill skill-3 skill--light">German (B2)</div>
+                                        <div id="about_mandarin" class="skill skill-3 skill--light">Mandarin (B1)</div>
+                                        <div id="about_dutch" class="skill skill-3 skill--light">Dutch (A2)</div>
                                     </div>
                                     <div class="reset__wrapper"><button class="reset" type="button">x</button></div>
                                 </div>

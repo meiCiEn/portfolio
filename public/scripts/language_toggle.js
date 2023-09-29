@@ -48,62 +48,82 @@ function updateSiteLanguage ( language )
 {
   // Set the siteLanguage to the specified language
   siteLanguage = language;
-// Set the lang attribute of <HTML> element (in header.php)
-if ( siteLanguage === 'en' )
-{
-  document.documentElement.lang = 'en';
-  // document.documentElement.lang = `${ siteLanguage }-UK`;
-  // store user language preference and set it in the browser storage
-  localStorage.setItem('site language', 'en');
-  console.log(pageTitle);
-  loadPageText(pageTitle, 'en');
-  loadPageTitle(pageTitle, 'en');
-} else
-{
-  document.documentElement.lang = 'fr';
-  // document.documentElement.lang = `${ siteLanguage }-BE`;
-  // store user language preference and set it in the browser storage
-  localStorage.setItem('site language', 'fr' );
-  console.log(pageTitle);
-  loadPageText(pageTitle, 'fr');
-  loadPageTitle(pageTitle, 'fr');
+  // Set the lang attribute of <HTML> element (in header.php)
+  if ( siteLanguage === 'en' )
+  {
+    document.documentElement.lang = 'en';
+    // document.documentElement.lang = `${ siteLanguage }-UK`;
+    // store user language preference and set it in the browser storage
+    localStorage.setItem( 'site language', 'en' );
+
+    loadPageText( pageTitle, 'en' );
+    loadPageTitle( pageTitle, 'en' );
+    loadClickMe( 'en' );
+  } else
+  {
+    document.documentElement.lang = 'fr';
+    // document.documentElement.lang = `${ siteLanguage }-BE`;
+    // store user language preference and set it in the browser storage
+
+    localStorage.setItem( 'site language', 'fr' );
+    loadPageText( pageTitle, 'fr' );
+    loadPageTitle( pageTitle, 'fr' );
+    loadClickMe( 'fr' );
+  }
+
+
+  // Reload page when user changes language
+  location.reload();
 }
 
-// Reload page when user changes language
-location.reload();
-}
-
-function setLanguageOnLoad() {
+function setLanguageOnLoad ()
+{
   // Get the user's selected language from browser storage
-  const storedLanguage = localStorage.getItem('site language');
+  const storedLanguage = localStorage.getItem( 'site language' );
 
   // If the user has a stored language preference, use it
-  if (storedLanguage) {
+  if ( storedLanguage )
+  {
     siteLanguage = storedLanguage;
   }
 
   // Set the lang attribute of <HTML> element
-  document.documentElement.lang = siteLanguage === 'en' ? `${siteLanguage}-UK` : `${siteLanguage}-BE`;
+  document.documentElement.lang = siteLanguage === 'en' ? `${ siteLanguage }-UK` : `${ siteLanguage }-BE`;
+
+  // Show the button that corresponds to the current language and hide the other one
+  if ( siteLanguage === 'en' )
+  {
+    document.getElementById( 'fr-btn' ).style.display = 'block'; // Show the English button
+  } else
+  {
+    document.getElementById( 'en-btn' ).style.display = 'block'; // Show the French button
+  }
+
 
   // fetch the text to be loaded
-  loadPageText(pageTitle, siteLanguage);
-  loadPageTitle(pageTitle, siteLanguage);
+  loadPageText( pageTitle, siteLanguage );
+  loadPageTitle( pageTitle, siteLanguage );
+  loadClickMe( siteLanguage );
 
 }
 
 // Event listener for the English button
-document.getElementById('en-btn').addEventListener('click', function () {
-  updateSiteLanguage('en'); // Set siteLanguage to English
-  loadPageText(pageTitle, 'en');
-  loadPageTitle(pageTitle, 'en');
-});
+document.getElementById( 'en-btn' ).addEventListener( 'click', function ()
+{
+  updateSiteLanguage( 'en' ); // Set siteLanguage to English
+  loadPageText( pageTitle, 'en' );
+  loadPageTitle( pageTitle, 'en' );
+  loadClickMe( 'en' );
+} );
 
 // Event listener for the French button
-document.getElementById('fr-btn').addEventListener('click', function () {
-  updateSiteLanguage('fr'); // Set siteLanguage to French
-  loadPageText(pageTitle, 'fr');
-  loadPageTitle(pageTitle, 'fr');
-});
+document.getElementById( 'fr-btn' ).addEventListener( 'click', function ()
+{
+  updateSiteLanguage( 'fr' ); // Set siteLanguage to French
+  loadPageText( pageTitle, 'fr' );
+  loadPageTitle( pageTitle, 'fr' );
+  loadClickMe( 'fr' );
+} );
 
 
 
@@ -111,8 +131,8 @@ document.getElementById('fr-btn').addEventListener('click', function () {
 function loadPageText ( page, language )
 {
   const filePath = `public/data/text_files/${ page }_${ language }.json`;
-  console.log('page:', page);
-  console.log('language:', language)
+  console.log( 'page:', page );
+  console.log( 'language:', language );
 
   fetch( filePath )
     .then( response => response.json() )
@@ -139,32 +159,48 @@ function loadPageText ( page, language )
     } );
 }
 
-function loadPageTitle(page, language) {
-  const svgElement = document.getElementById(`${page}-svg`);
-  const svgFileName = `public/images/titles/${page}_${language}.svg`;
-  const svgFileNameMob = `public/images/titles/${page}_mob_${language}.svg`;
+function loadPageTitle ( page, language )
+{
+  const svgElement = document.getElementById( `${ page }-svg` );
+  const svgFileName = `public/images/titles/${ page }_${ language }.svg`;
+  const svgFileNameMob = `public/images/titles/${ page }_mob_${ language }.svg`;
 
   // Get the current window width
   const windowWidth = window.innerWidth;
 
-  console.log('svgElement:', svgElement);
-  console.log('svgFileName:', svgFileName);
-  console.log('svgFileNameMob:', svgFileNameMob);
-
   // Conditionally fetch the appropriate SVG file based on screen size
   let svgFileToFetch;
 
-  if (windowWidth < 576) {
+  if ( windowWidth < 576 )
+  {
     svgFileToFetch = svgFileNameMob;
-  } else {
+  } else
+  {
     svgFileToFetch = svgFileName;
   }
 
-  fetch(svgFileToFetch)
-    .then(response => response.text())
-    .then(svgData => {
+  fetch( svgFileToFetch )
+    .then( response => response.text() )
+    .then( svgData =>
+    {
       svgElement.innerHTML = svgData;
-    });
+    } );
+}
+
+function loadClickMe ( language )
+{
+  const svgElement = document.getElementById( 'click-me-svg' );
+  const svgFileName = `public/images/icons/click_me_${ language }.svg`;
+
+  console.log( 'svgElement:', svgElement );
+  console.log( 'svgFileName:', svgFileName );
+
+  fetch( svgFileName )
+    .then( response => response.text() )
+    .then( svgData =>
+    {
+      svgElement.innerHTML = svgData;
+    } );
 }
 
 

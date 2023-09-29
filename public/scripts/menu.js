@@ -4,7 +4,8 @@ const menuButton = document.querySelector( '.menu__label' );
 const ellipsisContainer = 
     document.querySelector('.menu__burger' );
 // const menuBars = document.querySelector( '.fa-ellipsis-vertical' );
-const menuBars = document.querySelector( '.fa-bars' );
+// const menuBars = document.querySelector( '.fa-bars' );
+const menuBars = document.querySelector( '.menu-container' );
 const overlay = document.querySelector('.overlay' );
 const overlayClose = document.querySelector('.overlay__close');
 const slidingText = document.querySelector('.slide-top');
@@ -18,9 +19,9 @@ menuCheckBox.addEventListener( 'change', function ()
     if ( menuCheckBox.checked == true )
     {
         menu.style.overflow = ( 'unset' );
-        ellipsisContainer.classList.add('rotate-90');
-        ellipsisContainer.style.transition = "all 0.3s ease-out";
-        ellipsisContainer.style.transitionDelay = "0.1s";
+        // ellipsisContainer.classList.add('rotate-90');
+        // ellipsisContainer.style.transition = "all 0.3s ease-out";
+        // ellipsisContainer.style.transitionDelay = "0.1s";
         overlay.classList.add('open');
         loadPageText('menu', siteLanguage);
         // add hidden class so you don't see language toggle button when menu is open
@@ -29,7 +30,7 @@ menuCheckBox.addEventListener( 'change', function ()
             overlay.classList.remove('open');
             // remove hidden class so you see language toggle button again when menu closed
             languageToggleButton.classList.remove('hidden');
-            ellipsisContainer.classList.remove('rotate-90');
+            // ellipsisContainer.classList.remove('rotate-90');
             menuCheckBox.checked = false;
         })
         anime( {

@@ -1,0 +1,20 @@
+
+                    <svg id="menu-closed" xmlns="http://www.w3.org/2000/svg" width="34.96" height="34.96" viewBox="0 0 34.96 34.96">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <g>
+                            <g>
+                                <g id="line-2">
+                                    <rect class="cls-1" x="-5.14" y="15.23" width="45.25" height="4.5" rx=".27" ry=".27" transform="translate(-7.24 17.48) rotate(-45)" />
+                                </g>
+                                <g id="line-1">
+                                    <rect class="cls-1" x="15.23" y="-5.14" width="4.5" height="45.25" rx=".27" ry=".27" transform="translate(-7.24 17.48) rotate(-45)" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>

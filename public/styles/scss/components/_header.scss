@@ -26,7 +26,7 @@
 .header__content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     overflow: hidden;
     padding: 0 $vspace-0_75;
 
@@ -48,13 +48,8 @@
   margin: 0;
   padding: 0 10px 0 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 20px;
-
-  @include lg {
-flex-direction: row;
-  }
 }
 
 // LOGO ANIMATION
@@ -69,7 +64,7 @@ flex-direction: row;
 }
 
 .header__logo img {
-  width: 3rem;
+  width: 1.9rem;
   animation: spin 4s linear infinite;
   transition: transform 0.3s ease;
 }
@@ -99,4 +94,15 @@ flex-direction: row;
 
 .hidden {
   display: none;
+}
+
+.language-toggle {
+  display: flex;
+}
+
+.language-button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: $text-md;
 }

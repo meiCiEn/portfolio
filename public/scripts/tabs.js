@@ -27,7 +27,25 @@ function openSkills(evt, skillName) {
 
 anime.timeline()
   .add({
-    targets: '.skills__wrapper .skill',
+    targets: '.skills__wrapper .skill-1',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 200,
+    delay: (el, i) => 800 + (45 * (i+1))
+  });
+
+  anime.timeline()
+  .add({
+    targets: '.skills__wrapper .skill-2',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 200,
+    delay: (el, i) => 800 + (45 * (i+1))
+  });
+
+  anime.timeline()
+  .add({
+    targets: '.skills__wrapper .skill-3',
     scale: [0, 1],
     duration: 1500,
     elasticity: 200,
@@ -45,6 +63,8 @@ anime.timeline()
 
   let currentSkill =     document.getElementById(skillName);
 //   console.log(currentSkill);
+
+
 
 
 function closeSkills() {
