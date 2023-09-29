@@ -31,8 +31,8 @@ $particleColor = "#678b8b";
                 </g>
             </svg></a>
         <div class="about__wrapper">
-            <div class="wrapper wrapper--about">
-                <?php include_once 'views/titles/about_fr.php'; ?>
+            <div id="about-svg" class="wrapper wrapper--about">
+                <!-- svg added dynamically (see language_toggle.js) -->
             </div>
             <div class="line line--light line--mb"></div>
             <div class="about slide-page-up">

@@ -48,27 +48,31 @@ function updateSiteLanguage ( language )
 {
   // Set the siteLanguage to the specified language
   siteLanguage = language;
-  // console.log( 'site language:', siteLanguage );
 // Set the lang attribute of <HTML> element (in header.php)
 if ( siteLanguage === 'en' )
 {
   document.documentElement.lang = 'en';
   // document.documentElement.lang = `${ siteLanguage }-UK`;
+  // store user language preference and set it in the browser storage
   localStorage.setItem('site language', 'en');
   console.log(pageTitle);
   loadPageText(pageTitle, 'en');
+  loadPageTitle(pageTitle, 'en');
 } else
 {
   document.documentElement.lang = 'fr';
   // document.documentElement.lang = `${ siteLanguage }-BE`;
+  // store user language preference and set it in the browser storage
   localStorage.setItem('site language', 'fr' );
   console.log(pageTitle);
   loadPageText(pageTitle, 'fr');
-}
-// store user language preference and set it in the browser storage
+  loadPageTitle(pageTitle, 'fr');
 }
 
-// Add the setLanguageOnLoad function to determine the initial language on page load
+// Reload page when user changes language
+location.reload();
+}
+
 function setLanguageOnLoad() {
   // Get the user's selected language from browser storage
   const storedLanguage = localStorage.getItem('site language');
@@ -83,26 +87,22 @@ function setLanguageOnLoad() {
 
   // fetch the text to be loaded
   loadPageText(pageTitle, siteLanguage);
+  loadPageTitle(pageTitle, siteLanguage);
 
-
-  // console.log( 'stored language:', storedLanguage );
-  // console.log( 'site language:', siteLanguage);
 }
 
 // Event listener for the English button
 document.getElementById('en-btn').addEventListener('click', function () {
   updateSiteLanguage('en'); // Set siteLanguage to English
   loadPageText(pageTitle, 'en');
-  // console.log('Updated site language to English');
-  // console.log( 'lang attribute value:', document.documentElement.lang );
+  loadPageTitle(pageTitle, 'en');
 });
 
 // Event listener for the French button
 document.getElementById('fr-btn').addEventListener('click', function () {
   updateSiteLanguage('fr'); // Set siteLanguage to French
   loadPageText(pageTitle, 'fr');
-  // console.log('Updated site language to French');
-  // console.log( 'lang attribute value:', document.documentElement.lang );
+  loadPageTitle(pageTitle, 'fr');
 });
 
 
@@ -138,6 +138,36 @@ function loadPageText ( page, language )
       console.error( 'Error loading JSON data:', error );
     } );
 }
+
+function loadPageTitle(page, language) {
+  const svgElement = document.getElementById(`${page}-svg`);
+  const svgFileName = `public/images/titles/${page}_${language}.svg`;
+  const svgFileNameMob = `public/images/titles/${page}_mob_${language}.svg`;
+
+  // Get the current window width
+  const windowWidth = window.innerWidth;
+
+  console.log('svgElement:', svgElement);
+  console.log('svgFileName:', svgFileName);
+  console.log('svgFileNameMob:', svgFileNameMob);
+
+  // Conditionally fetch the appropriate SVG file based on screen size
+  let svgFileToFetch;
+
+  if (windowWidth < 576) {
+    svgFileToFetch = svgFileNameMob;
+  } else {
+    svgFileToFetch = svgFileName;
+  }
+
+  fetch(svgFileToFetch)
+    .then(response => response.text())
+    .then(svgData => {
+      svgElement.innerHTML = svgData;
+    });
+}
+
+
 
 function updateText ( language )
 {

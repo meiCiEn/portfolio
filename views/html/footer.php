@@ -42,6 +42,7 @@
 <script src="public/scripts/menu.js"></script>
 <script src="public/scripts/tabs.js"></script>
 <script src="public/scripts/form.js"></script>
+<script src="public/scripts/reload_on_resize.js"></script>
 <!-- <script src="public/scripts/intersection.js"></script> -->
 
 <!-- JS for toggling between languages -->

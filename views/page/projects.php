@@ -32,8 +32,8 @@ $particleColor = "#ffffff"
         </div>
         <div class="projects__right d-flex">
             <div class="d-flex flex-column">
-                <div class="wrapper wrapper--projects">
-                    <?php include_once 'views/titles/projects_fr.php'; ?>
+                <div id="projects-svg" class="wrapper wrapper--projects">
+                    <!-- svg added dynamically (see language_toggle.js) -->
                 </div>
                 <div class="line line--green"></div>
                 <!-- LIST OF PROJECTS -->

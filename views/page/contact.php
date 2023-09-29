@@ -35,10 +35,9 @@ $particleColor = "#efd7e3";
             <div class="contact__wrapper">
                 <div class="contact">
                     <div class="wrapper wrapper--contact">
-                    <?php include_once 'views/titles/contact_fr.php'; ?>
-                    <?php 
-                    // include_once 'views/titles/contact_mob_fr.php';
-                     ?>
+                    <div id="contact-svg" class="wrapper">
+                <!-- svg added dynamically (see language_toggle.js) -->
+                    </div>
                     </div>
                     <div class="line line--green"></div>
 

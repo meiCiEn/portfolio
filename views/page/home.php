@@ -22,9 +22,7 @@ $particleColor = "#ffffff";
 
         <div class="intro__text">
             <div class="intro__text-wrapper">
-                <div class="wrapper wrapper--eleanor">
-                <?php include_once 'views/titles/home.php'; ?>
-                <?php include_once 'views/titles/home_mob.php'; ?>
+                <div id="home-svg" class="wrapper wrapper--eleanor">
                 </div>
 
                 <h4 id="job_description" class="translate job_description">
