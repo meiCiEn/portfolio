@@ -5,94 +5,15 @@
     width: 100%;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: $vspace-0_5;
-}
-
-.form__field {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-}
-
-.form__field label {
-    margin-bottom: $vspace-0_25;
-}
-
-.form__input,
-.form__textarea {
-    border: 1px solid $color-4;
-    border-radius: $border-radius-small;
-    line-height: normal;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: 300;
-    transition: border .15s;
-    background-color: $color-5-lightest;
-}
-
-.form__input {
-    padding: 0 0 0 $vspace-0_25;
-    height: 45px;
-}
-
-.form__input:focus {
-    outline: 0;
-    border: 2px solid $color-4;
-}
-
-.form__input:hover,
-.form__input:active {
-    border: 2px solid $color-4;
-}
-
-.form__textarea {
-    padding: $vspace-0_25;
-    height: 100px;
-    overflow: auto;
-    resize: none;
-}
-
-.form__textarea:focus {
-    outline: 0;
-    border: 2px solid $color-4;
-}
-
-.form__textarea:hover,
-.form__textarea:active {
-    border: 2px solid $color-4;
-}
-
-.form__field.error input,
-.form__field.error textarea {
-    border-color: $color-error;
-}
-
-.form__field small {
-    color: $color-error;
-}
-
-.form__field.success input:focus,
-.form__field.success textarea:focus {
-    border-color: $color-success !important;
-}
-
-.button__body--form, #fs-frm .button__body--form {
+.button__body--form, #contact-form .button__body--form {
     @include button-color($color-4, $color-5); // see mixins.scss
 }
 
-
 /* reset */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm fieldset,
-#fs-frm optgroup,
-#fs-frm label,
-#fs-frm #card-element:disabled {
+#contact-form input,
+#contact-form textarea,
+#contact-form fieldset,
+#contact-form label {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
@@ -105,26 +26,15 @@
 
 }
 
-#fs-frm label,
-#fs-frm legend,
-#fs-frm ::placeholder {
-    /* font-size: .825rem; */
-    margin-bottom: .5rem;
-    padding-top: .2rem;
-    display: flex;
-    align-items: baseline;
-}
-
-#fs-frm input {
+#contact-form input {
         padding: 0 0 0 $vspace-0_25;
     height: 45px;
 }
 
 /* border, padding, margin, width */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm #card-element {
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
     border: 1px solid $color-4;
     border-radius: $border-radius-small;
     line-height: normal;
@@ -136,82 +46,22 @@
     margin-bottom: $vspace-0_25;
 }
 
-#fs-frm input:focus,
-#fs-frm select:focus,
-#fs-frm textarea:focus {
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
         outline: 0;
     border: 2px solid $color-4;
 }
 
-#fs-frm [type="text"],
-#fs-frm [type="email"] {
+#contact-form [type="text"],
+#contact-form [type="email"] {
     width: 100%;
 }
 
-// #fs-frm [type="button"],
-// #fs-frm [type="submit"],
-// #fs-frm [type="reset"] {
-//     width: auto;
-//     cursor: pointer;
-//     -webkit-appearance: button;
-//     -moz-appearance: button;
-//     appearance: button;
-// }
 
-// #fs-frm [type="button"]:focus,
-// #fs-frm [type="submit"]:focus,
-// #fs-frm [type="reset"]:focus {
-//     outline: none;
-// }
-
-#fs-frm [type="submit"],
-#fs-frm [type="reset"] {
-    margin-bottom: 0;
-}
-
-#fs-frm select {
-    text-transform: none;
-}
-
-#fs-frm textarea {
+#contact-form textarea {
     padding: $vspace-0_25;
     height: 100px;
     overflow: auto;
     resize: none;
-}
-
-#fs-frm [type="checkbox"] {
-    -webkit-appearance: checkbox;
-    -moz-appearance: checkbox;
-    appearance: checkbox;
-    display: inline-block;
-    width: auto;
-    margin: 0 .5em 0 0 !important;
-}
-
-#fs-frm [type="radio"] {
-    -webkit-appearance: radio;
-    -moz-appearance: radio;
-    appearance: radio;
-}
-
-/* address, locale */
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-    display: inline;
-}
-
-#fs-frm fieldset.locale input[name="city"] {
-    width: 52%;
-}
-
-#fs-frm fieldset.locale select[name="state"],
-#fs-frm fieldset.locale input[name="postal-code"] {
-    width: 20%;
-}
-
-#fs-frm fieldset.locale input[name="city"],
-#fs-frm fieldset.locale select[name="state"] {
-    margin-right: 3%;
 }

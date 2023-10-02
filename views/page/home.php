@@ -18,7 +18,7 @@ $particleColor = "#ffffff";
 <div class="page-bg page-bg--offwhite bg--home h-100 d-flex">
     <div id="tsparticles"></div>
 
-    <div class="intro__wrapper">
+    <div class="intro__wrapper article">
 
         <div class="intro__text">
             <div class="intro__text-wrapper">

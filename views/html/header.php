@@ -163,6 +163,3 @@
                             menuContainer.classList.toggle("closed");
                         });
                     </script>
-</body>
-
-</html>

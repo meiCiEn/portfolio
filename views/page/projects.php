@@ -17,7 +17,7 @@ $particleColor = "#ffffff"
 
     <div id="tsparticles"></div>
 
-    <div class="projects d-flex">
+    <div class="projects d-flex article">
         <div class="projects__left">
             <div id="project__image" class="project__image">
                 <img id="project-molenbeek-img" src="public/images/thumbnails/molenbeek.png" alt="screenshot of Molenbeek en Promenade" style="display: none;">

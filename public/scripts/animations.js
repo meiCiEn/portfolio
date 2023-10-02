@@ -107,7 +107,8 @@ anime( {
 // Get a reference to the element with the ID "bullet-link-trigger"
 const bulletLinkTrigger = document.getElementById('bullet-link-trigger');
 
-// Add a mouseover event listener to the element
+if (bulletLinkTrigger) {
+  // Add a mouseover event listener to the element
 bulletLinkTrigger.addEventListener('mouseenter', (event) => {
 
   // Wrap every letter in a span
@@ -126,6 +127,8 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='bul
       },
     });
 });
+}
+
 
 // Get a reference to the element with the ID "bullet-link-trigger"
 const bulletLink1Trigger = document.getElementById('bullet-link-1-trigger');

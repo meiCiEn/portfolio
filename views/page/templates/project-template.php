@@ -27,7 +27,7 @@ $particleColor = "#ffffff";
             <li class="breadcrumb__item"><a id="breadcrumbCurrent" class="breadcrumb__link translate" href="?section=<?php echo $pagePath; ?>" aria-current="location">--breadcrumbCurrent--</a></li>
         </ul>
     </nav>
-    <article id="<?php echo $pageTitle; ?>" class="d-flex flex-column align-items-center" style="z-index: 1;">
+    <article id="<?php echo $pageTitle; ?>" class="d-flex flex-column align-items-center article" style="z-index: 1;">
         <div class="project__backdrop slide-page-down">
             <header class="project__header text-wrapper">
                 <h2 class="project__title slide-up-text ">
@@ -172,7 +172,3 @@ $particleColor = "#ffffff";
     let jsParticleColor = "<?php echo $particleColor; ?>";
 </script>
 
-
-<!-- <script>
-    loadPageText('menu', siteLanguage);
-</script> -->

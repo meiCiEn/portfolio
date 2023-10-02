@@ -196,3 +196,13 @@
 .project-link {
     font-weight: 500;
 }
+
+// Brief opacity transition to avoid "jumping" effect where some static content is briefly rendered before the dynamic content comes in
+.article {
+    opacity: 0;
+    transition: opacity 0.2s ease-in; /* Adjust the duration as needed */
+  }
+  
+.article.loaded {
+    opacity: 1;
+  }

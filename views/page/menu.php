@@ -1,11 +1,3 @@
-<?php
-// $pageTitle = "menu";
-
-?>
-
-<script>
- <?php echo json_encode($pageTitle); ?>;
-</script>
 
 <nav>
     <ul class="overlay__list">
@@ -32,7 +24,3 @@
         </a>
     </ul>
 </nav>
-
-<script>
-    loadPageText('menu', siteLanguage);
-</script>

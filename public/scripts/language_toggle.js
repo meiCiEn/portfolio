@@ -1,3 +1,9 @@
+
+    document.addEventListener("DOMContentLoaded", function () {
+  // dynamic content and animations loading code here
+
+
+
 console.log( 'browser language:', navigator.language );
 
 function detectBrowserLanguage ()
@@ -59,6 +65,7 @@ function updateSiteLanguage ( language )
     loadPageText( pageTitle, 'en' );
     loadPageTitle( pageTitle, 'en' );
     loadClickMe( 'en' );
+    loadMenuText('en');
   } else
   {
     document.documentElement.lang = 'fr';
@@ -69,6 +76,7 @@ function updateSiteLanguage ( language )
     loadPageText( pageTitle, 'fr' );
     loadPageTitle( pageTitle, 'fr' );
     loadClickMe( 'fr' );
+    loadMenuText('fr');
   }
 
 
@@ -104,6 +112,7 @@ function setLanguageOnLoad ()
   loadPageText( pageTitle, siteLanguage );
   loadPageTitle( pageTitle, siteLanguage );
   loadClickMe( siteLanguage );
+  loadMenuText(siteLanguage);
 
 }
 
@@ -112,8 +121,10 @@ document.getElementById( 'en-btn' ).addEventListener( 'click', function ()
 {
   updateSiteLanguage( 'en' ); // Set siteLanguage to English
   loadPageText( pageTitle, 'en' );
+
   loadPageTitle( pageTitle, 'en' );
   loadClickMe( 'en' );
+  loadMenuText('en');
 } );
 
 // Event listener for the French button
@@ -121,8 +132,10 @@ document.getElementById( 'fr-btn' ).addEventListener( 'click', function ()
 {
   updateSiteLanguage( 'fr' ); // Set siteLanguage to French
   loadPageText( pageTitle, 'fr' );
+
   loadPageTitle( pageTitle, 'fr' );
   loadClickMe( 'fr' );
+  loadMenuText('fr');
 } );
 
 
@@ -159,6 +172,36 @@ function loadPageText ( page, language )
     } );
 }
 
+function loadMenuText ( language )
+{
+  const filePath = `public/data/text_files/menu_${ language }.json`;
+  // console.log( 'language:', language );
+
+  fetch( filePath )
+    .then( response => response.json() )
+    .then( data =>
+    {
+      // Update the page text when the data is loaded
+      if ( language === 'en' )
+      {
+        englishText = data;
+        console.log( 'English menu loaded:', englishText );
+        // console.log( 'pageTitle, pageLang:', pageTitle, pageLang );
+        updateText( 'en' );
+      } else if ( language === 'fr' )
+      {
+        frenchText = data;
+        console.log( 'French menu loaded:', frenchText );
+        // console.log( 'pageTitle, pageLang:', pageTitle, pageLang );
+        updateText( 'fr' );
+      }
+    } )
+    .catch( error =>
+    {
+      console.error( 'Error loading JSON menu data:', error );
+    } );
+}
+
 function loadPageTitle ( page, language )
 {
   const svgElement = document.getElementById( `${ page }-svg` );
@@ -192,15 +235,14 @@ function loadClickMe ( language )
   const svgElement = document.getElementById( 'click-me-svg' );
   const svgFileName = `public/images/icons/click_me_${ language }.svg`;
 
-  console.log( 'svgElement:', svgElement );
-  console.log( 'svgFileName:', svgFileName );
-
-  fetch( svgFileName )
+  if (svgElement) {
+    fetch( svgFileName )
     .then( response => response.text() )
     .then( svgData =>
     {
       svgElement.innerHTML = svgData;
     } );
+  }
 }
 
 
@@ -237,7 +279,10 @@ function updateText ( language )
   }
 }
 
-
-// loadPageText( pageTitle, pageLang );
-
+  // Once content is loaded, add the "loaded" class to .article elements
+  const articleElements = document.querySelectorAll(".article");
+  articleElements.forEach(function (element) {
+    element.classList.add("loaded");
+  });
+});
 

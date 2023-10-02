@@ -41,7 +41,7 @@
 <script src="public/scripts/animations.js"></script>
 <script src="public/scripts/menu.js"></script>
 <script src="public/scripts/tabs.js"></script>
-<script src="public/scripts/form.js"></script>
+<!-- <script src="public/scripts/form.js"></script> -->
 <script src="public/scripts/reload_on_resize.js"></script>
 <!-- <script src="public/scripts/intersection.js"></script> -->
 
@@ -75,9 +75,6 @@
     console.log("Background Color: <?php echo $backgroundColor; ?>");
     console.log("Background Image: <?php echo $backgroundImage; ?>");
 </script>
-
-
-
 
 
 </body>

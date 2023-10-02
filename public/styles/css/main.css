@@ -10780,86 +10780,11 @@ li {
   width: 100%;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: calc(0.5 * 3.2rem);
-}
-
-.form__field {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-}
-
-.form__field label {
-  margin-bottom: calc(0.25 * 3.2rem);
-}
-
-.form__input,
-.form__textarea {
-  border: 1px solid hsl(179deg, 42%, 26%);
-  border-radius: 4px;
-  line-height: normal;
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: 300;
-  transition: border 0.15s;
-  background-color: hsl(329deg, 56%, 96%);
-}
-
-.form__input {
-  padding: 0 0 0 calc(0.25 * 3.2rem);
-  height: 45px;
-}
-
-.form__input:focus {
-  outline: 0;
-  border: 2px solid hsl(179deg, 42%, 26%);
-}
-
-.form__input:hover,
-.form__input:active {
-  border: 2px solid hsl(179deg, 42%, 26%);
-}
-
-.form__textarea {
-  padding: calc(0.25 * 3.2rem);
-  height: 100px;
-  overflow: auto;
-  resize: none;
-}
-
-.form__textarea:focus {
-  outline: 0;
-  border: 2px solid hsl(179deg, 42%, 26%);
-}
-
-.form__textarea:hover,
-.form__textarea:active {
-  border: 2px solid hsl(179deg, 42%, 26%);
-}
-
-.form__field.error input,
-.form__field.error textarea {
-  border-color: #a21232;
-}
-
-.form__field small {
-  color: #a21232;
-}
-
-.form__field.success input:focus,
-.form__field.success textarea:focus {
-  border-color: #4c9173 !important;
-}
-
-.button__body--form, #fs-frm .button__body--form {
+.button__body--form, #contact-form .button__body--form {
   background: hsl(179deg, 42%, 26%);
   color: hsl(329deg, 56%, 80%);
 }
-.button__body--form:hover, #fs-frm .button__body--form:hover {
+.button__body--form:hover, #contact-form .button__body--form:hover {
   background: hsl(329deg, 56%, 80%);
   color: hsl(179deg, 42%, 26%);
   transition: all 0.3s ease;
@@ -10867,18 +10792,15 @@ li {
   border-color: hsl(179deg, 42%, 26%);
   border-style: solid;
 }
-.button__body--form:active, #fs-frm .button__body--form:active {
+.button__body--form:active, #contact-form .button__body--form:active {
   background: #f4d7e6;
 }
 
 /* reset */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm fieldset,
-#fs-frm optgroup,
-#fs-frm label,
-#fs-frm #card-element:disabled {
+#contact-form input,
+#contact-form textarea,
+#contact-form fieldset,
+#contact-form label {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -10890,26 +10812,15 @@ li {
   margin: 0;
 }
 
-#fs-frm label,
-#fs-frm legend,
-#fs-frm ::placeholder {
-  /* font-size: .825rem; */
-  margin-bottom: 0.5rem;
-  padding-top: 0.2rem;
-  display: flex;
-  align-items: baseline;
-}
-
-#fs-frm input {
+#contact-form input {
   padding: 0 0 0 calc(0.25 * 3.2rem);
   height: 45px;
 }
 
 /* border, padding, margin, width */
-#fs-frm input,
-#fs-frm select,
-#fs-frm textarea,
-#fs-frm #card-element {
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
   border: 1px solid hsl(179deg, 42%, 26%);
   border-radius: 4px;
   line-height: normal;
@@ -10921,68 +10832,23 @@ li {
   margin-bottom: calc(0.25 * 3.2rem);
 }
 
-#fs-frm input:focus,
-#fs-frm select:focus,
-#fs-frm textarea:focus {
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
   outline: 0;
   border: 2px solid hsl(179deg, 42%, 26%);
 }
 
-#fs-frm [type=text],
-#fs-frm [type=email] {
+#contact-form [type=text],
+#contact-form [type=email] {
   width: 100%;
 }
 
-#fs-frm [type=submit],
-#fs-frm [type=reset] {
-  margin-bottom: 0;
-}
-
-#fs-frm select {
-  text-transform: none;
-}
-
-#fs-frm textarea {
+#contact-form textarea {
   padding: calc(0.25 * 3.2rem);
   height: 100px;
   overflow: auto;
   resize: none;
-}
-
-#fs-frm [type=checkbox] {
-  -webkit-appearance: checkbox;
-  -moz-appearance: checkbox;
-  appearance: checkbox;
-  display: inline-block;
-  width: auto;
-  margin: 0 0.5em 0 0 !important;
-}
-
-#fs-frm [type=radio] {
-  -webkit-appearance: radio;
-  -moz-appearance: radio;
-  appearance: radio;
-}
-
-/* address, locale */
-#fs-frm fieldset.locale input[name=city],
-#fs-frm fieldset.locale select[name=state],
-#fs-frm fieldset.locale input[name=postal-code] {
-  display: inline;
-}
-
-#fs-frm fieldset.locale input[name=city] {
-  width: 52%;
-}
-
-#fs-frm fieldset.locale select[name=state],
-#fs-frm fieldset.locale input[name=postal-code] {
-  width: 20%;
-}
-
-#fs-frm fieldset.locale input[name=city],
-#fs-frm fieldset.locale select[name=state] {
-  margin-right: 3%;
 }
 
 /***************************************************
@@ -18679,6 +18545,15 @@ li {
 
 .project-link {
   font-weight: 500;
+}
+
+.article {
+  opacity: 0;
+  transition: opacity 0.2s ease-in; /* Adjust the duration as needed */
+}
+
+.article.loaded {
+  opacity: 1;
 }
 
 /* 

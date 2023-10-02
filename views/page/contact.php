@@ -3,7 +3,7 @@ $pageTitle = "contact";
 
 // Define background and bubble colors based on the page
 $backgroundColor = "#e9afcd"; // 
-$backgroundImage = "linear-gradient(160deg, #e9afcd 0%, e39cc0 100%)"; 
+$backgroundImage = "linear-gradient(160deg, #e9afcd 0%, e39cc0 100%)";
 $particleColor = "#efd7e3";
 
 
@@ -11,7 +11,7 @@ $particleColor = "#efd7e3";
 
 <script>
     // retrieve the value of the PHP variables $pageTitle/$pageLang and turn into JS variables
-        let pageTitle = <?php echo json_encode($pageTitle); ?>;
+    let pageTitle = <?php echo json_encode($pageTitle); ?>;
 </script>
 
 <div class="page-bg page-bg--pink forestgreen">
@@ -26,18 +26,18 @@ $particleColor = "#efd7e3";
                 </ul>
             </nav>
             <!-- <a class="back back--contact" href="?section=home"> -->
-                <svg id="back" class="back" xmlns="http://www.w3.org/2000/svg" width="50.06" height="50" viewBox="0 0 50.06 50">
-                    <g id="About_offwhite">
-                        <path d="M50.06,25c0,14.28-10.75,25-25.03,25S0,39.28,0,25,10.78,0,25.03,0s25.03,10.75,25.03,25Zm-25,23.09c13.02,0,22.89-9.97,22.89-23.09S38.08,1.94,25.06,1.94,2.1,11.88,2.1,25s9.91,23.09,22.96,23.09Zm-2.98-38.86h2.75l-13.21,13.21c-.58,.58-.29,1.1,.42,1.1h31.8v2.14H12.05c-.71,0-.97,.52-.42,1.1l13.18,13.28h-2.75L6.61,24.61l15.48-15.38Z" />
-                    </g>
-                </svg></a>
+            <svg id="back" class="back" xmlns="http://www.w3.org/2000/svg" width="50.06" height="50" viewBox="0 0 50.06 50">
+                <g id="About_offwhite">
+                    <path d="M50.06,25c0,14.28-10.75,25-25.03,25S0,39.28,0,25,10.78,0,25.03,0s25.03,10.75,25.03,25Zm-25,23.09c13.02,0,22.89-9.97,22.89-23.09S38.08,1.94,25.06,1.94,2.1,11.88,2.1,25s9.91,23.09,22.96,23.09Zm-2.98-38.86h2.75l-13.21,13.21c-.58,.58-.29,1.1,.42,1.1h31.8v2.14H12.05c-.71,0-.97,.52-.42,1.1l13.18,13.28h-2.75L6.61,24.61l15.48-15.38Z" />
+                </g>
+            </svg></a>
             <!-- col-md-8 col-11 d-flex flex-column -->
-            <div class="contact__wrapper">
+            <div class="contact__wrapper article">
                 <div class="contact">
                     <div class="wrapper wrapper--contact">
-                    <div id="contact-svg" class="wrapper">
-                <!-- svg added dynamically (see language_toggle.js) -->
-                    </div>
+                        <div id="contact-svg" class="wrapper">
+                            <!-- svg added dynamically (see language_toggle.js) -->
+                        </div>
                     </div>
                     <div class="line line--green"></div>
 
@@ -61,52 +61,25 @@ $particleColor = "#efd7e3";
                                 </li>
                             </ul>
 
-
                         </section>
 
 
                         <section class="contact__form">
                             <div class="form__wrapper">
-                                <!-- Launch the validateForm function (form.js) when the user clicks the submit button -->
-                                <!-- <form method="POST" id="contact__form" name="contact_form" class="form" action="https://formspree.io/f/xqkoqqdw"
-  method="POST">
-                                <div class="form__field">
-                                    <label for="full-name" class="form__label">Name:</label>
-                                    <input type="text" class="form__input" name="full-name" id="full-name" placeholder="e.g. Anna Brown" value="">
-                                    <small></small>
-
-                                </div>
-                                <div class="form__field">
-                                    <label for="email" class="form__label">Email:</label>
-                                    <input input type="email" name="email" id="email" class="form__input" placeholder="name@email.com">
-                                    <small></small>
-
-                                </div>
-                                <div class="form__field">
-                                    <label for="message" class="form__label">Message:</label>
-                                    <textarea class="form__textarea" name="message" id="message" rows="3" placeholder="What would you like to discuss?"></textarea>
-                                    <small></small>
-
-                                </div>
-                                <div class="button">
-                                    <button type="submit" class="button__body button__body--form">Submit</button>
-                                
-                                </div>
-                            </form> -->
-                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkoqqdw" method="post">
-                                    <fieldset id="fs-frm-inputs">
+                                <form id="contact-form" name="simple-contact-form" method="post" action="helpers/process_form.php">
+                                <fieldset id="form-inputs">
                                         <label for="full-name" id="label_full_name" class="form__label">Full Name</label>
                                         <input type="text" name="name" id="full-name" required="">
                                         <label for="email-address" id="label_email_address">Email Address</label>
-                                        <input type="email" name="_replyto" id="email-address"required="">
+                                        <input type="email" name="_replyto" id="email-address" required="">
                                         <label for="message" id="label_message">Message</label>
                                         <textarea rows="5" name="message" id="message" required=""></textarea>
                                         <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                                     </fieldset>
                                     <input id="submit_button" class="button__body button__body--form" type="submit" value="Submit">
                                 </form>
-
                             </div>
+
                         </section>
                     </div>
                 </div>
@@ -117,11 +90,27 @@ $particleColor = "#efd7e3";
 
 <!-- Define JavaScript variables with PHP values -->
 <script>
-// for page background
-let jsBackgroundColor = "<?php echo $backgroundColor; ?>";
-let jsBackgroundImage = "<?php echo $backgroundImage; ?>";
-let jsParticleColor = "<?php echo $particleColor; ?>";
-
+    // for page background
+    let jsBackgroundColor = "<?php echo $backgroundColor; ?>";
+    let jsBackgroundImage = "<?php echo $backgroundImage; ?>";
+    let jsParticleColor = "<?php echo $particleColor; ?>";
 </script>
 
+<script>
+    const form = document.getElementById("contact-form");
+    console.log('form: ', form)
 
+form.addEventListener("submit", function (event) {
+   const name = form.elements["name"].value;
+   const email = form.elements["_replyto"].value;
+   const message = form.elements["message"].value;
+
+   console.log(name, email, message);
+
+   if (!name || !email || !message) {
+      alert("Please fill out all required fields.");
+      event.preventDefault(); // Prevent form submission
+   }
+});
+
+</script>
