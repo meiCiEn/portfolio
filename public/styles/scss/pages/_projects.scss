@@ -1,8 +1,4 @@
-@import url('../abstracts/mixins');
-@import url('../base/typography');
-
 .projects {
-  display: flex;
   width: 100%;
   flex-wrap: wrap;
   height: calc((100vh) - ($frame-space * 2) - 2px);
@@ -35,7 +31,7 @@
 
 .projects-right ul {
   overflow-y: auto;
-  padding-left: 0px;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -75,7 +71,6 @@
   margin: 0 0 0 2rem;
   text-overflow: ellipsis;
   white-space: nowrap;
-
   transform: translateX(-30px);
   transition: all 0.3s ease-in-out;
   padding-right: 20px;
