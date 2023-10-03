@@ -3,19 +3,16 @@
 // 1. Variables
 @import
   'abstracts/variables',
-  'abstracts/functions',
   'abstracts/mixins';
 
 // 2. Base
 @import
-  'base/reset',
   'base/base',
   'base/typography';
 
 // 3. Layout
 @import 
-  'layout/utilities',
-  'layout/grid';
+  'layout/utilities';
 
 
 // 5. Components
@@ -34,8 +31,6 @@
   'components/form',
   'components/titles';
 
-
-
 // 6. Page-specific styles
 @import
   'pages/home',
@@ -43,7 +38,4 @@
   'pages/projects',
   'pages/project-overview',
   'pages/contact';
-// 7. Themes
-@import
-  'themes/default';
 

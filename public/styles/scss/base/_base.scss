@@ -23,7 +23,7 @@ body {
     font-size: $base-font-size;
     font-weight: 400;
     line-height: 1.5;
-    color: #{$color-text}; // var(--blackish)
+    color: #{$color-text}; /* var(--blackish) */
 	font-family: $font-main;
 	scroll-behavior: smooth;
 }

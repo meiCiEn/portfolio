@@ -1,13 +1,6 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-@import '../base/typography';
-
-/*
-* # PROJECT OVERVIEW PAGES
-*
-*
-* ------------------------------------------------------------------- */
-
+// @import '../abstracts/variables';
+@import url('../abstracts/mixins');
+@import url('../base/typography');
 
 .project {
     position: relative;
@@ -91,9 +84,6 @@
     }
 }
 
-
-// See _table.scss
-
 .project-overview__table {
     display: block;
     padding: $vspace-0_5;
@@ -140,7 +130,7 @@
 
 .next__arrow {
     padding: 0;
-    margin: -3px 0 0 0;
+    margin: -3px 0 0;
     position: relative;
 
     @include sm {
@@ -197,7 +187,7 @@
     font-weight: 500;
 }
 
-// Brief opacity transition to avoid "jumping" effect where some static content is briefly rendered before the dynamic content comes in
+/* Brief opacity transition to avoid "jumping" effect where some static content is briefly rendered before the dynamic content comes in */
 .article {
     opacity: 0;
     transition: opacity 0.2s ease-in; /* Adjust the duration as needed */

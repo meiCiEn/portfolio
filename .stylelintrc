@@ -1,0 +1,7 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+      "plugin/declaration-block-no-ignored-properties": true
+    },
+    "processors": ["stylelint-processor-html"]
+  }

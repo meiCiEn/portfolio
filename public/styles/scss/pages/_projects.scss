@@ -1,7 +1,5 @@
-@import '../abstracts/variables';
-@import '../abstracts/mixins';
-@import '../base/typography';
-
+@import url('../abstracts/mixins');
+@import url('../base/typography');
 
 .projects {
   display: flex;
@@ -12,7 +10,7 @@
   padding-top: 10rem;
 }
 
-.projects__left {
+.projects-left {
   display: none;
 
   @include md {
@@ -21,7 +19,7 @@
   }
 }
 
-.projects__right {
+.projects-right {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -35,13 +33,13 @@
   }
 }
 
-.projects__right ul {
+.projects-right ul {
   overflow-y: auto;
   padding-left: 0px;
   margin: 0;
 }
 
-.projects__right ul .projects__row {
+.projects-right ul .projects-row {
   position: relative;
   height: 100%;
   width: 100%;
@@ -57,27 +55,24 @@
   }
 }
 
-.projects__right ul li:last-child .projects__row {
+.projects-right ul li:last-child .projects-row {
   border-bottom: 0;
 }
 
-.projects__name {
+.projects-name {
   display: flex;
   align-items: center;
   width: 100%;
   text-overflow: ellipsis;
 }
 
-.projects__name .projects__arrow {
+.projects-name .projects-arrow {
   position: absolute;
   overflow: hidden;
 }
 
-.projects__title {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 2rem;
-  margin-right: 0;
+.projects-title {
+  margin: 0 0 0 2rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 
@@ -95,8 +90,8 @@
 
 }
 
-.projects__name:hover .projects__title,
-.projects__name:active .projects__title {
+.projects-link:hover .projects-title,
+.projects-link:active .projects-title {
   transform: translateX(0);
 }
 
@@ -104,17 +99,17 @@
   padding: 0 $vspace-0_25 5px 0;
   margin: 0;
   position: relative;
-  transform: translateX(-100px);
+  transform: translateX(-80px);
   transition: all 0.3s ease-in-out;
   font-size: $text-sm;
 }
 
-.projects__name:hover .arrow,
-.projects__name:active .arrow {
+.projects-link:hover .arrow,
+.projects-link:active .arrow {
   transform: translateX(0);
 }
 
-.projects__right ul .projects__year {
+.projects-right ul .projects-year {
   display: none;
   width: 100%;
   text-align: right;
@@ -125,53 +120,8 @@
   }
 }
 
-.projects__right ul .projects__year p {
+.projects-right ul .projects-year p {
   margin: 0;
-}
-
-.project__image {
-  display: flex;
-  min-width: 100%;
-  height: 400px;
-  padding: 20px;
-  object-fit: cover;
-
-}
-
-.project__sitelink {
-  padding: 5px 15px;
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 1.25rem;
-  font-weight: 400;
-  width: fit-content;
-  flex: 0 0 auto;
-  background-color: $color-1;
-
-  &:hover {
-    background-color: $color-5-lightest;
-  }
-
-  a {
-    color: $color-5-lightest;
-
-    &:hover {
-      color: $color-1;
-    }
-
-    &:active, &:focus {
-      color: $color-5-lightest;
-    }
-  }
-
-  &:hover a {
-    color: $color-1;
-  }
-
-  &:active a,  &:focus a {
-    color: $color-5-lightest;
-  }
-
 }
 
 .scrollable-list-container {

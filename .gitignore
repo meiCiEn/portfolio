@@ -9,3 +9,11 @@
 /poubelle/
 
 /do_not_upload/
+
+/.stylelintr
+
+/node_modules/
+
+/package-lock.json
+
+/package.json

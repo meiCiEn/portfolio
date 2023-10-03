@@ -1,5 +1,8 @@
 {
   "devDependencies": {
-    "stylelint": "^15.10.3"
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+    "stylelint-scss": "^5.2.1"
   }
 }

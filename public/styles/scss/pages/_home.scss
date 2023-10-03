@@ -7,8 +7,6 @@
     height: calc(100vh - ($frame-space * 2) - 2px);
 }
 
-
-
 .intro__wrapper p,
 .intro__wrapper a {
     font-size: inherit;
@@ -31,16 +29,12 @@
 
     @include sm {
         height: calc(70vh - ($frame-space * 2) - 2px);
-
         padding-bottom: $vspace-1;
     }
-
-
 
     @include md {
         width: $col-8;
         padding-bottom: $vspace-0_5;
-
     }
 }
 
@@ -115,10 +109,6 @@
                     transform: translateX(0);
                 }
 
-                // a {
-                //     transform: skewX(-18deg);
-                // }
-
                 img {
                     transform: rotate(0deg);
                 }
@@ -190,21 +180,24 @@ svg#eleanor {
 
 .job_description {
     font-family: $font-main;
+    font-weight: 300;
     text-align: left;
     font-size: inherit;
     line-height: 1.2rem;
 
     @include xs {
-    font-size: 5vw;
+        font-size: 5vw;
     }
-    
+
     @include sm {
         font-size: $text-md;
     }
+
     @include md {
         font-size: $text-lg;
         text-align: right;
     }
+
     @include xl {
         font-size: $text-xl;
         text-align: right;
