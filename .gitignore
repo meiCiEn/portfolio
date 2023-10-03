@@ -1,3 +1,7 @@
+/helpers/
+
+/node_modules/
+
 /.htaccess
 
 /TODO.txt
@@ -12,8 +16,10 @@
 
 /.stylelintr
 
-/node_modules/
+
 
 /package-lock.json
 
 /package.json
+
+
