@@ -34,7 +34,7 @@ $particleColor = "#ffffff";
                     <li class="bullet-link-trigger" id="bullet-link-trigger">
                         <a href="?section=projects">
                             <div class="d-flex align-items-center">
-                                <div class="bullet"><img src="public/images/glyphs/arrow-bullet_green.svg" alt="arrow"></div>
+                                <div class="bullet"><img src="public/images/icons/arrow-bullet_green.svg" alt="arrow"></div>
                                 <div class="bullet-link"><span class="bullet-link-text-wrapper"><span id="projects" class="bullet-link-letters translate">projects</span></span></div>
                             </div>
                         </a>
@@ -42,7 +42,7 @@ $particleColor = "#ffffff";
                     <li class="bullet-link-trigger" id="bullet-link-1-trigger">
                         <a href="?section=about">
                             <div class="d-flex align-items-center">
-                                <div class="bullet"><img src="public/images/glyphs/arrow-bullet_green.svg" alt="arrow"></div>
+                                <div class="bullet"><img src="public/images/icons/arrow-bullet_green.svg" alt="arrow"></div>
                                 <div class="bullet-link"><span class="bullet-link-text-wrapper"><span id="about_me" class="bullet-link-1-letters translate">about me</span></span></div>
                             </div>
                         </a>
@@ -50,7 +50,7 @@ $particleColor = "#ffffff";
                     <li class="bullet-link-trigger" id="bullet-link-2-trigger">
                         <a href="?section=contact">
                             <div class="d-flex align-items-center">
-                                <div class="bullet"><img src="public/images/glyphs/arrow-bullet_green.svg" alt="arrow"></div>
+                                <div class="bullet"><img src="public/images/icons/arrow-bullet_green.svg" alt="arrow"></div>
                                 <div class="bullet-link"><span  class="bullet-link-text-wrapper"><span id="contact_us" class="bullet-link-2-letters translate">get in touch</span></span></div>
                             </div>
                         </a>

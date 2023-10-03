@@ -18,7 +18,7 @@
     <!-- <link rel="stylesheet" href="public/styles/css/fonts.css" /> -->
     <link rel="stylesheet" href="public/styles/css/main.css" />
 
-    <script src="https://kit.fontawesome.com/f64cbb42a1.js" crossorigin="anonymous" defer></script>
+    <!-- <script src="https://kit.fontawesome.com/f64cbb42a1.js" crossorigin="anonymous" defer></script> -->
     <!-- <script src="gen_validatorv4.js" type="text/javascript"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.18.3/dist/tsparticles.min.js"></script>
 
@@ -87,7 +87,7 @@
                         <button id="en-btn" class="rader language-button hidden">EN</button>
                         <button id="fr-btn" class="rader language-button hidden">FR</button>
                     </div>
-                    
+
 
                     <div class="menu">
                         <!-- hamburger icon -->
@@ -98,28 +98,23 @@
                                 <!-- hamburger menu -->
                                 <div class="menu__burger">
                                     <div id="menu-container" class="opened">
-                        <div id="menu-open">
-                            <img src="public/images/glyphs/blue-menu.svg" alt="">
-                        </div>
-                        <div id="menu-closed">
-                            <img src="public/images/glyphs/red-menu.svg" alt="">
+                                        <div id="menu-open">
+                                            <img src="public/images/icons/menu-open.svg" alt="">
+                                        </div>
+                                        <div id="menu-closed">
+                                            <img src="public/images/icons/menu-closed.svg" alt="">
 
-                        </div>
-                    </div>
-                                    <!-- <div style="width: 25px;">
-                                        <img src="public/images/glyphs/blue-menu.svg" alt="">
-                                        <img src="public/images/glyphs/red-menu.svg" alt=""> -->
-                                        <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
-                                        <!-- <i class="fa-solid fa-bars"></i> -->
-                                    </div> 
+                                        </div>
+                                    </div>
                                 </div>
-                            </li>
-                        </label>
-                        <input type="checkbox" name="menu__checkbox" id="menu__checkbox" class="menu__checkbox" autocomplete="off">
-
                     </div>
-                </ul>
+                    </li>
+                    </label>
+                    <input type="checkbox" name="menu__checkbox" id="menu__checkbox" class="menu__checkbox" autocomplete="off">
+
             </div>
+            </ul>
+        </div>
         </div>
 
     </header>

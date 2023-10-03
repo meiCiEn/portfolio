@@ -46,18 +46,14 @@ $particleColor = "#efd7e3";
                     <div class="contact__content">
                         <section class="contact__details">
                             <p id="contact_message">Get in touch with me through social media or using the contact form.
-                                <!-- Get in touch with me via email, on social media or using the online contact form. -->
                             <p>
                             <ul>
-                                <!-- <li>
-                                <div class="bullet"><img src="public/images/glyphs/arrow-bullet_green.svg" alt="arrow"></div><a href="mailto:eleanor.mears@gmail.com" target="_blank">email</a>
-                            </li> -->
 
                                 <li>
-                                    <div class="bullet"><img src="public/images/glyphs/arrow-bullet_green.svg" alt="arrow"></div><a href="https://www.linkedin.com/in/elliemears/" target="_blank">linkedin</a>
+                                    <div class="bullet"><img src="public/images/icons/arrow-bullet_green.svg" alt="arrow"></div><a href="https://www.linkedin.com/in/elliemears/" target="_blank">linkedin</a>
                                 </li>
                                 <li>
-                                    <div class="bullet"><img src="public/images/glyphs/arrow-bullet_green.svg" alt="arrow"></div><a href="https://github.com/meiCiEn" target="_blank">github</a>
+                                    <div class="bullet"><img src="public/images/icons/arrow-bullet_green.svg" alt="arrow"></div><a href="https://github.com/meiCiEn" target="_blank">github</a>
                                 </li>
                             </ul>
 
